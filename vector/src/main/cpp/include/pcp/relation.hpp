@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_RELATION_HPP
-#define PROGRESSIVE_RELATION_HPP
+#ifndef PCP_RELATION_HPP
+#define PCP_RELATION_HPP
 
 #include <string>
 #include <optional>
 
-namespace progressive {
+namespace pcp {
 
 struct RelationInfo {
     std::string sourceEventId;    // the event this one relates to
@@ -21,6 +21,6 @@ RelationInfo parseRelation(const std::string& eventJson);
 bool isJumpableRelationType(const std::string& relationType);
 bool isJumpableRelationType(const char* relationType);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_RELATION_HPP
+#endif // PCP_RELATION_HPP

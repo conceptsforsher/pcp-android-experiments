@@ -1,10 +1,10 @@
-# 📈 Progressive Chat — Android
+# 📈 PCP — Android
 
-A Matrix client in the making. The goal: a truly progressive messenger with a **pure C++ native** core.
+A Matrix client in the making. The goal: a truly modern messenger with a **pure C++ native** core.
 
 Currently an active fork of Element Classic Android. Kotlin/Java/Rust components are being gradually replaced with native C++ — starting with real features.
 
-**Website:** [progressive.chat](https://progressive.chat)
+**Website:** [pcp.chat](https://pcp.chat)
 
 ## The Vision
 
@@ -15,7 +15,7 @@ Currently an active fork of Element Classic Android. Kotlin/Java/Rust components
 
 ## C++ Native Modules
 
-Progressive Chat replaces slow Kotlin/Java components with native C++:
+PCP replaces slow Kotlin/Java components with native C++:
 
 | Module | File | Replaces |
 |--------|------|----------|

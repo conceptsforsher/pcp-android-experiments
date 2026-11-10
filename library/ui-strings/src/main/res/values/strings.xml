@@ -460,7 +460,7 @@
     <string name="home_layout_preferences_sort_name">A - Z</string>
 
     <string name="labs_enable_new_app_layout_title">Enable new layout</string>
-    <string name="labs_enable_new_app_layout_summary">A simplified Progressive with optional tabs</string>
+    <string name="labs_enable_new_app_layout_summary">A simplified PCP with optional tabs</string>
 
     <string name="labs_enable_deferred_dm_title">Enable deferred DMs</string>
     <string name="labs_enable_deferred_dm_summary">Create DM only on first message</string>
