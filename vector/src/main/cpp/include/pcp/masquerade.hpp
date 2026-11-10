@@ -1,9 +1,9 @@
-#ifndef PROGRESSIVE_MASQUERADE_HPP
-#define PROGRESSIVE_MASQUERADE_HPP
+#ifndef PCP_MASQUERADE_HPP
+#define PCP_MASQUERADE_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 struct MasqueradeConfig {
     bool enabled = false;
@@ -26,6 +26,6 @@ std::string getSuggestedNames();
 // Validate icon alias name (alphanumeric, 1-20 chars)
 bool isValidIconAlias(const std::string& alias);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_MASQUERADE_HPP
+#endif // PCP_MASQUERADE_HPP

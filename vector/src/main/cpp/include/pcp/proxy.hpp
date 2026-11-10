@@ -1,9 +1,9 @@
-#ifndef PROGRESSIVE_PROXY_HPP
-#define PROGRESSIVE_PROXY_HPP
+#ifndef PCP_PROXY_HPP
+#define PCP_PROXY_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 enum class ConnectionType { Matrix, Onion, I2p };
 enum class ProxyType { None, Http, Socks5 };
@@ -39,6 +39,6 @@ bool isValidProxyHost(const std::string& host);
 // Validate proxy port (1-65535)
 bool isValidProxyPort(int port);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_PROXY_HPP
+#endif // PCP_PROXY_HPP

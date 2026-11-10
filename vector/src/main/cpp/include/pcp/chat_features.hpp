@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_CHAT_FEATURES_HPP
-#define PROGRESSIVE_CHAT_FEATURES_HPP
+#ifndef PCP_CHAT_FEATURES_HPP
+#define PCP_CHAT_FEATURES_HPP
 
 #include <string>
 #include <cstdint>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Timezone Display ----
 
@@ -46,6 +46,6 @@ bool fileHasMetadata(const std::string& mimeType);
 // Get list of MIME types that support metadata stripping
 std::string getStrippableMimeTypes();
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_CHAT_FEATURES_HPP
+#endif // PCP_CHAT_FEATURES_HPP

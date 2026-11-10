@@ -1,9 +1,9 @@
-#ifndef PROGRESSIVE_YGGDRASIL_HPP
-#define PROGRESSIVE_YGGDRASIL_HPP
+#ifndef PCP_YGGDRASIL_HPP
+#define PCP_YGGDRASIL_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 // Check if a string is a valid Yggdrasil IPv6 address (200::/7 prefix)
 bool isYggdrasilAddress(const std::string& addr);
@@ -30,6 +30,6 @@ std::string buildYggHomeserverUrl(
     bool tls = true
 );
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_YGGDRASIL_HPP
+#endif // PCP_YGGDRASIL_HPP

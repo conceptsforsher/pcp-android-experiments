@@ -1,14 +1,14 @@
-#ifndef PROGRESSIVE_JSON_PARSER_HPP
-#define PROGRESSIVE_JSON_PARSER_HPP
+#ifndef PCP_JSON_PARSER_HPP
+#define PCP_JSON_PARSER_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 // Minimal JSON parser — extracts a string value for a given key
 // Handles objects like {"key": "value"} or {"key": 123}
 std::string parseJsonStringValue(const std::string& json, const std::string& key);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_JSON_PARSER_HPP
+#endif // PCP_JSON_PARSER_HPP

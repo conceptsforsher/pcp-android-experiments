@@ -1,9 +1,9 @@
-#ifndef PROGRESSIVE_TRANSLATE_HPP
-#define PROGRESSIVE_TRANSLATE_HPP
+#ifndef PCP_TRANSLATE_HPP
+#define PCP_TRANSLATE_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 struct TranslateRequest {
     std::string text;
@@ -27,6 +27,6 @@ std::string buildTranslateRequestBody(const TranslateRequest& request);
 // Parse the OpenAI-compatible response to extract translated text
 TranslateResult parseTranslateResponse(const std::string& responseBody, int httpStatus);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_TRANSLATE_HPP
+#endif // PCP_TRANSLATE_HPP

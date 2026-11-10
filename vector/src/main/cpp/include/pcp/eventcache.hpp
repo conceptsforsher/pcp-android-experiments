@@ -1,12 +1,12 @@
-#ifndef PROGRESSIVE_EVENTCACHE_HPP
-#define PROGRESSIVE_EVENTCACHE_HPP
+#ifndef PCP_EVENTCACHE_HPP
+#define PCP_EVENTCACHE_HPP
 
 #include <string>
 #include <vector>
 #include <unordered_map>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 struct CachedEvent {
     std::string eventId;
@@ -53,6 +53,6 @@ private:
     std::unordered_map<std::string, std::vector<std::string>> relationIndex_;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_EVENTCACHE_HPP
+#endif // PCP_EVENTCACHE_HPP

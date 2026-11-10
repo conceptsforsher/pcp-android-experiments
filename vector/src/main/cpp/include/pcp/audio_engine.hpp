@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_AUDIO_ENGINE_HPP
-#define PROGRESSIVE_AUDIO_ENGINE_HPP
+#ifndef PCP_AUDIO_ENGINE_HPP
+#define PCP_AUDIO_ENGINE_HPP
 
 #include <string>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 struct AudioTrack {
     std::string url;          // MXC or HTTP URL
@@ -41,6 +41,6 @@ bool isSupportedAudioType(const std::string& mimeType);
 // Extract file extension from MIME type
 std::string mimeToExtension(const std::string& mimeType);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_AUDIO_ENGINE_HPP
+#endif // PCP_AUDIO_ENGINE_HPP
