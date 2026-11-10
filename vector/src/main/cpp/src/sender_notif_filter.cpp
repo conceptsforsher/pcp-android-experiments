@@ -1,10 +1,10 @@
-#include "progressive/sender_notif_filter.hpp"
+#include "pcp/sender_notif_filter.hpp"
 #include <sstream>
 #include <algorithm>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ==== Notification Decision Logic ====
 
@@ -197,4 +197,4 @@ SenderNotifSettings getDefaultSenderNotifSettings(const std::string& roomId) {
     return settings;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,8 +1,8 @@
-#include "progressive/encrypted_file.hpp"
+#include "pcp/encrypted_file.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ==== EncryptedFileKey Validation (from EncryptedFileKey.kt:57-79) ====
 bool EncryptedFileKey::isValid() const {
@@ -176,4 +176,4 @@ std::string encryptedFileInfoToJson(const EncryptedFileInfo& info) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

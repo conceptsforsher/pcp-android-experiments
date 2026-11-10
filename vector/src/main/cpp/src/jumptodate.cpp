@@ -1,5 +1,5 @@
-#include "progressive/jumptodate.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/jumptodate.hpp"
+#include "pcp/json_parser.hpp"
 #include <ctime>
 #include <sstream>
 #include <regex>
@@ -7,7 +7,7 @@
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 bool validateAndComputeTimestamp(JumpToDateRequest& request) {
     // YYYY-MM-DD regex
@@ -110,4 +110,4 @@ JumpToDateResult parseTimestampToEventResponse(const std::string& responseBody, 
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp

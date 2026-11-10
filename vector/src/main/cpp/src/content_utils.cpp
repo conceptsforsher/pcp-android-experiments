@@ -1,10 +1,10 @@
-#include "progressive/content_utils.hpp"
+#include "pcp/content_utils.hpp"
 #include <sstream>
 #include <iomanip>
 #include <cmath>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- MXC URL Resolution ----
 // Original Kotlin (ContentUrlResolver.kt):
@@ -550,4 +550,4 @@ bool isEditionEvent(const std::string& contentJson) {
     return !getEditedTargetEventId(contentJson).empty();
 }
 
-} // namespace progressive
+} // namespace pcp

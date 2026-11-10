@@ -1,4 +1,4 @@
-#include "progressive/reaction_utils.hpp"
+#include "pcp/reaction_utils.hpp"
 #include <sstream>
 #include <algorithm>
 #include <unordered_set>
@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 ReactionSummary aggregateReactions(
     const std::string& eventId,
@@ -159,4 +159,4 @@ std::string reactionSummaryToJson(const ReactionSummary& summary) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

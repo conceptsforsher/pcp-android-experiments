@@ -1,10 +1,10 @@
-#include "progressive/device_naming.hpp"
+#include "pcp/device_naming.hpp"
 #include <sstream>
 #include <cctype>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- User Agent Builder ----
 // Original Kotlin (ComputeUserAgentUseCase.kt:execute):
@@ -164,4 +164,4 @@ std::string sanitizeUserAgentComponent(const std::string& input) {
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp

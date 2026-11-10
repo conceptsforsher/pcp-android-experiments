@@ -1,8 +1,8 @@
-#include "progressive/server_capabilities.hpp"
+#include "pcp/server_capabilities.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Capability Checking (from HomeServerCapabilities.kt:125-143) ----
 // Original Kotlin:
@@ -234,4 +234,4 @@ HomeServerVersion parseHomeServerVersion(const std::string& versionStr) {
     return ver;
 }
 
-} // namespace progressive
+} // namespace pcp

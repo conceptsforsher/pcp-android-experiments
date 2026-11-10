@@ -1,12 +1,12 @@
-#include "progressive/permalink.hpp"
-#include "progressive/url_tools.hpp"
+#include "pcp/permalink.hpp"
+#include "pcp/url_tools.hpp"
 #include <sstream>
 #include <unordered_map>
 #include <algorithm>
 #include <sstream>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 std::string buildRoomPermalink(const std::string& roomIdOrAlias) {
     return "https://matrix.to/#/" + roomIdOrAlias;
@@ -194,7 +194,7 @@ bool isEmailInviteLink(const std::string& url) {
     return fragment.find("email=") != std::string::npos && fragment.find("signurl=") != std::string::npos;
 }
 
-// urlDecode is defined in progressive/url_tools.cpp
+// urlDecode is defined in pcp/url_tools.cpp
 
 // ==== Via Parameter Computation (from ViaParameterFinder.kt:36-64) ====
 // Original Kotlin:
@@ -275,4 +275,4 @@ std::string formatViaParamsUrl(const std::vector<std::string>& viaServers) {
     return out.str();
 }
 
-} // namespace progressive
+} // namespace pcp

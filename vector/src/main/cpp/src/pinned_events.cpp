@@ -1,9 +1,9 @@
-#include "progressive/pinned_events.hpp"
+#include "pcp/pinned_events.hpp"
 #include <sstream>
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<std::string> parsePinnedEventIds(const std::string& stateContentJson) {
     std::vector<std::string> ids;
@@ -91,4 +91,4 @@ bool canManagePins(int userPowerLevel, int requiredLevel) {
     return userPowerLevel >= requiredLevel;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,4 +1,4 @@
-#include "progressive/timeline_utils.hpp"
+#include "pcp/timeline_utils.hpp"
 #include <sstream>
 #include <algorithm>
 #include <iomanip>
@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<std::string> mergeTimelineChunks(const std::vector<TimelineChunk>& chunks) {
     if (chunks.empty()) return {};
@@ -146,4 +146,4 @@ std::string loadingProgressToJson(const LoadingProgress& prog) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

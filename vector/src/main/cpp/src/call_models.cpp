@@ -1,6 +1,6 @@
-#include "progressive/call_models.hpp"
+#include "pcp/call_models.hpp"
 
-namespace progressive {
+namespace pcp {
 
 // ==== SdpType ====
 const char* sdpTypeToString(SdpType t) {
@@ -241,4 +241,4 @@ CallAssertedIdentityContent parseCallAssertedIdentity(const std::string& json) {
     return c;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,6 +1,6 @@
-#include "progressive/raw_service.hpp"
+#include "pcp/raw_service.hpp"
 
-namespace progressive {
+namespace pcp {
 
 // ==== JSON Escape/Unescape Helpers ====
 
@@ -151,4 +151,4 @@ std::string cacheKeyForUrl(const std::string& url) {
     return url;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,6 +1,6 @@
-#include "progressive/room_tombstone.hpp"
+#include "pcp/room_tombstone.hpp"
 
-namespace progressive {
+namespace pcp {
 
 // ==== Versioning State ====
 //
@@ -95,4 +95,4 @@ std::string tombstoneContentToJson(const RoomTombstoneContent& content) {
     return json;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,7 +1,7 @@
-#include "progressive/e2ee_decoration.hpp"
+#include "pcp/e2ee_decoration.hpp"
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 E2eeMessageDecoration computeE2eeDecoration(
     bool isEncrypted,
@@ -90,4 +90,4 @@ std::string getE2eeAccessibility(E2eeState state, const std::string& errorReason
     return base;
 }
 
-} // namespace progressive
+} // namespace pcp

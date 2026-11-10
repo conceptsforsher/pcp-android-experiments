@@ -1,4 +1,4 @@
-#include "progressive/cache_manager.hpp"
+#include "pcp/cache_manager.hpp"
 #include <sstream>
 #include <ctime>
 #include <algorithm>
@@ -7,7 +7,7 @@
 #include <sstream>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 void CacheManager::track(const std::string& eventId, const std::string& roomId,
                          const std::string& roomName, int64_t timestamp, int64_t sizeBytes,
@@ -163,4 +163,4 @@ std::string CacheManager::entriesToJson(const std::vector<CacheEntry>& entries) 
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

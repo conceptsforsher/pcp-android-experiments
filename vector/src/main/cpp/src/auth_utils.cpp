@@ -1,11 +1,11 @@
-#include "progressive/auth_utils.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/auth_utils.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <chrono>
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 AuthFlow parseAuthFlow(const std::string& responseJson, int httpStatus) {
     AuthFlow flow;
@@ -162,4 +162,4 @@ std::string formatRateLimitMessage(const RateLimit& limit) {
     return "Rate limited. Try again in " + std::to_string(seconds / 60) + " minutes.";
 }
 
-} // namespace progressive
+} // namespace pcp

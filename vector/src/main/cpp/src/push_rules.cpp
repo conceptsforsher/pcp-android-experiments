@@ -1,10 +1,10 @@
-#include "progressive/push_rules.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/push_rules.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 PushCondition parsePushCondition(const std::string& conditionJson) {
     PushCondition cond;
@@ -208,4 +208,4 @@ bool canShareHistory(const std::string& roomVisibility) {
     return roomVisibility == "world_readable" || roomVisibility == "shared";
 }
 
-} // namespace progressive
+} // namespace pcp

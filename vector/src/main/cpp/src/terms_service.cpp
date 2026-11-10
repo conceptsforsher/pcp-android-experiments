@@ -1,8 +1,8 @@
-#include "progressive/terms_service.hpp"
+#include "pcp/terms_service.hpp"
 #include <algorithm>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 // ==== LocalizedTerms Extraction ====
 //
@@ -345,4 +345,4 @@ std::vector<LocalizedTerms> getLocalizedTermsWithStatus(
     return terms;
 }
 
-} // namespace progressive
+} // namespace pcp

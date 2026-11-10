@@ -1,4 +1,4 @@
-#include "progressive/color_utils.hpp"
+#include "pcp/color_utils.hpp"
 #include <sstream>
 #include <iomanip>
 #include <cmath>
@@ -7,7 +7,7 @@
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string RgbaColor::toHex() const {
     std::ostringstream out;
@@ -170,4 +170,4 @@ RgbaColor hslToRgb(double h, double s, double l) {
     };
 }
 
-} // namespace progressive
+} // namespace pcp

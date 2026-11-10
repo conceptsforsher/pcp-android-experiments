@@ -1,6 +1,6 @@
-#include "progressive/event_models.hpp"
+#include "pcp/event_models.hpp"
 
-namespace progressive {
+namespace pcp {
 
 // ==== WithHeldCode ====
 
@@ -272,4 +272,4 @@ std::string eventToJson(const Event& ev) {
     return json;
 }
 
-} // namespace progressive
+} // namespace pcp

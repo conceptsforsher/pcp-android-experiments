@@ -1,4 +1,4 @@
-#include "progressive/notif_analyzer.hpp"
+#include "pcp/notif_analyzer.hpp"
 #include <sstream>
 #include <algorithm>
 #include <unordered_map>
@@ -7,7 +7,7 @@
 #include <sstream>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 NotifAnalytics analyzeNotifications(const std::vector<NotifEvent>& events) {
     NotifAnalytics a;
@@ -157,4 +157,4 @@ std::string notifAnalyticsToText(const NotifAnalytics& a) {
     return out.str();
 }
 
-} // namespace progressive
+} // namespace pcp

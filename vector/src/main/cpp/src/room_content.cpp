@@ -1,6 +1,6 @@
-#include "progressive/room_content.hpp"
+#include "pcp/room_content.hpp"
 
-namespace progressive {
+namespace pcp {
 
 // ==== Membership ====
 
@@ -324,4 +324,4 @@ RoomGuestAccessContent parseRoomGuestAccessContent(const std::string& json) {
     return c;
 }
 
-} // namespace progressive
+} // namespace pcp

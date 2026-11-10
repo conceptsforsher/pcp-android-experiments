@@ -1,4 +1,4 @@
-#include "progressive/displayname_utils.hpp"
+#include "pcp/displayname_utils.hpp"
 #include <sstream>
 #include <iomanip>
 #include <cctype>
@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string userIdToDisplayName(const std::string& userId, bool capitalize) {
     // Extract localpart: @alice_johnson:matrix.org → alice_johnson
@@ -204,4 +204,4 @@ std::string getBestDisplayName(const std::string& displayName, const std::string
     return "Unknown";
 }
 
-} // namespace progressive
+} // namespace pcp

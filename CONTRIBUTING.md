@@ -1,6 +1,6 @@
-# Contributing to Progressive Chat
+# Contributing to PCP
 
-Progressive Chat is a Matrix client with a **pure C++ native core**.
+PCP is a Matrix client with a **pure C++ native core**.
 We're steadily replacing Kotlin/Java with compiled C++ modules.
 
 ## Core Philosophy
@@ -20,7 +20,7 @@ cd vector/src/main/cpp
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
-# Output: libprogressive_native.so (95+ modules)
+# Output: libpcp_native.so (95+ modules)
 ```
 
 ```bash
@@ -33,7 +33,7 @@ make -j$(nproc)
 | Path | Purpose |
 |------|---------|
 | `vector/src/main/cpp/` | **C++ native modules** (main focus) |
-| `vector/src/main/cpp/include/progressive/` | Headers (1 per module) |
+| `vector/src/main/cpp/include/pcp/` | Headers (1 per module) |
 | `vector/src/main/cpp/src/` | Implementations + `jni_bridge.cpp` |
 | `vector/src/main/cpp/libolm/` | libolm E2EE crypto (git submodule) |
 | `vector/src/main/java/` | Kotlin/JNI bridge (being replaced) |
@@ -43,14 +43,14 @@ make -j$(nproc)
 ## Porting a Kotlin Module to C++
 
 1. **Read the original** — find the Kotlin file in `matrix-sdk-android/src/` or `vector/src/`
-2. **Create header** — `include/progressive/your_module.hpp` with structs + function declarations
+2. **Create header** — `include/pcp/your_module.hpp` with structs + function declarations
 3. **Create implementation** — `src/your_module.cpp` with inline `// Original Kotlin:` comments
 4. **Add to CMakeLists.txt** — add `src/your_module.cpp` to sources
 5. **Add JNI bridge** — add `extern "C"` functions in `src/jni_bridge.cpp`
-6. **Add Kotlin fallback** — add `@JvmStatic external fun` declarations in `ProgressiveNative.kt`
+6. **Add Kotlin fallback** — add `@JvmStatic external fun` declarations in `PcpNative.kt`
 7. **Document** — add entry to `docs/cpp_module_map.md`
 
-See existing modules in `vector/src/main/cpp/include/progressive/` for patterns.
+See existing modules in `vector/src/main/cpp/include/pcp/` for patterns.
 
 ## Code Style
 
@@ -79,7 +79,7 @@ See existing modules in `vector/src/main/cpp/include/progressive/` for patterns.
 ## Need Help?
 
 Open an issue on GitHub or contact the project author:
-- **Anton Maurer** — [GitHub: progressive-chat](https://github.com/progressive-chat)
+- **Anton Maurer** — [GitHub: pcp-chat](https://github.com/pcp-chat)
 
 ---
 

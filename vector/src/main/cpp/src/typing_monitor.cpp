@@ -1,9 +1,9 @@
-#include "progressive/typing_monitor.hpp"
+#include "pcp/typing_monitor.hpp"
 #include <sstream>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 TypingState updateTypingState(
     const std::string& roomId,
@@ -109,4 +109,4 @@ std::string typingStateToJson(const TypingState& state) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,11 +1,11 @@
-#include "progressive/notif_priority.hpp"
+#include "pcp/notif_priority.hpp"
 #include <sstream>
 #include <regex>
 #include <algorithm>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 bool isRoomMention(const std::string& body) {
     auto lower = body;
@@ -120,4 +120,4 @@ std::string truncateForNotification(const std::string& text, int maxLen) {
     return truncated + "...";
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,10 +1,10 @@
-# 📈 Progressive Chat — Android
+# 📈 PCP — Android
 
-A Matrix client in the making. The goal: a truly progressive messenger with a **pure C++ native** core.
+A Matrix client in the making. The goal: a truly modern messenger with a **pure C++ native** core.
 
 Currently an active fork of [Element](https://github.com/element-hq) Classic ([element-android](https://github.com/element-hq/element-android)). Kotlin/Java/Rust components are being gradually replaced with native C++ — starting with real features.
 
-**Website:** [progressive.chat](https://progressive.chat)
+**Website:** [pcp.chat](https://pcp.chat)
 
 ## The Vision
 
@@ -15,7 +15,7 @@ Currently an active fork of [Element](https://github.com/element-hq) Classic ([e
 
 ## AI Agent (`/agent`)
 
-Progressive Chat includes an LLM-powered agent system — like Claude Code for your chats.
+PCP includes an LLM-powered agent system — like Claude Code for your chats.
 
 ```
 /agent find messages from Alice about the future
@@ -45,7 +45,7 @@ The agent can:
 
 ## C++ Native Modules
 
-Progressive Chat replaces slow Kotlin/Java components with native C++:
+PCP replaces slow Kotlin/Java components with native C++:
 
 | Module | File | Replaces |
 |--------|------|----------|
@@ -96,16 +96,16 @@ CI builds F-Droid arm32 (armeabi-v7a, works on all devices). Requires Android SD
 
 ## How You Can Help
 
-Progressive Chat is in active development. We have months of debugging and polishing ahead before the first stable release. Here's how you can contribute:
+PCP is in active development. We have months of debugging and polishing ahead before the first stable release. Here's how you can contribute:
 
 - **Test and report bugs** — run the F-Droid debug APK, use the features, and open issues
 - **C++ code review** — all native modules in `vector/src/main/cpp/` welcome scrutiny
 - **Kotlin integration** — JNI wrappers are ready, UI wiring needs love
 - **Translations** — help localize the growing list of labs settings
 - **Documentation** — improve setup guides, feature descriptions
-- **Spread the word** — tell your Matrix friends about `progressive.chat`
+- **Spread the word** — tell your Matrix friends about `pcp.chat`
 
-Every bit helps us ship the truly progressive Matrix client we all want.
+Every bit helps us ship the truly pcp Matrix client we all want.
 
 ## License
 

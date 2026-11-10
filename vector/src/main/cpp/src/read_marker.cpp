@@ -1,9 +1,9 @@
-#include "progressive/read_marker.hpp"
+#include "pcp/read_marker.hpp"
 #include <sstream>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 ReadMarkerState computeReadMarker(const std::string& lastReadEventId,
     const std::vector<std::string>& loadedEventIds,
@@ -137,4 +137,4 @@ std::string formatJumpToUnreadLabel(const ReadMarkerState& state, int64_t nowMs)
     return "Jump to unread (" + timeLabel + ")";
 }
 
-} // namespace progressive
+} // namespace pcp

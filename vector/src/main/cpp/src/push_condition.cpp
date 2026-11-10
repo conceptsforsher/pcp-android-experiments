@@ -1,9 +1,9 @@
-#include "progressive/push_condition.hpp"
+#include "pcp/push_condition.hpp"
 #include <sstream>
 #include <cctype>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ==== Glob to Regex (from Glob.kt:24-38) ====
 // Original Kotlin:
@@ -380,4 +380,4 @@ std::string pushRuleToJson(const EventPushRule& rule) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

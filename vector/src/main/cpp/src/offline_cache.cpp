@@ -1,11 +1,11 @@
-#include "progressive/offline_cache.hpp"
+#include "pcp/offline_cache.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cmath>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ==== Priority Computation ====
 
@@ -198,4 +198,4 @@ std::string offlineCachePlanToJson(const OfflineCachePlan& plan) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

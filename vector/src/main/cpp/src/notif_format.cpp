@@ -1,10 +1,10 @@
-#include "progressive/notif_format.hpp"
+#include "pcp/notif_format.hpp"
 #include <sstream>
 #include <iomanip>
 #include <cmath>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Unread Counter (from RoomSummaryFormatter.kt:18-24) ----
 // Original Kotlin:
@@ -70,4 +70,4 @@ std::string formatBadgeText(int totalCount) {
     return "999+";  // capped for Android notification badge
 }
 
-} // namespace progressive
+} // namespace pcp
