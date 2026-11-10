@@ -1,11 +1,11 @@
-#include "progressive/location_sharing.hpp"
+#include "pcp/location_sharing.hpp"
 #include <sstream>
 #include <cmath>
 #include <chrono>
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 int LocationSharingManager::nextId_ = 1;
 
@@ -213,4 +213,4 @@ std::string LocationSharingManager::exportJson() const {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

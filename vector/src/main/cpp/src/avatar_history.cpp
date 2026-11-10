@@ -1,4 +1,4 @@
-#include "progressive/avatar_history.hpp"
+#include "pcp/avatar_history.hpp"
 #include <sstream>
 #include <ctime>
 #include <algorithm>
@@ -8,7 +8,7 @@
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- AvatarHistory ----
 
@@ -257,4 +257,4 @@ std::vector<RoomMatch> matchRooms(const std::string& query, const std::vector<Ro
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp

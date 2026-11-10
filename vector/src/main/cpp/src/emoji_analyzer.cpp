@@ -1,11 +1,11 @@
-#include "progressive/emoji_analyzer.hpp"
+#include "pcp/emoji_analyzer.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cctype>
 #include <algorithm>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 bool isEmojiChar(uint32_t cp) {
     return (cp >= 0x1F600 && cp <= 0x1F64F) || // emoticons
@@ -147,4 +147,4 @@ std::string findSimilarEmoji(const std::string& query,
     return emojiList[0];
 }
 
-} // namespace progressive
+} // namespace pcp

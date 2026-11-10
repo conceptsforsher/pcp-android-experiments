@@ -1,8 +1,8 @@
-#include "progressive/text_formats.hpp"
+#include "pcp/text_formats.hpp"
 #include <sstream>
 #include <algorithm>
 
-namespace progressive {
+namespace pcp {
 
 std::string escapeHtml(const std::string& text) {
     std::string out;
@@ -118,4 +118,4 @@ bool isEmojiOnly(const std::string& text) {
     return true;
 }
 
-} // namespace progressive
+} // namespace pcp

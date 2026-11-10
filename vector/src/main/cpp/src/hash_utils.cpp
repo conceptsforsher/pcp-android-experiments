@@ -1,11 +1,11 @@
-#include "progressive/hash_utils.hpp"
+#include "pcp/hash_utils.hpp"
 #include <sstream>
 #include <iomanip>
 #include <cstring>
 #include <random>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- SHA-256 implementation ----
 
@@ -245,4 +245,4 @@ bool constantTimeCompare(const std::string& a, const std::string& b) {
     return result == 0;
 }
 
-} // namespace progressive
+} // namespace pcp

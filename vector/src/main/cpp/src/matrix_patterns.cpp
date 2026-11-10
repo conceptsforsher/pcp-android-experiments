@@ -1,9 +1,9 @@
-#include "progressive/matrix_patterns.hpp"
+#include "pcp/matrix_patterns.hpp"
 #include <regex>
 #include <algorithm>
 #include <regex>
 
-namespace progressive {
+namespace pcp {
 
 static const char* DOMAIN_REGEX = ":[A-Z0-9.-]+(:[0-9]{2,5})?";
 static const char* BASE64 = "[0-9A-Za-z/\\\\+=]+";
@@ -117,4 +117,4 @@ bool isValidEmail(const std::string& input) {
     return std::regex_match(input, re);
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.22.1)
-project("progressive_native")
+project("pcp_native")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(
-    progressive_native
+    pcp_native
     SHARED
     src/jumptodate.cpp
     src/json_parser.cpp
@@ -89,8 +89,8 @@ add_library(
 # --- libolm E2EE crypto (C/C++ native) ---
 # To enable, uncomment and add libolm source:
 #   add_subdirectory(${CMAKE_SOURCE_DIR}/../libolm ${CMAKE_BINARY_DIR}/libolm)
-#   target_link_libraries(progressive_native olm)
-#   target_compile_definitions(progressive_native PRIVATE PROGRESSIVE_HAS_OLM=1)
+#   target_link_libraries(pcp_native olm)
+#   target_compile_definitions(pcp_native PRIVATE PCP_HAS_OLM=1)
 
     src/room_directory.cpp
     src/widget_utils.cpp
@@ -100,7 +100,7 @@ add_library(
 )
 
 target_include_directories(
-    progressive_native
+    pcp_native
     PUBLIC
     include
 )
@@ -108,6 +108,6 @@ target_include_directories(
 find_library(log_lib log)
 
 target_link_libraries(
-    progressive_native
+    pcp_native
     ${log_lib}
 )

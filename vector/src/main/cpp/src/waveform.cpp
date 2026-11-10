@@ -1,10 +1,10 @@
-#include "progressive/waveform.hpp"
+#include "pcp/waveform.hpp"
 #include <sstream>
 #include <cmath>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<WaveformBar> generateWaveform(
     const std::vector<int16_t>& samples,
@@ -135,4 +135,4 @@ std::vector<double> normalizeAmplitudes(const std::vector<double>& amplitudes) {
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp

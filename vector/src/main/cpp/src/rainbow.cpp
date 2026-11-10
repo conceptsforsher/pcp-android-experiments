@@ -1,10 +1,10 @@
-#include "progressive/rainbow.hpp"
+#include "pcp/rainbow.hpp"
 #include <sstream>
 #include <cmath>
 #include <iomanip>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string RgbColor::toHex() const {
     std::ostringstream out;
@@ -99,4 +99,4 @@ std::string generateRainbow(const std::string& text) {
     return result.str();
 }
 
-} // namespace progressive
+} // namespace pcp

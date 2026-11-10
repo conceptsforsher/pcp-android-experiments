@@ -1,10 +1,10 @@
-#include "progressive/audio_engine.hpp"
+#include "pcp/audio_engine.hpp"
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 #if 0 // Duplicate — defined in date_utils.cpp
 
@@ -67,4 +67,4 @@ std::string mimeToExtension(const std::string& mimeType) {
     return "";
 }
 
-} // namespace progressive
+} // namespace pcp

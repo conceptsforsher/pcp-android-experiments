@@ -1,4 +1,4 @@
-#include "progressive/reaction_utils.hpp"
+#include "pcp/reaction_utils.hpp"
 #include <sstream>
 #include <algorithm>
 #include <unordered_set>
@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 ReactionSummary aggregateReactions(
     const std::string& eventId,
@@ -136,4 +136,4 @@ bool isSameEmoji(const std::string& a, const std::string& b) {
     return strip(a) == strip(b);
 }
 
-} // namespace progressive
+} // namespace pcp

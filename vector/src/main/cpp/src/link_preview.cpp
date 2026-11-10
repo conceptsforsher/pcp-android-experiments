@@ -1,11 +1,11 @@
-#include "progressive/link_preview.hpp"
+#include "pcp/link_preview.hpp"
 #include <sstream>
 #include <regex>
 #include <algorithm>
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string extractTitle(const std::string& html) {
     std::regex titleRe(R"(<title[^>]*>([^<]+)</title>)", std::regex::icase);
@@ -132,4 +132,4 @@ std::string truncatePreviewText(const std::string& text, int maxLen) {
     return truncated + "...";
 }
 
-} // namespace progressive
+} // namespace pcp

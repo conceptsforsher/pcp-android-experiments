@@ -1,4 +1,4 @@
-#include "progressive/yggdrasil.hpp"
+#include "pcp/yggdrasil.hpp"
 #include <sstream>
 #include <regex>
 #include <cctype>
@@ -7,7 +7,7 @@
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 bool isYggdrasilAddress(const std::string& addr) {
     // Yggdrasil uses 200::/7 prefix
@@ -91,4 +91,4 @@ std::string rewriteHomeserverUrl(
     return buildYggHomeserverUrl(yggAddress, port, tls);
 }
 
-} // namespace progressive
+} // namespace pcp

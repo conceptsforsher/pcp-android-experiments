@@ -1,6 +1,6 @@
-#include "progressive/sso_utils.hpp"
-#include "progressive/json_parser.hpp"
-#include "progressive/url_tools.hpp"
+#include "pcp/sso_utils.hpp"
+#include "pcp/json_parser.hpp"
+#include "pcp/url_tools.hpp"
 #include <sstream>
 #include <regex>
 #include <algorithm>
@@ -9,7 +9,7 @@
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<SsoRedirect> parseSsoRedirects(const std::string& loginFlowsJson) {
     std::vector<SsoRedirect> redirects;
@@ -192,4 +192,4 @@ std::string buildWellKnownUrl(const std::string& serverName) {
     return "https://" + serverName + "/.well-known/matrix/client";
 }
 
-} // namespace progressive
+} // namespace pcp

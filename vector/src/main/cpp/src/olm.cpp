@@ -1,4 +1,4 @@
-#include "progressive/olm.hpp"
+#include "pcp/olm.hpp"
 #include <sstream>
 #include <cstring>
 #include <sstream>
@@ -6,7 +6,7 @@
 // libolm C API headers (from https://gitlab.matrix.org/matrix-org/olm)
 // To enable, add libolm to CMakeLists.txt:
 //   add_subdirectory(libolm)
-//   target_link_libraries(progressive_native olm)
+//   target_link_libraries(pcp_native olm)
 //
 // Then uncomment the includes below:
 // #include <olm/olm.h>
@@ -14,7 +14,7 @@
 // #include <olm/inbound_group_session.h>
 // #include <olm/sas.h>
 
-namespace progressive {
+namespace pcp {
 
 // Forward-declare libolm C functions (will be resolved when libolm is linked)
 extern "C" {
@@ -407,4 +407,4 @@ bool OlmSession::matchesInbound(const std::string& preKeyMessage) {
 // ---- SAS ----
 // (implementation stubs)
 
-} // namespace progressive
+} // namespace pcp
