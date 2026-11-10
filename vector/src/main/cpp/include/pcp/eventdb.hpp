@@ -1,5 +1,5 @@
-#ifndef PROGRESSIVE_EVENTDB_HPP
-#define PROGRESSIVE_EVENTDB_HPP
+#ifndef PCP_EVENTDB_HPP
+#define PCP_EVENTDB_HPP
 
 #include <string>
 #include <vector>
@@ -8,7 +8,7 @@
 
 struct sqlite3;
 
-namespace progressive {
+namespace pcp {
 
 struct DbEvent {
     std::string eventId;
@@ -74,6 +74,6 @@ private:
     void exec(const char* sql) const;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_EVENTDB_HPP
+#endif // PCP_EVENTDB_HPP

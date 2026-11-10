@@ -1,10 +1,10 @@
-#include "progressive/account_export.hpp"
+#include "pcp/account_export.hpp"
 #include <sstream>
 #include <cstring>
 #include <vector>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 static const char BASE64_CHARS[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
@@ -129,4 +129,4 @@ AccountData decryptAccountData(const std::string& encrypted, const std::string& 
     return data;
 }
 
-} // namespace progressive
+} // namespace pcp
