@@ -1,7 +1,7 @@
-#include "progressive/sso_utils.hpp"
-#include "progressive/login_utils.hpp"
-#include "progressive/json_parser.hpp"
-#include "progressive/url_tools.hpp"
+#include "pcp/sso_utils.hpp"
+#include "pcp/login_utils.hpp"
+#include "pcp/json_parser.hpp"
+#include "pcp/url_tools.hpp"
 #include <sstream>
 #include <regex>
 #include <algorithm>
@@ -10,7 +10,7 @@
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<SsoRedirect> parseSsoRedirects(const std::string& loginFlowsJson) {
     std::vector<SsoRedirect> redirects;
@@ -189,4 +189,4 @@ bool isHomeserverUrl(const std::string& url) {
            url.find("_matrix") != std::string::npos;
 }
 
-} // namespace progressive
+} // namespace pcp

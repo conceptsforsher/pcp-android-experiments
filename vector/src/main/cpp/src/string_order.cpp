@@ -1,9 +1,9 @@
-#include "progressive/string_order.hpp"
+#include "pcp/string_order.hpp"
 #include <sstream>
 #include <algorithm>
 #include <algorithm>
 
-namespace progressive {
+namespace pcp {
 
 // ==== Simple Big Integer Helpers (decimal strings) ====
 // Used by stringToBigInt/bigIntToString for fractional indexing.
@@ -251,4 +251,4 @@ std::vector<ReorderCommand> computeSpaceReorder(
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp

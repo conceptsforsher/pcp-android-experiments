@@ -1,10 +1,10 @@
-#include "progressive/verification_utils.hpp"
+#include "pcp/verification_utils.hpp"
 #include <sstream>
 #include <iomanip>
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<VerificationEmoji> getVerificationEmojis() {
     // Standard SAS emoji list from Matrix spec
@@ -155,4 +155,4 @@ bool isVerificationMethodSupported(const std::string& method) {
     return false;
 }
 
-} // namespace progressive
+} // namespace pcp

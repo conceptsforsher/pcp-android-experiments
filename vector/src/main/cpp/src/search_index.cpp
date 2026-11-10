@@ -1,4 +1,4 @@
-#include "progressive/search_index.hpp"
+#include "pcp/search_index.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cctype>
@@ -9,7 +9,7 @@
 #include <sstream>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 std::string SearchIndex::toLower(const std::string& s) {
     std::string r = s;
@@ -162,4 +162,4 @@ std::string SearchIndex::hitsToJson(const std::vector<SearchHit>& hits) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

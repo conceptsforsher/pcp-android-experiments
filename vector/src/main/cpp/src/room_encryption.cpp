@@ -1,11 +1,11 @@
-#include "progressive/room_encryption.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/room_encryption.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <chrono>
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 EncryptionConfig parseEncryptionConfig(const std::string& stateContentJson) {
     EncryptionConfig config;
@@ -122,4 +122,4 @@ bool isRotationDue(const EncryptionConfig& config, int messageCount, int64_t ses
     return false;
 }
 
-} // namespace progressive
+} // namespace pcp

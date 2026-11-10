@@ -1,4 +1,4 @@
-#include "progressive/network_stats.hpp"
+#include "pcp/network_stats.hpp"
 #include <sstream>
 #include <algorithm>
 #include <chrono>
@@ -8,7 +8,7 @@
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 int NetworkStatsCollector::startRequest(const std::string& url, const std::string& method) {
     RequestRecord rec;
@@ -167,4 +167,4 @@ double computeRequestRate(int totalRequests, int64_t elapsedMs) {
     return static_cast<double>(totalRequests) / minutes;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,4 +1,4 @@
-#include "progressive/eventdb.hpp"
+#include "pcp/eventdb.hpp"
 
 // Note: This implementation uses sqlite3 C API.
 // SQLite amalgamation is available at build time under vector/.cxx/
@@ -7,7 +7,7 @@
 // Uncomment when sqlite3 include path is resolved.
 // #include <sqlite3.h>
 
-namespace progressive {
+namespace pcp {
 
 EventDatabase::EventDatabase() = default;
 
@@ -50,4 +50,4 @@ int EventDatabase::count() const {
 
 void EventDatabase::exec(const char* /*sql*/) const {}
 
-} // namespace progressive
+} // namespace pcp

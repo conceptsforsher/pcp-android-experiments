@@ -1,9 +1,9 @@
-#include "progressive/lightweight_call.hpp"
+#include "pcp/lightweight_call.hpp"
 #include <sstream>
 #include <fstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Memory Assessment ----
 
@@ -185,4 +185,4 @@ std::string LightweightCallManager::memoryStateToJson(const MemoryState& state) 
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

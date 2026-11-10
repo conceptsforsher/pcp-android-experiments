@@ -1,4 +1,4 @@
-#include "progressive/room_stats.hpp"
+#include "pcp/room_stats.hpp"
 #include <sstream>
 #include <unordered_set>
 #include <algorithm>
@@ -6,7 +6,7 @@
 #include <sstream>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 RoomStats computeRoomStats(
     const std::string& roomId,
@@ -138,4 +138,4 @@ std::string roomStatsToText(const RoomStats& stats) {
     return out.str();
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,4 +1,4 @@
-#include "progressive/room_directory.hpp"
+#include "pcp/room_directory.hpp"
 #include <sstream>
 #include <algorithm>
 #include <unordered_set>
@@ -6,7 +6,7 @@
 #include <sstream>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<RoomDirectoryEntry> filterDirectory(
     const std::vector<RoomDirectoryEntry>& rooms,
@@ -164,4 +164,4 @@ std::string directoryStatsToJson(const DirectoryStats& stats) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

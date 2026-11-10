@@ -1,11 +1,11 @@
-#include "progressive/sync_analyzer.hpp"
+#include "pcp/sync_analyzer.hpp"
 #include <sstream>
 #include <algorithm>
 #include <chrono>
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 SyncStats analyzeSyncHistory(const std::vector<SyncEvent>& history) {
     SyncStats stats;
@@ -165,4 +165,4 @@ std::string formatProgressBar(double percent, int width) {
     return bar;
 }
 
-} // namespace progressive
+} // namespace pcp

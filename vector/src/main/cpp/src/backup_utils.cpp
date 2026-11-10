@@ -1,12 +1,12 @@
-#include "progressive/backup_utils.hpp"
-#include "progressive/key_backup.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/backup_utils.hpp"
+#include "pcp/key_backup.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 BackupInfo parseBackupInfo(const std::string& apiResponseJson) {
     BackupInfo info;
@@ -125,4 +125,4 @@ bool hasCrossSigningSecrets(const std::string& accountDataJson) {
     return accountDataJson.find("m.cross_signing.master") != std::string::npos;
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,8 +1,8 @@
-#include "progressive/room_state.hpp"
+#include "pcp/room_state.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // Helper: extract string field from JSON
 static std::string extractStr(const std::string& json, const std::string& field) {
@@ -265,4 +265,4 @@ std::string tombstoneToJson(const RoomTombstone& tombstone) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

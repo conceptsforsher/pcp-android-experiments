@@ -1,10 +1,10 @@
-#include "progressive/unified_push.hpp"
-#include "progressive/http_client.hpp"
+#include "pcp/unified_push.hpp"
+#include "pcp/http_client.hpp"
 #include <sstream>
 #include <sstream>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 // ==== Discover Distributors ====
 // On Android, this uses PackageManager to find installed distributor apps.
@@ -68,7 +68,7 @@ std::string buildPusherJson(const UnifiedPushPusherConfig& config) {
     os << R"("pushkey":")" << config.pushKey << R"(",)";
     os << R"("kind":"http",)";
     os << R"("app_id":")" << config.appId << R"(",)";
-    os << R"("app_display_name":"Progressive Chat",)";
+    os << R"("app_display_name":"PCP",)";
     os << R"("device_display_name":"Android Device",)";
     os << R"("lang":")" << config.lang << R"(",)";
     if (!config.profileTag.empty()) os << R"("profile_tag":")" << config.profileTag << R"(",)";
@@ -211,4 +211,4 @@ bool parsePushState(const std::string& state,
     return !endpointUrl.empty();
 }
 
-} // namespace progressive
+} // namespace pcp

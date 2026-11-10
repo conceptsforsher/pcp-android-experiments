@@ -1,4 +1,4 @@
-#include "progressive/graph_utils.hpp"
+#include "pcp/graph_utils.hpp"
 #include <stack>
 #include <sstream>
 #include <chrono>
@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 int64_t SimpleClock::epochMillis() const {
     auto now = std::chrono::system_clock::now();
@@ -185,4 +185,4 @@ std::string Graph::toString() const {
     return os.str();
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,9 +1,9 @@
-#include "progressive/content_scanner.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/content_scanner.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 ScanResult parseScanResult(const std::string& apiResponseJson) {
     ScanResult result;
@@ -102,4 +102,4 @@ std::string buildTosAcceptBody(const std::string& version) {
     return R"({"m.login.terms": {"version": ")" + esc(version) + R"("}})";
 }
 
-} // namespace progressive
+} // namespace pcp

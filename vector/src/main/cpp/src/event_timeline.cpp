@@ -1,11 +1,11 @@
-#include "progressive/event_timeline.hpp"
+#include "pcp/event_timeline.hpp"
 #include <sstream>
 #include <algorithm>
 #include <ctime>
 #include <unordered_set>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Timeline Gap Detection ----
 
@@ -188,4 +188,4 @@ std::string timelineStatsToJson(const TimelineStats& stats) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

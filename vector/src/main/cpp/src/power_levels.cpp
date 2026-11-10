@@ -1,8 +1,8 @@
-#include "progressive/power_levels.hpp"
+#include "pcp/power_levels.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // Helper: extract integer value for a JSON key
 static int getInt(const std::string& json, const std::string& key, int defaultVal = 0) {
@@ -224,4 +224,4 @@ std::string permissionsToJson(const UserPermissions& perms) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,10 +1,10 @@
-#include "progressive/report_utils.hpp"
+#include "pcp/report_utils.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cmath>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<ReportReason> getReportReasons() {
     return {
@@ -138,4 +138,4 @@ bool shouldTriggerRageshake(const std::vector<RageshakeEvent>& events) {
     return detectShake(events, 15.0, 3, 500);
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,8 +1,8 @@
-#include "progressive/e2ee_utils.hpp"
+#include "pcp/e2ee_utils.hpp"
 #include <regex>
 #include <regex>
 
-namespace progressive {
+namespace pcp {
 
 E2eeDecoration computeE2eeDecoration(
     bool isEncrypted, bool isVerifiedDevice, bool isCrossSigned,
@@ -82,4 +82,4 @@ TrustLevel parseVerificationState(const std::string& stateJson) {
     return TrustLevel::Unknown;
 }
 
-} // namespace progressive
+} // namespace pcp

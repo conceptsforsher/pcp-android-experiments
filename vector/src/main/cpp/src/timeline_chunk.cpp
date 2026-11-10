@@ -1,4 +1,4 @@
-#include "progressive/timeline_chunk.hpp"
+#include "pcp/timeline_chunk.hpp"
 #include <algorithm>
 #include <sstream>
 #include <limits>
@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 // ==== TimelineChunkManager ====
 
@@ -348,4 +348,4 @@ TimelineChunkManager deserializeChunkManager(const std::string& /*json*/, const 
     return TimelineChunkManager(roomId);
 }
 
-} // namespace progressive
+} // namespace pcp

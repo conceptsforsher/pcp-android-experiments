@@ -1,10 +1,10 @@
-#include "progressive/push_rules.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/push_rules.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 PushCondition parsePushCondition(const std::string& conditionJson) {
     PushCondition cond;
@@ -407,4 +407,4 @@ std::string ruleSetToJson(const RuleSet&) {
     return "{}"; // placeholder — full serialization when needed
 }
 
-} // namespace progressive
+} // namespace pcp

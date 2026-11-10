@@ -1,10 +1,10 @@
-#include "progressive/canonical_json.hpp"
+#include "pcp/canonical_json.hpp"
 #include <vector>
 #include <algorithm>
 #include <set>
 #include <set>
 
-namespace progressive {
+namespace pcp {
 
 // ==== Canonical JSON Implementation ====
 //
@@ -222,4 +222,4 @@ std::string canonicalizeJson(const std::string& json) {
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp

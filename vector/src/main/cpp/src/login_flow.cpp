@@ -1,8 +1,8 @@
-#include "progressive/login_flow.hpp"
+#include "pcp/login_flow.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Login Flow Parsing ----
 // Original Kotlin (LoginWizard.kt):
@@ -286,4 +286,4 @@ std::string loginFlowsToJson(const LoginAuthFlowsResult& result) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

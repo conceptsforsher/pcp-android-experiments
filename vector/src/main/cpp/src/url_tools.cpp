@@ -1,11 +1,11 @@
-#include "progressive/url_tools.hpp"
+#include "pcp/url_tools.hpp"
 #include <sstream>
 #include <regex>
 #include <iomanip>
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 ParsedUrl parseUrl(const std::string& url) {
     ParsedUrl result;
@@ -180,4 +180,4 @@ std::string ensureTrailingSlash(const std::string& url) {
     return url + "/";
 }
 
-} // namespace progressive
+} // namespace pcp

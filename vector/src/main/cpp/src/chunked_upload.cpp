@@ -1,9 +1,9 @@
-#include "progressive/chunked_upload.hpp"
+#include "pcp/chunked_upload.hpp"
 #include <sstream>
 #include <cmath>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 int ChunkedUploader::computeChunks(int64_t fileSize) {
     fileSize_ = fileSize;
@@ -129,4 +129,4 @@ ChunkedUploader::ListChunkSize ChunkedUploader::computeBestListChunkSize(int lis
     return {numberOfChunks, chunkSize};
 }
 
-} // namespace progressive
+} // namespace pcp

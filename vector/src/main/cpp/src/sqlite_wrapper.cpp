@@ -1,4 +1,4 @@
-#include "progressive/sqlite_wrapper.hpp"
+#include "pcp/sqlite_wrapper.hpp"
 #include <cstring>
 
 // Note: This implementation uses the sqlite3 C API.
@@ -9,7 +9,7 @@
 // Uncomment when sqlite3 is linked:
 // #include <sqlite3.h>
 
-namespace progressive {
+namespace pcp {
 
 // ==== SQLite Stub — requires linking libsqlite ====
 // The full implementation uses sqlite3_open, sqlite3_exec, etc.
@@ -132,4 +132,4 @@ std::string buildInsertSql(
     return sql;
 }
 
-} // namespace progressive
+} // namespace pcp

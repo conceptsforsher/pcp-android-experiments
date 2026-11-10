@@ -1,6 +1,6 @@
-#include "progressive/room_content.hpp"
+#include "pcp/room_content.hpp"
 
-namespace progressive {
+namespace pcp {
 
 // ==== Membership ====
 
@@ -516,4 +516,4 @@ PublicRoomsResponse parsePublicRoomsResponse(const std::string& json) {
     return r;
 }
 
-} // namespace progressive
+} // namespace pcp

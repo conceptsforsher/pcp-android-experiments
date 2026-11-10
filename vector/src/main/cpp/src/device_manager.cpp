@@ -1,5 +1,5 @@
-#include "progressive/device_manager.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/device_manager.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <chrono>
@@ -8,7 +8,7 @@
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 DeviceStats parseDeviceList(const std::string& apiResponseJson, const std::string& currentDeviceId) {
     DeviceStats stats;
@@ -251,4 +251,4 @@ std::string formatFingerprint(const std::string& fingerprint) {
     return out.str();
 }
 
-} // namespace progressive
+} // namespace pcp

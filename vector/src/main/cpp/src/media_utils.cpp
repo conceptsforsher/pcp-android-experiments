@@ -1,10 +1,10 @@
-#include "progressive/media_utils.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/media_utils.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <iomanip>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string buildMediaUploadBody(const MediaUploadConfig& config) {
     auto esc = [](const std::string& s) -> std::string {
@@ -116,4 +116,4 @@ BlurhashResult parseBlurhash(const std::string& contentJson) {
     return result;
 }
 
-} // namespace progressive
+} // namespace pcp
