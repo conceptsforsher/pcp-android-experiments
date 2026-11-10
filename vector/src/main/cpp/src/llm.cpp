@@ -1,11 +1,11 @@
-#include "progressive/llm.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/llm.hpp"
+#include "pcp/json_parser.hpp"
 #include <unordered_map>
 #include <unordered_set>
 #include <sstream>
 #include <algorithm>
 
-namespace progressive {
+namespace pcp {
 
 // ---- LLM Request Building ----
 
@@ -235,4 +235,4 @@ void UserMxidVisibility::importJson(const std::string& json) {
     }
 }
 
-} // namespace progressive
+} // namespace pcp
