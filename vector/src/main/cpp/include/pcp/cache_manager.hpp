@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_CACHE_MANAGER_HPP
-#define PROGRESSIVE_CACHE_MANAGER_HPP
+#ifndef PCP_CACHE_MANAGER_HPP
+#define PCP_CACHE_MANAGER_HPP
 
 #include <string>
 #include <vector>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 struct CacheEntry {
     std::string eventId;
@@ -66,6 +66,6 @@ private:
     std::vector<CacheEntry> entries_;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_CACHE_MANAGER_HPP
+#endif // PCP_CACHE_MANAGER_HPP

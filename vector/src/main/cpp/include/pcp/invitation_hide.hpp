@@ -1,12 +1,12 @@
-#ifndef PROGRESSIVE_INVITATION_HIDE_HPP
-#define PROGRESSIVE_INVITATION_HIDE_HPP
+#ifndef PCP_INVITATION_HIDE_HPP
+#define PCP_INVITATION_HIDE_HPP
 
 #include <string>
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 struct HiddenInvitation {
     std::string roomId;
@@ -46,6 +46,6 @@ private:
     std::unordered_map<std::string, HiddenInvitation> hidden_;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_INVITATION_HIDE_HPP
+#endif // PCP_INVITATION_HIDE_HPP

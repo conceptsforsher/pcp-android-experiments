@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_USER_MASK_HPP
-#define PROGRESSIVE_USER_MASK_HPP
+#ifndef PCP_USER_MASK_HPP
+#define PCP_USER_MASK_HPP
 
 #include <string>
 #include <vector>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 struct UserMask {
     std::string originalMxid;      // @user:server
@@ -55,6 +55,6 @@ std::string resolveDisplayName(const std::string& mxid, const std::string& origi
 std::string resolveAvatarUrl(const std::string& mxid, const std::string& originalUrl,
                              const UserMaskRegistry& registry);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_USER_MASK_HPP
+#endif // PCP_USER_MASK_HPP

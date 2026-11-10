@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_CHAT_PREVIEW_HPP
-#define PROGRESSIVE_CHAT_PREVIEW_HPP
+#ifndef PCP_CHAT_PREVIEW_HPP
+#define PCP_CHAT_PREVIEW_HPP
 
 #include <string>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 struct PreviewEvent {
     std::string senderName;
@@ -50,6 +50,6 @@ std::string truncateMessage(const std::string& body, int maxLen = 60);
 // Format a timestamp to short time: "12:34"
 std::string formatShortTime(int64_t epochMs);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_CHAT_PREVIEW_HPP
+#endif // PCP_CHAT_PREVIEW_HPP

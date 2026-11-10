@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_CONTENT_FILTER_HPP
-#define PROGRESSIVE_CONTENT_FILTER_HPP
+#ifndef PCP_CONTENT_FILTER_HPP
+#define PCP_CONTENT_FILTER_HPP
 
 #include <string>
 #include <vector>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Forbidden Keywords Filter ----
 
@@ -58,6 +58,6 @@ struct MediaSendPolicy {
     bool skipPreviewGeneration = false; // don't generate thumbnail for RAM saving
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_CONTENT_FILTER_HPP
+#endif // PCP_CONTENT_FILTER_HPP

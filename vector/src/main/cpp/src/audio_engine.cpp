@@ -1,9 +1,9 @@
-#include "progressive/audio_engine.hpp"
+#include "pcp/audio_engine.hpp"
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
 
-namespace progressive {
+namespace pcp {
 
 std::string formatDuration(int64_t ms) {
     if (ms < 0) ms = 0;
@@ -62,4 +62,4 @@ std::string mimeToExtension(const std::string& mimeType) {
     return "";
 }
 
-} // namespace progressive
+} // namespace pcp

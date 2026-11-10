@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_MESSAGE_AGGREGATOR_HPP
-#define PROGRESSIVE_MESSAGE_AGGREGATOR_HPP
+#ifndef PCP_MESSAGE_AGGREGATOR_HPP
+#define PCP_MESSAGE_AGGREGATOR_HPP
 
 #include <string>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 struct AggregatedMessage {
     std::string eventId;
@@ -39,6 +39,6 @@ private:
     std::vector<AggregatedMessage> messages_;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_MESSAGE_AGGREGATOR_HPP
+#endif // PCP_MESSAGE_AGGREGATOR_HPP

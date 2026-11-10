@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_ROOM_VERSION_HPP
-#define PROGRESSIVE_ROOM_VERSION_HPP
+#ifndef PCP_ROOM_VERSION_HPP
+#define PCP_ROOM_VERSION_HPP
 
 #include <string>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 struct RoomVersion {
     std::string id;          // e.g. "1", "9", "10"
@@ -25,6 +25,6 @@ std::string getDefaultRoomVersion();
 // Format room versions as JSON for settings UI.
 std::string roomVersionsToJson();
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_ROOM_VERSION_HPP
+#endif // PCP_ROOM_VERSION_HPP

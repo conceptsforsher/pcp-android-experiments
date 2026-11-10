@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_THREAD_AGGREGATOR_HPP
-#define PROGRESSIVE_THREAD_AGGREGATOR_HPP
+#ifndef PCP_THREAD_AGGREGATOR_HPP
+#define PCP_THREAD_AGGREGATOR_HPP
 
 #include <string>
 #include <vector>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 struct ThreadInfo {
     std::string threadId;        // root thread event ID
@@ -48,6 +48,6 @@ private:
     std::unordered_map<std::string, ThreadInfo> threads_;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_THREAD_AGGREGATOR_HPP
+#endif // PCP_THREAD_AGGREGATOR_HPP

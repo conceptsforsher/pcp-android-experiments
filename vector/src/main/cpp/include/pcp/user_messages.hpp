@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_USER_MESSAGES_HPP
-#define PROGRESSIVE_USER_MESSAGES_HPP
+#ifndef PCP_USER_MESSAGES_HPP
+#define PCP_USER_MESSAGES_HPP
 
 #include <string>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 struct UserMessage {
     std::string eventId;
@@ -31,6 +31,6 @@ std::string userMessagesToJson(const std::vector<const UserMessage*>& messages);
 // Format a single user message as preview text: "roomName: first 80 chars of body"
 std::string formatUserMessagePreview(const UserMessage& msg, int maxLen = 80);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_USER_MESSAGES_HPP
+#endif // PCP_USER_MESSAGES_HPP

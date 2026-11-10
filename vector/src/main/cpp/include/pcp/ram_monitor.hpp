@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_RAM_MONITOR_HPP
-#define PROGRESSIVE_RAM_MONITOR_HPP
+#ifndef PCP_RAM_MONITOR_HPP
+#define PCP_RAM_MONITOR_HPP
 
 #include <string>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 struct MemoryInfo {
     int64_t totalRamKb = 0;      // total system RAM
@@ -24,6 +24,6 @@ std::string memoryInfoToJson(const MemoryInfo& info);
 // Format a short label for the statusbar: "42 MB"
 std::string formatMemoryLabel(int64_t rssKb);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_RAM_MONITOR_HPP
+#endif // PCP_RAM_MONITOR_HPP
