@@ -1,10 +1,10 @@
-#ifndef PROGRESSIVE_MEDIA_FILTER_HPP
-#define PROGRESSIVE_MEDIA_FILTER_HPP
+#ifndef PCP_MEDIA_FILTER_HPP
+#define PCP_MEDIA_FILTER_HPP
 
 #include <string>
 #include <vector>
 
-namespace progressive {
+namespace pcp {
 
 struct MediaItem {
     std::string eventId;
@@ -37,6 +37,6 @@ bool isValidMxcUri(const std::string& uri);
 // Get unique extensions from a list of media items.
 std::vector<std::string> getAvailableExtensions(const std::vector<MediaItem>& items);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_MEDIA_FILTER_HPP
+#endif // PCP_MEDIA_FILTER_HPP

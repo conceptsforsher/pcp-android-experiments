@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_CHUNKED_UPLOAD_HPP
-#define PROGRESSIVE_CHUNKED_UPLOAD_HPP
+#ifndef PCP_CHUNKED_UPLOAD_HPP
+#define PCP_CHUNKED_UPLOAD_HPP
 
 #include <string>
 #include <cstdint>
 #include <functional>
 
-namespace progressive {
+namespace pcp {
 
 struct ChunkInfo {
     int64_t offset = 0;       // byte offset of this chunk in the file
@@ -90,6 +90,6 @@ private:
     std::string error_;
 };
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_CHUNKED_UPLOAD_HPP
+#endif // PCP_CHUNKED_UPLOAD_HPP

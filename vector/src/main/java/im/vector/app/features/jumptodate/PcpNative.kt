@@ -4,21 +4,21 @@ import org.json.JSONObject
 import timber.log.Timber
 
 /**
- * JNI bridge to the progressive_native C++ library.
+ * JNI bridge to the pcp_native C++ library.
  * Handles date validation, MSC3030 URL construction, and response parsing.
  */
-object ProgressiveNative {
+object PcpNative {
 
     private var isLoaded = false
 
     fun ensureLoaded() {
         if (!isLoaded) {
             try {
-                System.loadLibrary("progressive_native")
+                System.loadLibrary("pcp_native")
                 isLoaded = true
-                Timber.d("progressive_native loaded successfully")
+                Timber.d("pcp_native loaded successfully")
             } catch (e: UnsatisfiedLinkError) {
-                Timber.e(e, "Failed to load progressive_native")
+                Timber.e(e, "Failed to load pcp_native")
                 // Fallback: use pure Kotlin implementation
             }
         }
@@ -472,7 +472,7 @@ object ProgressiveNative {
         append("  <p>Total messages: ").append(eventHtmls.size).appendLine("</p>")
         appendLine("</div>")
         for (html in eventHtmls) append(html)
-        appendLine("<hr><p style=\"color:#999;text-align:center;\">Exported with Progressive Chat</p>")
+        appendLine("<hr><p style=\"color:#999;text-align:center;\">Exported with PCP</p>")
         appendLine("</body></html>")
     }
 
