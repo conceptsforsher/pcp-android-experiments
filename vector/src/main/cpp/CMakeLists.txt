@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22.1)
-project("progressive_native")
+project("pcp_native")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SQLITE3_DIR "${CMAKE_BINARY_DIR}/sqlite-amalgamation-3450200")
@@ -17,7 +17,7 @@ if(NOT EXISTS "${SQLITE3_SRC}")
         message(FATAL_ERROR "SQLite extraction failed")
     endif()
 endif()
-add_library(progressive_native SHARED
+add_library(pcp_native SHARED
             src/jumptodate.cpp
             src/json_parser.cpp
             src/relation.cpp
@@ -55,7 +55,7 @@ add_library(progressive_native SHARED
             src/llm.cpp
             src/jni_bridge.cpp
     ${SQLITE3_SRC})
-target_include_directories(progressive_native PUBLIC include ${SQLITE3_DIR})
+target_include_directories(pcp_native PUBLIC include ${SQLITE3_DIR})
 set_source_files_properties("${SQLITE3_SRC}" PROPERTIES COMPILE_FLAGS "-DSQLITE_THREADSAFE=1 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_LIKE_DOESNT_MATCH_BLOBS -DSQLITE_MAX_EXPR_DEPTH=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_USE_ALLOCA -Os")
 find_library(log_lib log)
-target_link_libraries(progressive_native ${log_lib})
+target_link_libraries(pcp_native ${log_lib})

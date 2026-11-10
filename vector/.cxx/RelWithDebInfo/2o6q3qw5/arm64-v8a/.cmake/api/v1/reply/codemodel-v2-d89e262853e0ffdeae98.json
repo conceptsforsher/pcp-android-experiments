@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "progressive_native",
+					"name" : "pcp_native",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "progressive_native::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-progressive_native-RelWithDebInfo-bc19334acd1b968f71fc.json",
-					"name" : "progressive_native",
+					"id" : "pcp_native::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcp_native-RelWithDebInfo-bc19334acd1b968f71fc.json",
+					"name" : "pcp_native",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/arm64-v8a",
-		"source" : "/tmp/progressive-android-experiments/vector/src/main/cpp"
+		"build" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/arm64-v8a",
+		"source" : "/tmp/pcp-android-experiments/vector/src/main/cpp"
 	},
 	"version" : 
 	{
