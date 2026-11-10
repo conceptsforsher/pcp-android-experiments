@@ -1,11 +1,11 @@
-#include "progressive/content_filter.hpp"
+#include "pcp/content_filter.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cctype>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- KeywordFilter ----
 
@@ -93,4 +93,4 @@ bool ImagePolicy::shouldBlock(const std::string& mxcUrl, const std::string& imag
     return true;
 }
 
-} // namespace progressive
+} // namespace pcp

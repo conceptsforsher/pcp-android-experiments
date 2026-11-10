@@ -1,9 +1,9 @@
-#include "progressive/permalink.hpp"
-#include "progressive/url_tools.hpp"
+#include "pcp/permalink.hpp"
+#include "pcp/url_tools.hpp"
 #include <sstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string buildRoomPermalink(const std::string& roomIdOrAlias) {
     return "https://matrix.to/#/" + roomIdOrAlias;
@@ -95,4 +95,4 @@ bool isSameRoomPermalink(const std::string& url1, const std::string& url2) {
     return extractRoomIdFromPermalink(url1) == extractRoomIdFromPermalink(url2);
 }
 
-} // namespace progressive
+} // namespace pcp

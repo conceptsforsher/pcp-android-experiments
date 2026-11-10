@@ -1,11 +1,11 @@
-#include "progressive/message_retry.hpp"
+#include "pcp/message_retry.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cmath>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 int64_t computeRetryDelay(int retryCount, int64_t maxDelayMs) {
     // Exponential backoff: base 1s, double each retry
@@ -192,4 +192,4 @@ std::string queueToJson(const std::vector<PendingMessage>& queue) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

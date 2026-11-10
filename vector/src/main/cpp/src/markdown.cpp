@@ -1,11 +1,11 @@
-#include "progressive/markdown.hpp"
+#include "pcp/markdown.hpp"
 #include <sstream>
 #include <regex>
 #include <vector>
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 static std::string escapeHtml(const std::string& s) {
     std::string out;
@@ -330,4 +330,4 @@ std::string parseMarkdownTable(const std::string& tableBlock, bool withScroll) {
     return parseTable(tableBlock, withScroll);
 }
 
-} // namespace progressive
+} // namespace pcp

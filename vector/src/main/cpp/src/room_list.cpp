@@ -1,10 +1,10 @@
-#include "progressive/room_list.hpp"
+#include "pcp/room_list.hpp"
 #include <sstream>
 #include <algorithm>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string assignRoomSection(const RoomListItem& room) {
     if (room.isInvited) return "Invites";
@@ -115,4 +115,4 @@ std::string roomListLayoutToJson(const RoomListLayout& layout) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

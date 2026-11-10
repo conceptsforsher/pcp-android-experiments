@@ -1,9 +1,9 @@
-#include "progressive/ram_monitor.hpp"
+#include "pcp/ram_monitor.hpp"
 #include <sstream>
 #include <fstream>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 MemoryInfo getMemoryInfo() {
     MemoryInfo info;
@@ -95,4 +95,4 @@ std::string formatMemoryLabel(int64_t rssKb) {
     return out.str();
 }
 
-} // namespace progressive
+} // namespace pcp

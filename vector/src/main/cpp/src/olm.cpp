@@ -1,4 +1,4 @@
-#include "progressive/olm.hpp"
+#include "pcp/olm.hpp"
 #include <sstream>
 #include <cstring>
 
@@ -9,7 +9,7 @@
 #include <olm/sas.h>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // Aliases for libolm C opaque types (defined in global scope by olm.h)
 typedef ::OlmAccount COlmAccount;
@@ -306,4 +306,4 @@ bool OlmSession::matchesInbound(const std::string& preKeyMessage) {
 // ---- SAS ----
 // (implementation stubs)
 
-} // namespace progressive
+} // namespace pcp

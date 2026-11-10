@@ -1,11 +1,11 @@
-#include "progressive/server_capabilities.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/server_capabilities.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 ServerCapabilities parseServerCapabilities(const std::string& wellKnownJson) {
     ServerCapabilities caps;
@@ -126,4 +126,4 @@ std::string capabilitiesToText(const ServerCapabilities& caps) {
     return out.str();
 }
 
-} // namespace progressive
+} // namespace pcp

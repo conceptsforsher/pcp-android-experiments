@@ -1,11 +1,11 @@
-#include "progressive/event_relations.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/event_relations.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <unordered_set>
 #include <sstream>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 EventRelationInfo parseEventRelation(const std::string& contentJson) {
     EventRelationInfo info;
@@ -163,4 +163,4 @@ std::string threadSummaryToJson(const ThreadSummary& summary) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

@@ -1,9 +1,9 @@
-#include "progressive/client_info.hpp"
+#include "pcp/client_info.hpp"
 #include <sstream>
 #include <regex>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::string buildUserAgent(const ClientVersionInfo& info) {
     std::ostringstream ua;
@@ -108,9 +108,9 @@ std::string formatBuildInfo(const BuildInfo& info) {
 }
 
 std::string getAppDisplayName(const BuildInfo& info) {
-    if (info.isDebug) return "Progressive Chat (Debug)";
-    if (info.isNightly) return "Progressive Chat (Nightly)";
-    return "Progressive Chat";
+    if (info.isDebug) return "PCP (Debug)";
+    if (info.isNightly) return "PCP (Nightly)";
+    return "PCP";
 }
 
-} // namespace progressive
+} // namespace pcp

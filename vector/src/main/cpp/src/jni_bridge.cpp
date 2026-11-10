@@ -1,243 +1,243 @@
 #include <jni.h>
-#define JNI_FUNC(ret, name) JNIEXPORT ret JNICALL Java_im_vector_app_features_jumptodate_ProgressiveNative_##name
+#define JNI_FUNC(ret, name) JNIEXPORT ret JNICALL Java_im_vector_app_features_jumptodate_PcpNative_##name
 #include <string>
 #include <android/log.h>
-#include "progressive/jumptodate.hpp"
-#include "progressive/relation.hpp"
-#include "progressive/exporter.hpp"
-#include "progressive/eventcache.hpp"
-#include "progressive/translate.hpp"
-#include "progressive/proxy.hpp"
-#include "progressive/yggdrasil.hpp"
-#include "progressive/markdown.hpp"
-#include "progressive/account_export.hpp"
-#include "progressive/audio_engine.hpp"
-#include "progressive/media_filter.hpp"
-#include "progressive/content_filter.hpp"
-#include "progressive/network_stats.hpp"
-#include "progressive/masquerade.hpp"
-#include "progressive/user_mask.hpp"
-#include "progressive/chunked_upload.hpp"
-#include "progressive/chat_features.hpp"
-#include "progressive/invitation_hide.hpp"
-#include "progressive/thread_aggregator.hpp"
-#include "progressive/user_messages.hpp"
-#include "progressive/room_version.hpp"
-#include "progressive/chat_preview.hpp"
-#include "progressive/ram_monitor.hpp"
-#include "progressive/cache_manager.hpp"
-#include "progressive/message_aggregator.hpp"
-#include "progressive/room_info.hpp"
-#include "progressive/deleted_archive.hpp"
-#include "progressive/search_index.hpp"
-#include "progressive/module_loader.hpp"
-#include "progressive/notification.hpp"
-#include "progressive/room_mirror.hpp"
-#include "progressive/input_tools.hpp"
-#include "progressive/llm.hpp"
-#include "progressive/read_receipts.hpp"
-#include "progressive/room_analytics.hpp"
-#include "progressive/chat_tools.hpp"
-#include "progressive/lang_detect.hpp"
-#include "progressive/avatar_history.hpp"
-#include "progressive/event_link.hpp"
-#include "progressive/lightweight_call.hpp"
-#include "progressive/scheduled_edit.hpp"
-#include "progressive/svg_draw.hpp"
-#include "progressive/profile_swiper.hpp"
-#include "progressive/rainbow.hpp"
-#include "progressive/text_formats.hpp"
-#include "progressive/url_tools.hpp"
-#include "progressive/notif_priority.hpp"
-#include "progressive/matrix_patterns.hpp"
-#include "progressive/desync_detector.hpp"
-#include "progressive/latency_stats.hpp"
-#include "progressive/string_utils.hpp"
-#include "progressive/location_sharing.hpp"
-#include "progressive/color_utils.hpp"
-#include "progressive/e2ee_utils.hpp"
-#include "progressive/thumbnail.hpp"
-#include "progressive/waveform.hpp"
-#include "progressive/session_timeout.hpp"
-#include "progressive/password_validator.hpp"
-#include "progressive/spellcheck.hpp"
-#include "progressive/draft_manager.hpp"
-#include "progressive/link_preview.hpp"
-#include "progressive/hash_utils.hpp"
-#include "progressive/room_stats.hpp"
-#include "progressive/mention_parser.hpp"
-#include "progressive/poll_utils.hpp"
-#include "progressive/reaction_utils.hpp"
-#include "progressive/file_validator.hpp"
-#include "progressive/date_utils.hpp"
-#include "progressive/message_queue.hpp"
-#include "progressive/pinned_events.hpp"
-#include "progressive/server_capabilities.hpp"
-#include "progressive/username_validator.hpp"
-#include "progressive/emoji_analyzer.hpp"
-#include "progressive/identity_utils.hpp"
-#include "progressive/notif_analyzer.hpp"
-#include "progressive/sync_analyzer.hpp"
-#include "progressive/user_rating.hpp"
-#include "progressive/event_timeline.hpp"
-#include "progressive/room_directory.hpp"
-#include "progressive/widget_utils.hpp"
-#include "progressive/sso_utils.hpp"
-#include "progressive/backup_utils.hpp"
-#include "progressive/device_manager.hpp"
-#include "progressive/presence_utils.hpp"
-#include "progressive/room_permissions.hpp"
-#include "progressive/room_summary.hpp"
-#include "progressive/membership_utils.hpp"
-#include "progressive/event_validator.hpp"
-#include "progressive/room_encryption.hpp"
-#include "progressive/login_utils.hpp"
-#include "progressive/connection_monitor.hpp"
-#include "progressive/push_rules.hpp"
-#include "progressive/space_utils.hpp"
-#include "progressive/event_relations.hpp"
-#include "progressive/e2ee_decoration.hpp"
-#include "progressive/room_list.hpp"
-#include "progressive/media_utils.hpp"
-#include "progressive/notif_settings.hpp"
-#include "progressive/invite_utils.hpp"
-#include "progressive/session_manager.hpp"
-#include "progressive/auth_utils.hpp"
-#include "progressive/content_scanner.hpp"
-#include "progressive/event_encryption.hpp"
-#include "progressive/report_utils.hpp"
-#include "progressive/webrtc_utils.hpp"
-#include "progressive/message_retry.hpp"
-#include "progressive/sync_utils.hpp"
-#include "progressive/event_display.hpp"
-#include "progressive/permalink.hpp"
-#include "progressive/network_monitor.hpp"
-#include "progressive/client_info.hpp"
-#include "progressive/keyshare.hpp"
-#include "progressive/displayname_utils.hpp"
-#include "progressive/message_location.hpp"
-#include "progressive/timeline_utils.hpp"
-#include "progressive/cross_signing.hpp"
-#include "progressive/edit_history.hpp"
-#include "progressive/read_marker.hpp"
-#include "progressive/slash_command.hpp"
-#include "progressive/typing_monitor.hpp"
-#include "progressive/url_preview.hpp"
-#include "progressive/power_levels.hpp"
-#include "progressive/verification_utils.hpp"
-#include "progressive/account_utils.hpp"
+#include "pcp/jumptodate.hpp"
+#include "pcp/relation.hpp"
+#include "pcp/exporter.hpp"
+#include "pcp/eventcache.hpp"
+#include "pcp/translate.hpp"
+#include "pcp/proxy.hpp"
+#include "pcp/yggdrasil.hpp"
+#include "pcp/markdown.hpp"
+#include "pcp/account_export.hpp"
+#include "pcp/audio_engine.hpp"
+#include "pcp/media_filter.hpp"
+#include "pcp/content_filter.hpp"
+#include "pcp/network_stats.hpp"
+#include "pcp/masquerade.hpp"
+#include "pcp/user_mask.hpp"
+#include "pcp/chunked_upload.hpp"
+#include "pcp/chat_features.hpp"
+#include "pcp/invitation_hide.hpp"
+#include "pcp/thread_aggregator.hpp"
+#include "pcp/user_messages.hpp"
+#include "pcp/room_version.hpp"
+#include "pcp/chat_preview.hpp"
+#include "pcp/ram_monitor.hpp"
+#include "pcp/cache_manager.hpp"
+#include "pcp/message_aggregator.hpp"
+#include "pcp/room_info.hpp"
+#include "pcp/deleted_archive.hpp"
+#include "pcp/search_index.hpp"
+#include "pcp/module_loader.hpp"
+#include "pcp/notification.hpp"
+#include "pcp/room_mirror.hpp"
+#include "pcp/input_tools.hpp"
+#include "pcp/llm.hpp"
+#include "pcp/read_receipts.hpp"
+#include "pcp/room_analytics.hpp"
+#include "pcp/chat_tools.hpp"
+#include "pcp/lang_detect.hpp"
+#include "pcp/avatar_history.hpp"
+#include "pcp/event_link.hpp"
+#include "pcp/lightweight_call.hpp"
+#include "pcp/scheduled_edit.hpp"
+#include "pcp/svg_draw.hpp"
+#include "pcp/profile_swiper.hpp"
+#include "pcp/rainbow.hpp"
+#include "pcp/text_formats.hpp"
+#include "pcp/url_tools.hpp"
+#include "pcp/notif_priority.hpp"
+#include "pcp/matrix_patterns.hpp"
+#include "pcp/desync_detector.hpp"
+#include "pcp/latency_stats.hpp"
+#include "pcp/string_utils.hpp"
+#include "pcp/location_sharing.hpp"
+#include "pcp/color_utils.hpp"
+#include "pcp/e2ee_utils.hpp"
+#include "pcp/thumbnail.hpp"
+#include "pcp/waveform.hpp"
+#include "pcp/session_timeout.hpp"
+#include "pcp/password_validator.hpp"
+#include "pcp/spellcheck.hpp"
+#include "pcp/draft_manager.hpp"
+#include "pcp/link_preview.hpp"
+#include "pcp/hash_utils.hpp"
+#include "pcp/room_stats.hpp"
+#include "pcp/mention_parser.hpp"
+#include "pcp/poll_utils.hpp"
+#include "pcp/reaction_utils.hpp"
+#include "pcp/file_validator.hpp"
+#include "pcp/date_utils.hpp"
+#include "pcp/message_queue.hpp"
+#include "pcp/pinned_events.hpp"
+#include "pcp/server_capabilities.hpp"
+#include "pcp/username_validator.hpp"
+#include "pcp/emoji_analyzer.hpp"
+#include "pcp/identity_utils.hpp"
+#include "pcp/notif_analyzer.hpp"
+#include "pcp/sync_analyzer.hpp"
+#include "pcp/user_rating.hpp"
+#include "pcp/event_timeline.hpp"
+#include "pcp/room_directory.hpp"
+#include "pcp/widget_utils.hpp"
+#include "pcp/sso_utils.hpp"
+#include "pcp/backup_utils.hpp"
+#include "pcp/device_manager.hpp"
+#include "pcp/presence_utils.hpp"
+#include "pcp/room_permissions.hpp"
+#include "pcp/room_summary.hpp"
+#include "pcp/membership_utils.hpp"
+#include "pcp/event_validator.hpp"
+#include "pcp/room_encryption.hpp"
+#include "pcp/login_utils.hpp"
+#include "pcp/connection_monitor.hpp"
+#include "pcp/push_rules.hpp"
+#include "pcp/space_utils.hpp"
+#include "pcp/event_relations.hpp"
+#include "pcp/e2ee_decoration.hpp"
+#include "pcp/room_list.hpp"
+#include "pcp/media_utils.hpp"
+#include "pcp/notif_settings.hpp"
+#include "pcp/invite_utils.hpp"
+#include "pcp/session_manager.hpp"
+#include "pcp/auth_utils.hpp"
+#include "pcp/content_scanner.hpp"
+#include "pcp/event_encryption.hpp"
+#include "pcp/report_utils.hpp"
+#include "pcp/webrtc_utils.hpp"
+#include "pcp/message_retry.hpp"
+#include "pcp/sync_utils.hpp"
+#include "pcp/event_display.hpp"
+#include "pcp/permalink.hpp"
+#include "pcp/network_monitor.hpp"
+#include "pcp/client_info.hpp"
+#include "pcp/keyshare.hpp"
+#include "pcp/displayname_utils.hpp"
+#include "pcp/message_location.hpp"
+#include "pcp/timeline_utils.hpp"
+#include "pcp/cross_signing.hpp"
+#include "pcp/edit_history.hpp"
+#include "pcp/read_marker.hpp"
+#include "pcp/slash_command.hpp"
+#include "pcp/typing_monitor.hpp"
+#include "pcp/url_preview.hpp"
+#include "pcp/power_levels.hpp"
+#include "pcp/verification_utils.hpp"
+#include "pcp/account_utils.hpp"
 #include <sstream>
 #include <chrono>
 #include <sstream>
 #include <unordered_set>
 
-using namespace progressive;
+using namespace pcp;
 
 // --- Singleton keyword filter ---
-static progressive::KeywordFilter g_keywordFilter;
+static pcp::KeywordFilter g_keywordFilter;
 
 // --- Singleton network stats collector ---
-static progressive::NetworkStatsCollector g_netStats;
+static pcp::NetworkStatsCollector g_netStats;
 
 // --- Singleton user mask registry ---
-static progressive::UserMaskRegistry g_userMasks;
+static pcp::UserMaskRegistry g_userMasks;
 
 // --- Singleton chunked uploader ---
-static progressive::ChunkedUploader g_uploader;
+static pcp::ChunkedUploader g_uploader;
 
 // --- Singleton invitation hide list ---
-static progressive::InvitationHideList g_inviteHide;
+static pcp::InvitationHideList g_inviteHide;
 
 // --- Singleton thread aggregator ---
-static progressive::ThreadAggregator g_threadAgg;
+static pcp::ThreadAggregator g_threadAgg;
 
 // --- Singleton cache manager ---
-static progressive::CacheManager g_cacheMgr;
+static pcp::CacheManager g_cacheMgr;
 
 // --- Singleton message aggregator ---
-static progressive::MessageAggregator g_msgAgg;
+static pcp::MessageAggregator g_msgAgg;
 
 // --- Singleton deleted archive ---
-static progressive::DeletedMessageArchive g_deletedArchive;
+static pcp::DeletedMessageArchive g_deletedArchive;
 
 // --- Singleton search index ---
-static progressive::SearchIndex g_searchIndex;
+static pcp::SearchIndex g_searchIndex;
 
 // --- Singleton module loader ---
-static progressive::ModuleLoader g_moduleLoader;
+static pcp::ModuleLoader g_moduleLoader;
 
 // --- Singleton notification keywords ---
-static progressive::NotificationKeywords g_notifKeywords;
+static pcp::NotificationKeywords g_notifKeywords;
 
 // --- Singleton room mirror manager ---
-static progressive::RoomMirrorManager g_mirrorMgr;
+static pcp::RoomMirrorManager g_mirrorMgr;
 
 // --- Singleton symbol bar ---
-static progressive::SymbolBar g_symbolBar;
+static pcp::SymbolBar g_symbolBar;
 
 // --- Singleton replacement engine ---
-static progressive::ReplacementEngine g_replacementEngine;
+static pcp::ReplacementEngine g_replacementEngine;
 
 // --- Singleton user MXID visibility ---
-static progressive::UserMxidVisibility g_mxidVisibility;
+static pcp::UserMxidVisibility g_mxidVisibility;
 
 // --- Singleton user hide manager ---
-static progressive::UserHideManager g_userHide;
+static pcp::UserHideManager g_userHide;
 
 // --- Singleton message queue ---
-static progressive::MessageQueue g_msgQueue;
+static pcp::MessageQueue g_msgQueue;
 
 // --- Singleton language hide manager ---
-static progressive::LanguageHideManager g_langHide;
+static pcp::LanguageHideManager g_langHide;
 
 // --- Singleton chat push down ---
-static progressive::ChatPushDownManager g_chatPushDown;
+static pcp::ChatPushDownManager g_chatPushDown;
 
 // --- Singleton emoji blacklist ---
-static progressive::EmojiBlacklist g_emojiBlacklist;
+static pcp::EmojiBlacklist g_emojiBlacklist;
 
 // --- Singleton avatar history ---
-static progressive::AvatarHistory g_avatarHistory;
+static pcp::AvatarHistory g_avatarHistory;
 
 // --- Singleton lightweight call manager ---
-static progressive::LightweightCallManager g_lightCall;
+static pcp::LightweightCallManager g_lightCall;
 
 // --- Singleton scheduled edit queue ---
-static progressive::ScheduledEditQueue g_schedEdits;
+static pcp::ScheduledEditQueue g_schedEdits;
 
 // --- Singleton drawing canvas ---
-static progressive::DrawingCanvas g_drawCanvas;
+static pcp::DrawingCanvas g_drawCanvas;
 
 // --- Singleton profile swiper ---
-static progressive::ProfileSwiper g_profileSwiper;
+static pcp::ProfileSwiper g_profileSwiper;
 
 // --- Singleton connection monitor ---
-static progressive::ConnectionMonitor g_connectionMonitor;
+static pcp::ConnectionMonitor g_connectionMonitor;
 
 // --- Singleton desync detector ---
-static progressive::DesyncDetector g_desyncDetector;
+static pcp::DesyncDetector g_desyncDetector;
 
 // --- Singleton latency tracker ---
-static progressive::LatencyTracker g_latencyTracker;
+static pcp::LatencyTracker g_latencyTracker;
 
 // --- Singleton location sharing manager ---
-static progressive::LocationSharingManager g_locationSharing;
+static pcp::LocationSharingManager g_locationSharing;
 
-#define LOG_TAG "ProgressiveNative"
+#define LOG_TAG "PcpNative"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
 extern "C" {
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeValidateAndBuild
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
  *
  * Returns JSON string: {"url": "...", ...} or {"error": "..."}
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateAndBuild(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeValidateAndBuild(
     JNIEnv* env,
     jclass /* this */,
     jstring jRoomId,
@@ -263,7 +263,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateAndBuild(
     const char* serverUrlCh  = env->GetStringUTFChars(jServerUrl, nullptr);
     const char* accessTokenCh = env->GetStringUTFChars(jAccessToken, nullptr);
 
-    progressive::JumpToDateRequest request;
+    pcp::JumpToDateRequest request;
     request.roomId        = std::string(roomIdCh);
     request.dateString    = std::string(dateCh);
     request.serverBaseUrl = std::string(serverUrlCh);
@@ -278,13 +278,13 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateAndBuild(
     LOGD("nativeJumpToDate called: roomId=%s date=%s", request.roomId.c_str(), request.dateString.c_str());
 
     // Validate date and compute timestamp
-    if (!progressive::validateAndComputeTimestamp(request)) {
+    if (!pcp::validateAndComputeTimestamp(request)) {
         std::string errorJson = R"({"error":")" + request.errorMessage + R"("})";
         return env->NewStringUTF(errorJson.c_str());
     }
 
     // Build the MSC3030 URL
-    std::string url = progressive::buildMsc3030Url(request);
+    std::string url = pcp::buildMsc3030Url(request);
     LOGD("MSC3030 URL: %s", url.c_str());
 
     // Return the URL and timestamp to Kotlin — HTTP call happens in Kotlin layer
@@ -297,14 +297,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateAndBuild(
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeParseResponse
  * Signature: (Ljava/lang/String;I)Ljava/lang/String;
  *
  * Parses the HTTP response body and returns JSON with eventId or error.
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseResponse(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseResponse(
     JNIEnv* env,
     jclass /* this */,
     jstring jResponseBody,
@@ -322,7 +322,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseResponse(
 
     LOGD("nativeParseResponse: status=%d body_len=%zu", httpStatus, body.size());
 
-    auto result = progressive::parseTimestampToEventResponse(body, httpStatus);
+    auto result = pcp::parseTimestampToEventResponse(body, httpStatus);
 
     if (result.success) {
         std::string json = R"({"eventId":")" + result.eventId + R"("})";
@@ -336,7 +336,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseResponse(
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeParseRelation
  * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  *
@@ -348,7 +348,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseResponse(
  * Returns JSON: {"sourceEventId": "$xyz", "relationType": "m.annotation"} or {"isRelation": false}
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseRelation(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseRelation(
     JNIEnv* env,
     jclass /* this */,
     jstring jEventJson,
@@ -366,7 +366,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseRelation(
 
     LOGD("nativeParseRelation: eventJson_len=%zu", json.size());
 
-    auto relation = progressive::parseRelation(json);
+    auto relation = pcp::parseRelation(json);
 
     if (!relation.isRelation) {
         return env->NewStringUTF(R"({"isRelation": false})");
@@ -380,11 +380,11 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseRelation(
         env->ReleaseStringUTFChars(jAllowedTypes, allowedCh);
 
         if (!allowedStr.empty()) {
-            allowed = progressive::isJumpableRelationType(relation.relationType) &&
+            allowed = pcp::isJumpableRelationType(relation.relationType) &&
                       allowedStr.find(relation.relationType) != std::string::npos;
         }
     } else {
-        allowed = progressive::isJumpableRelationType(relation.relationType);
+        allowed = pcp::isJumpableRelationType(relation.relationType);
     }
 
     if (!allowed) {
@@ -398,7 +398,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseRelation(
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeFormatEventHtml
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
  *
@@ -413,7 +413,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseRelation(
  * @param isContinuation Whether this event is from the same sender as previous
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatEventHtml(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatEventHtml(
     JNIEnv* env,
     jclass /* this */,
     jstring jSenderName,
@@ -447,19 +447,19 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatEventHtml(
     if (jFileName)     env->ReleaseStringUTFChars(jFileName, event.fileName.c_str());
     if (jRelationType) env->ReleaseStringUTFChars(jRelationType, event.relationType.c_str());
 
-    auto html = progressive::formatEventHtml(event, jIsContinuation);
+    auto html = pcp::formatEventHtml(event, jIsContinuation);
     return env->NewStringUTF(html.c_str());
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeFormatEventPlainText
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  *
  * Formats a single event as plain text line.
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatEventPlainText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatEventPlainText(
     JNIEnv* env,
     jclass /* this */,
     jstring jSenderName,
@@ -484,12 +484,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatEventPlainT
     if (jFileName)     env->ReleaseStringUTFChars(jFileName, event.fileName.c_str());
     if (jRelationType) env->ReleaseStringUTFChars(jRelationType, event.relationType.c_str());
 
-    auto text = progressive::formatEventPlainText(event);
+    auto text = pcp::formatEventPlainText(event);
     return env->NewStringUTF(text.c_str());
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeBuildHtmlExport
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
  *
@@ -500,7 +500,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatEventPlainT
  * @param eventHtmls  Array of pre-rendered event HTML strings
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildHtmlExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildHtmlExport(
     JNIEnv* env,
     jclass /* this */,
     jstring jRoomName,
@@ -558,22 +558,22 @@ hr { border: none; border-top: 1px solid #e0e0e0; margin: 16px 0; }
         }
     }
 
-    html << "<hr>\n<p style=\"color:#999;text-align:center;\">Exported with Progressive Chat</p>\n";
+    html << "<hr>\n<p style=\"color:#999;text-align:center;\">Exported with PCP</p>\n";
     html << "</body>\n</html>";
 
     return env->NewStringUTF(html.str().c_str());
 }
 
 // --- Event Cache (global singleton for Stage 2 acceleration) ---
-static progressive::EventCache g_eventCache;
+static pcp::EventCache g_eventCache;
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeCachePut
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
  */
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCachePut(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCachePut(
     JNIEnv* env,
     jclass /* this */,
     jstring jEventId,
@@ -614,12 +614,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCachePut(
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeCacheGetContext
  * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheGetContext(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCacheGetContext(
     JNIEnv* env,
     jclass /* this */,
     jstring jEventId
@@ -636,12 +636,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheGetContext(
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeCacheSize
  * Signature: ()I
  */
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheSize(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCacheSize(
     JNIEnv* /* env */,
     jclass /* this */
 ) {
@@ -651,12 +651,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheSize(
 // --- Translation ---
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeBuildTranslateRequest
  * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildTranslateRequest(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildTranslateRequest(
     JNIEnv* env, jclass,
     jstring jText, jstring jSourceLang, jstring jTargetLang,
     jstring jApiEndpoint, jstring jApiToken, jstring jModel
@@ -676,17 +676,17 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildTranslateReq
     if (jApiToken)    env->ReleaseStringUTFChars(jApiToken, req.apiToken.c_str());
     if (jModel)       env->ReleaseStringUTFChars(jModel, req.model.c_str());
 
-    auto body = progressive::buildTranslateRequestBody(req);
+    auto body = pcp::buildTranslateRequestBody(req);
     return env->NewStringUTF(body.c_str());
 }
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeParseTranslateResponse
  * Signature: (Ljava/lang/String;I)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseTranslateResponse(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseTranslateResponse(
     JNIEnv* env, jclass,
     jstring jResponseBody, jint jHttpStatus
 ) {
@@ -696,7 +696,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseTranslateRes
     auto body = std::string(env->GetStringUTFChars(jResponseBody, nullptr));
     env->ReleaseStringUTFChars(jResponseBody, body.c_str());
 
-    auto result = progressive::parseTranslateResponse(body, jHttpStatus);
+    auto result = pcp::parseTranslateResponse(body, jHttpStatus);
 
     if (result.success) {
         std::string json = R"({"success": true, "translatedText": ")" + result.translatedText + R"("})";
@@ -711,12 +711,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseTranslateRes
 // --- Proxy Configuration ---
 
 /*
- * Class: im.vector.app.features.jumptodate.ProgressiveNative
+ * Class: im.vector.app.features.jumptodate.PcpNative
  * Method: nativeComputeProxyConfig
  * Signature: (IILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeProxyConfig(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeProxyConfig(
     JNIEnv* env, jclass,
     jint jConnType, jint jProxyType,
     jstring jHost, jint jPort,
@@ -733,7 +733,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeProxyConfi
     if (jUsername) env->ReleaseStringUTFChars(jUsername, username.c_str());
     if (jPassword) env->ReleaseStringUTFChars(jPassword, password.c_str());
 
-    auto config = progressive::computeProxyConfig(
+    auto config = pcp::computeProxyConfig(
         connType, proxyType, host, jPort, username, password
     );
 
@@ -744,38 +744,38 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeProxyConfi
 // --- Yggdrasil ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsYggdrasilAddress(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsYggdrasilAddress(
     JNIEnv* env, jclass, jstring jAddr
 ) {
     if (!jAddr) return JNI_FALSE;
     auto addr = std::string(env->GetStringUTFChars(jAddr, nullptr));
     env->ReleaseStringUTFChars(jAddr, addr.c_str());
-    return progressive::isYggdrasilAddress(addr) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isYggdrasilAddress(addr) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsYggdrasilDomain(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsYggdrasilDomain(
     JNIEnv* env, jclass, jstring jHost
 ) {
     if (!jHost) return JNI_FALSE;
     auto host = std::string(env->GetStringUTFChars(jHost, nullptr));
     env->ReleaseStringUTFChars(jHost, host.c_str());
-    return progressive::isYggdrasilDomain(host) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isYggdrasilDomain(host) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildYggHomeserverUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildYggHomeserverUrl(
     JNIEnv* env, jclass, jstring jAddr, jint jPort, jboolean jTls
 ) {
     if (!jAddr) return env->NewStringUTF("");
     auto addr = std::string(env->GetStringUTFChars(jAddr, nullptr));
     env->ReleaseStringUTFChars(jAddr, addr.c_str());
-    auto url = progressive::buildYggHomeserverUrl(addr, jPort, jTls);
+    auto url = pcp::buildYggHomeserverUrl(addr, jPort, jTls);
     return env->NewStringUTF(url.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeRewriteHomeserverUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeRewriteHomeserverUrl(
     JNIEnv* env, jclass, jstring jOriginalUrl, jstring jYggAddr
 ) {
     if (!jOriginalUrl || !jYggAddr) return env->NewStringUTF("");
@@ -783,14 +783,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeRewriteHomeserver
     auto ygg = std::string(env->GetStringUTFChars(jYggAddr, nullptr));
     env->ReleaseStringUTFChars(jOriginalUrl, original.c_str());
     env->ReleaseStringUTFChars(jYggAddr, ygg.c_str());
-    auto result = progressive::rewriteHomeserverUrl(original, ygg);
+    auto result = pcp::rewriteHomeserverUrl(original, ygg);
     return env->NewStringUTF(result.c_str());
 }
 
 // --- Markdown ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMarkdownToHtml(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMarkdownToHtml(
     JNIEnv* env, jclass, jstring jMarkdown, jboolean jEnableTables
 ) {
     if (!jMarkdown) return env->NewStringUTF("");
@@ -799,26 +799,26 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMarkdownToHtml(
 
     MdConfig config;
     config.enableTables = jEnableTables;
-    auto html = progressive::markdownToHtml(md, config);
+    auto html = pcp::markdownToHtml(md, config);
     return env->NewStringUTF(html.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseMarkdownTable(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseMarkdownTable(
     JNIEnv* env, jclass, jstring jTableBlock, jboolean jWithScroll
 ) {
     if (!jTableBlock) return env->NewStringUTF("");
     auto block = std::string(env->GetStringUTFChars(jTableBlock, nullptr));
     env->ReleaseStringUTFChars(jTableBlock, block.c_str());
 
-    auto html = progressive::parseMarkdownTable(block, jWithScroll);
+    auto html = pcp::parseMarkdownTable(block, jWithScroll);
     return env->NewStringUTF(html.c_str());
 }
 
 // --- Account Export ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEncryptAccount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEncryptAccount(
     JNIEnv* env, jclass,
     jstring jUserId, jstring jToken, jstring jRefreshToken,
     jstring jHomeServer, jstring jDeviceId, jstring jDeviceName,
@@ -849,12 +849,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEncryptAccount(
     if (jAvatarUrl) env->ReleaseStringUTFChars(jAvatarUrl, data.avatarUrl.c_str());
     if (jPassphrase) env->ReleaseStringUTFChars(jPassphrase, pass.c_str());
 
-    auto result = progressive::encryptAccountData(data, pass);
+    auto result = pcp::encryptAccountData(data, pass);
     return env->NewStringUTF(result.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDecryptAccount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDecryptAccount(
     JNIEnv* env, jclass, jstring jEncrypted, jstring jPassphrase
 ) {
     if (!jEncrypted || !jPassphrase) return env->NewStringUTF("");
@@ -863,62 +863,62 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDecryptAccount(
     env->ReleaseStringUTFChars(jEncrypted, enc.c_str());
     env->ReleaseStringUTFChars(jPassphrase, pass.c_str());
 
-    auto data = progressive::decryptAccountData(enc, pass);
+    auto data = pcp::decryptAccountData(enc, pass);
     if (data.userId.empty()) return env->NewStringUTF(R"({"error": "Decryption failed"})");
 
-    auto json = progressive::accountToJson(data);
+    auto json = pcp::accountToJson(data);
     return env->NewStringUTF(json.c_str());
 }
 
 // --- Audio ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatDuration(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatDuration(
     JNIEnv* env, jclass, jlong jMs
 ) {
-    auto s = progressive::formatDuration(jMs);
+    auto s = pcp::formatDuration(jMs);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatPositionInfo(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatPositionInfo(
     JNIEnv* env, jclass, jlong jPos, jlong jDur
 ) {
-    auto s = progressive::formatPositionInfo(jPos, jDur);
+    auto s = pcp::formatPositionInfo(jPos, jDur);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jfloat JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeProgress(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeProgress(
     JNIEnv*, jclass, jlong jPos, jlong jDur
 ) {
-    return progressive::computeProgress(jPos, jDur);
+    return pcp::computeProgress(jPos, jDur);
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsSupportedAudio(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsSupportedAudio(
     JNIEnv* env, jclass, jstring jMime
 ) {
     if (!jMime) return JNI_FALSE;
     auto mime = std::string(env->GetStringUTFChars(jMime, nullptr));
     env->ReleaseStringUTFChars(jMime, mime.c_str());
-    return progressive::isSupportedAudioType(mime) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isSupportedAudioType(mime) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidMxcUri(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidMxcUri(
     JNIEnv* env, jclass, jstring jUri
 ) {
     if (!jUri) return JNI_FALSE;
     auto uri = std::string(env->GetStringUTFChars(jUri, nullptr));
     env->ReleaseStringUTFChars(jUri, uri.c_str());
-    return progressive::isValidMxcUri(uri) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidMxcUri(uri) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Content Filter ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterLoad(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeKeywordFilterLoad(
     JNIEnv* env, jclass, jstring jRaw
 ) {
     if (!jRaw) return;
@@ -928,7 +928,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterLoad
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterCheck(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeKeywordFilterCheck(
     JNIEnv* env, jclass, jstring jText
 ) {
     if (!jText) return env->NewStringUTF("");
@@ -939,7 +939,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterChec
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeKeywordFilterExport(
     JNIEnv* env, jclass
 ) {
     auto s = g_keywordFilter.exportKeywords();
@@ -947,21 +947,21 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterExpo
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeKeywordFilterCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_keywordFilter.count());
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeKeywordFilterClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeKeywordFilterClear(
     JNIEnv*, jclass
 ) {
     g_keywordFilter.clear();
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldBlockImage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeShouldBlockImage(
     JNIEnv* env, jclass,
     jboolean jBlockAll, jboolean jAllowAvatars, jboolean jAllowStickers, jboolean jAllowEmoji,
     jstring jMxcUrl, jstring jImageType
@@ -983,7 +983,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldBlockImage(
 // --- Network Stats ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsStart(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNetStatsStart(
     JNIEnv* env, jclass, jstring jUrl, jstring jMethod
 ) {
     auto url = jUrl ? std::string(env->GetStringUTFChars(jUrl, nullptr)) : "";
@@ -994,7 +994,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsStart(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsEnd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNetStatsEnd(
     JNIEnv* env, jclass,
     jint jRequestId, jint jStatusCode, jlong jBytesSent, jlong jBytesReceived,
     jstring jError
@@ -1005,7 +1005,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsEnd(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsToJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNetStatsToJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_netStats.statsToJson();
@@ -1013,7 +1013,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsToJson(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsToText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNetStatsToText(
     JNIEnv* env, jclass
 ) {
     auto text = g_netStats.statsToText();
@@ -1021,7 +1021,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsToText(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNetStatsClear(
     JNIEnv*, jclass
 ) {
     g_netStats.clear();
@@ -1030,49 +1030,49 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNetStatsClear(
 // --- Masquerade ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidMasqueradeName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidMasqueradeName(
     JNIEnv* env, jclass, jstring jName
 ) {
     if (!jName) return JNI_FALSE;
     auto name = std::string(env->GetStringUTFChars(jName, nullptr));
     env->ReleaseStringUTFChars(jName, name.c_str());
-    return progressive::isValidMasqueradeName(name) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidMasqueradeName(name) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetSuggestedMasqueradeNames(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetSuggestedMasqueradeNames(
     JNIEnv* env, jclass
 ) {
-    auto names = progressive::getSuggestedNames();
+    auto names = pcp::getSuggestedNames();
     return env->NewStringUTF(names.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidIconAlias(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidIconAlias(
     JNIEnv* env, jclass, jstring jAlias
 ) {
     if (!jAlias) return JNI_FALSE;
     auto alias = std::string(env->GetStringUTFChars(jAlias, nullptr));
     env->ReleaseStringUTFChars(jAlias, alias.c_str());
-    return progressive::isValidIconAlias(alias) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidIconAlias(alias) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildMasqueradeAlias(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildMasqueradeAlias(
     JNIEnv* env, jclass, jstring jBase, jstring jIcon
 ) {
     auto base = jBase ? std::string(env->GetStringUTFChars(jBase, nullptr)) : "";
     auto icon = jIcon ? std::string(env->GetStringUTFChars(jIcon, nullptr)) : "";
     if (jBase) env->ReleaseStringUTFChars(jBase, base.c_str());
     if (jIcon) env->ReleaseStringUTFChars(jIcon, icon.c_str());
-    auto alias = progressive::buildMasqueradeAlias(base, icon);
+    auto alias = pcp::buildMasqueradeAlias(base, icon);
     return env->NewStringUTF(alias.c_str());
 }
 
 // --- User Mask ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskSet(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskSet(
     JNIEnv* env, jclass,
     jstring jMxid, jstring jDisplayName, jstring jAvatarUrl, jstring jOverrideMxid
 ) {
@@ -1091,7 +1091,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskSet(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskRemove(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskRemove(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     if (!jMxid) return;
@@ -1101,7 +1101,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskRemove(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskResolveName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskResolveName(
     JNIEnv* env, jclass, jstring jMxid, jstring jOriginalName
 ) {
     auto mxid = jMxid ? std::string(env->GetStringUTFChars(jMxid, nullptr)) : "";
@@ -1109,12 +1109,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskResolveNa
     if (jMxid) env->ReleaseStringUTFChars(jMxid, mxid.c_str());
     if (jOriginalName) env->ReleaseStringUTFChars(jOriginalName, orig.c_str());
 
-    auto resolved = progressive::resolveDisplayName(mxid, orig, g_userMasks);
+    auto resolved = pcp::resolveDisplayName(mxid, orig, g_userMasks);
     return env->NewStringUTF(resolved.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskResolveAvatar(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskResolveAvatar(
     JNIEnv* env, jclass, jstring jMxid, jstring jOriginalUrl
 ) {
     auto mxid = jMxid ? std::string(env->GetStringUTFChars(jMxid, nullptr)) : "";
@@ -1122,12 +1122,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskResolveAv
     if (jMxid) env->ReleaseStringUTFChars(jMxid, mxid.c_str());
     if (jOriginalUrl) env->ReleaseStringUTFChars(jOriginalUrl, orig.c_str());
 
-    auto resolved = progressive::resolveAvatarUrl(mxid, orig, g_userMasks);
+    auto resolved = pcp::resolveAvatarUrl(mxid, orig, g_userMasks);
     return env->NewStringUTF(resolved.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskExportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskExportJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_userMasks.exportJson();
@@ -1135,7 +1135,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskExportJso
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskImportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskImportJson(
     JNIEnv* env, jclass, jstring jJson
 ) {
     if (!jJson) return;
@@ -1145,24 +1145,24 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskImportJso
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidMxid(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidMxid(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     if (!jMxid) return JNI_FALSE;
     auto mxid = std::string(env->GetStringUTFChars(jMxid, nullptr));
     env->ReleaseStringUTFChars(jMxid, mxid.c_str());
-    return progressive::isValidMxid(mxid) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidMxid(mxid) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskClear(
     JNIEnv*, jclass
 ) {
     g_userMasks.clear();
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserMaskCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_userMasks.count());
@@ -1171,44 +1171,44 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserMaskCount(
 // --- Chunked Upload ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderSetChunkSizeMb(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderSetChunkSizeMb(
     JNIEnv*, jclass, jint jMb
 ) {
     g_uploader.setChunkSizeMb(jMb);
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderComputeChunks(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderComputeChunks(
     JNIEnv*, jclass, jlong jFileSize
 ) {
     return g_uploader.computeChunks(jFileSize);
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderGetChunkJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderGetChunkJson(
     JNIEnv* env, jclass, jint jIndex
 ) {
     auto chunk = g_uploader.getChunkInfo(jIndex);
-    auto json = progressive::ChunkedUploader::chunkToJson(chunk);
+    auto json = pcp::ChunkedUploader::chunkToJson(chunk);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderAdvance(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderAdvance(
     JNIEnv*, jclass
 ) {
     g_uploader.advanceChunk();
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderCancel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderCancel(
     JNIEnv*, jclass
 ) {
     g_uploader.cancel();
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderFail(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderFail(
     JNIEnv* env, jclass, jstring jError
 ) {
     auto err = jError ? std::string(env->GetStringUTFChars(jError, nullptr)) : "";
@@ -1217,14 +1217,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderFail(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderReset(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderReset(
     JNIEnv*, jclass
 ) {
     g_uploader.reset();
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderProgressJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderProgressJson(
     JNIEnv* env, jclass
 ) {
     auto prog = g_uploader.progress();
@@ -1245,28 +1245,28 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderProgressJ
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUploaderContentRange(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUploaderContentRange(
     JNIEnv* env, jclass, jint jIndex
 ) {
     auto chunk = g_uploader.getChunkInfo(jIndex);
-    auto range = progressive::ChunkedUploader::formatContentRange(chunk);
+    auto range = pcp::ChunkedUploader::formatContentRange(chunk);
     return env->NewStringUTF(range.c_str());
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSuggestChunkSizeMb(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSuggestChunkSizeMb(
     JNIEnv*, jclass, jlong jFileSize
 ) {
-    return progressive::ChunkedUploader::suggestChunkSizeMb(jFileSize);
+    return pcp::ChunkedUploader::suggestChunkSizeMb(jFileSize);
 }
 
 // --- Chat Features (Timezone + EXIF) ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetCommonTimezones(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetCommonTimezones(
     JNIEnv* env, jclass
 ) {
-    auto zones = progressive::getCommonTimezones();
+    auto zones = pcp::getCommonTimezones();
     // Return as JSON array
     std::ostringstream json;
     json << "[";
@@ -1281,46 +1281,46 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetCommonTimezone
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTimestampInTimezone(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatTimestampInTimezone(
     JNIEnv* env, jclass, jlong jUtcMs, jstring jTzId
 ) {
     auto tzId = jTzId ? std::string(env->GetStringUTFChars(jTzId, nullptr)) : "UTC";
     if (jTzId) env->ReleaseStringUTFChars(jTzId, tzId.c_str());
 
-    auto formatted = progressive::formatTimestampInTimezone(jUtcMs, tzId);
+    auto formatted = pcp::formatTimestampInTimezone(jUtcMs, tzId);
     return env->NewStringUTF(formatted.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidTimezoneId(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidTimezoneId(
     JNIEnv* env, jclass, jstring jTzId
 ) {
     auto tzId = jTzId ? std::string(env->GetStringUTFChars(jTzId, nullptr)) : "";
     if (jTzId) env->ReleaseStringUTFChars(jTzId, tzId.c_str());
-    return progressive::isValidTimezoneId(tzId) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidTimezoneId(tzId) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFileHasMetadata(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFileHasMetadata(
     JNIEnv* env, jclass, jstring jMimeType
 ) {
     auto mime = jMimeType ? std::string(env->GetStringUTFChars(jMimeType, nullptr)) : "";
     if (jMimeType) env->ReleaseStringUTFChars(jMimeType, mime.c_str());
-    return progressive::fileHasMetadata(mime) ? JNI_TRUE : JNI_FALSE;
+    return pcp::fileHasMetadata(mime) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetStrippableMimeTypes(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetStrippableMimeTypes(
     JNIEnv* env, jclass
 ) {
-    auto s = progressive::getStrippableMimeTypes();
+    auto s = pcp::getStrippableMimeTypes();
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Invitation Hide ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteHide(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteHide(
     JNIEnv* env, jclass,
     jstring jRoomId, jstring jRoomName, jstring jInviterName, jstring jInviterMxid
 ) {
@@ -1339,7 +1339,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteHide(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteUnhide(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteUnhide(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     if (!jRoomId) return;
@@ -1349,7 +1349,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteUnhide(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteIsHidden(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteIsHidden(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     if (!jRoomId) return JNI_FALSE;
@@ -1359,7 +1359,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteIsHidden(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteExportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteExportJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_inviteHide.exportJson();
@@ -1367,7 +1367,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteExportJson(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteImportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteImportJson(
     JNIEnv* env, jclass, jstring jJson
 ) {
     if (!jJson) return;
@@ -1377,14 +1377,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteImportJson(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteClear(
     JNIEnv*, jclass
 ) {
     g_inviteHide.clear();
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeInviteCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_inviteHide.count());
@@ -1393,7 +1393,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeInviteCount(
 // --- Thread Aggregator ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeThreadAdd(
     JNIEnv* env, jclass,
     jstring jThreadId, jstring jRoomId, jstring jRoomName,
     jstring jAccountId, jstring jAccountIndex,
@@ -1424,7 +1424,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadAdd(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadGetAllJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeThreadGetAllJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_threadAgg.exportJson();
@@ -1432,21 +1432,21 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadGetAllJson(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeThreadClear(
     JNIEnv*, jclass
 ) {
     g_threadAgg.clear();
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeThreadCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_threadAgg.count());
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadRemoveRoom(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeThreadRemoveRoom(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     if (!jRoomId) return;
@@ -1458,7 +1458,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeThreadRemoveRoom(
 // --- User Messages ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatUserMessagePreview(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatUserMessagePreview(
     JNIEnv* env, jclass,
     jstring jRoomName, jstring jBody, jstring jMsgType, jint jMaxLen
 ) {
@@ -1471,72 +1471,72 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatUserMessage
     if (jBody)     env->ReleaseStringUTFChars(jBody, msg.body.c_str());
     if (jMsgType)  env->ReleaseStringUTFChars(jMsgType, msg.msgType.c_str());
 
-    auto preview = progressive::formatUserMessagePreview(msg, jMaxLen);
+    auto preview = pcp::formatUserMessagePreview(msg, jMaxLen);
     return env->NewStringUTF(preview.c_str());
 }
 
 // --- Room Version ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetRoomVersionsJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetRoomVersionsJson(
     JNIEnv* env, jclass
 ) {
-    auto json = progressive::roomVersionsToJson();
+    auto json = pcp::roomVersionsToJson();
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidRoomVersion(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidRoomVersion(
     JNIEnv* env, jclass, jstring jVersion
 ) {
     auto v = jVersion ? std::string(env->GetStringUTFChars(jVersion, nullptr)) : "";
     if (jVersion) env->ReleaseStringUTFChars(jVersion, v.c_str());
-    return progressive::isValidRoomVersion(v) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidRoomVersion(v) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Chat Preview ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatShortTime(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatShortTime(
     JNIEnv* env, jclass, jlong jEpochMs
 ) {
-    auto s = progressive::formatShortTime(jEpochMs);
+    auto s = pcp::formatShortTime(jEpochMs);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeTruncateMessage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeTruncateMessage(
     JNIEnv* env, jclass, jstring jBody, jint jMaxLen
 ) {
     auto body = jBody ? std::string(env->GetStringUTFChars(jBody, nullptr)) : "";
     if (jBody) env->ReleaseStringUTFChars(jBody, body.c_str());
-    auto s = progressive::truncateMessage(body, jMaxLen);
+    auto s = pcp::truncateMessage(body, jMaxLen);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- RAM Monitor ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetMemoryInfo(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetMemoryInfo(
     JNIEnv* env, jclass
 ) {
-    auto info = progressive::getMemoryInfo();
-    auto json = progressive::memoryInfoToJson(info);
+    auto info = pcp::getMemoryInfo();
+    auto json = pcp::memoryInfoToJson(info);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatMemoryLabel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatMemoryLabel(
     JNIEnv* env, jclass, jlong jRssKb
 ) {
-    auto label = progressive::formatMemoryLabel(jRssKb);
+    auto label = pcp::formatMemoryLabel(jRssKb);
     return env->NewStringUTF(label.c_str());
 }
 
 // --- Cache Manager ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheTrack(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCacheTrack(
     JNIEnv* env, jclass,
     jstring jEventId, jstring jRoomId, jstring jRoomName,
     jlong jTimestamp, jlong jSizeBytes, jstring jMsgType, jstring jBody
@@ -1557,7 +1557,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheTrack(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheStatsJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCacheStatsJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_cacheMgr.statsToJson();
@@ -1565,29 +1565,29 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheStatsJson(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheGetByRoom(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCacheGetByRoom(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     auto roomId = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
     if (jRoomId) env->ReleaseStringUTFChars(jRoomId, roomId.c_str());
     auto entries = g_cacheMgr.getByRoom(roomId);
-    auto json = progressive::CacheManager::entriesToJson(entries);
+    auto json = pcp::CacheManager::entriesToJson(entries);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCacheGetOlderThan(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCacheGetOlderThan(
     JNIEnv* env, jclass, jlong jBeforeTs
 ) {
     auto entries = g_cacheMgr.getOlderThan(jBeforeTs);
-    auto json = progressive::CacheManager::entriesToJson(entries);
+    auto json = pcp::CacheManager::entriesToJson(entries);
     return env->NewStringUTF(json.c_str());
 }
 
 // --- Message Aggregator ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgAggAdd(
     JNIEnv* env, jclass,
     jstring jEventId, jstring jRoomId, jstring jRoomName,
     jstring jAccountId, jstring jAccountIndex,
@@ -1618,7 +1618,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggAdd(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggGetAllJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgAggGetAllJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_msgAgg.exportJson();
@@ -1626,14 +1626,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggGetAllJson(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgAggClear(
     JNIEnv*, jclass
 ) {
     g_msgAgg.clear();
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgAggCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_msgAgg.count());
@@ -1642,24 +1642,24 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgAggCount(
 // --- Room Info ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatCreationDate(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatCreationDate(
     JNIEnv* env, jclass, jlong jEpochMs
 ) {
-    auto s = progressive::formatCreationDate(jEpochMs);
+    auto s = pcp::formatCreationDate(jEpochMs);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsLikelyFullHistory(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsLikelyFullHistory(
     JNIEnv*, jclass, jint jCached, jint jEstimated
 ) {
-    return progressive::isLikelyFullHistory(jCached, jEstimated) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isLikelyFullHistory(jCached, jEstimated) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Deleted Archive ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDeletedArchiveAdd(
     JNIEnv* env, jclass,
     jstring jEventId, jstring jRoomId, jstring jRoomName,
     jstring jSenderName, jstring jBody, jstring jMsgType,
@@ -1689,7 +1689,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveAdd
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveExportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDeletedArchiveExportJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_deletedArchive.exportJson();
@@ -1697,14 +1697,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveExp
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDeletedArchiveClear(
     JNIEnv*, jclass
 ) {
     g_deletedArchive.clear();
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDeletedArchiveCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_deletedArchive.count());
@@ -1713,7 +1713,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDeletedArchiveCou
 // --- Search Index ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchIndexMessage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSearchIndexMessage(
     JNIEnv* env, jclass,
     jstring jEventId, jstring jRoomId, jstring jRoomName,
     jstring jSenderName, jstring jBody, jlong jTimestamp, jboolean jEncrypted
@@ -1734,7 +1734,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchIndexMessag
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchQuery(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSearchQuery(
     JNIEnv* env, jclass, jstring jQuery, jint jLimit
 ) {
     auto query = jQuery ? std::string(env->GetStringUTFChars(jQuery, nullptr)) : "";
@@ -1754,20 +1754,20 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchQuery(
     json << R"("totalHits": )" << result.totalHits << ",";
     json << R"("roomsSearched": )" << result.roomsSearched << ",";
     json << R"("searchTimeMs": )" << result.searchTimeMs << ",";
-    json << R"("hits": )" << progressive::SearchIndex::hitsToJson(result.hits);
+    json << R"("hits": )" << pcp::SearchIndex::hitsToJson(result.hits);
     json << "}";
     return env->NewStringUTF(json.str().c_str());
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSearchClear(
     JNIEnv*, jclass
 ) {
     g_searchIndex.clear();
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchIndexedCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSearchIndexedCount(
     JNIEnv*, jclass
 ) {
     return static_cast<jint>(g_searchIndex.indexedCount());
@@ -1776,7 +1776,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSearchIndexedCoun
 // --- Module Loader ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleScanDir(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeModuleScanDir(
     JNIEnv* env, jclass, jstring jDir
 ) {
     auto dir = jDir ? std::string(env->GetStringUTFChars(jDir, nullptr)) : "";
@@ -1785,7 +1785,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleScanDir(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleEnable(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeModuleEnable(
     JNIEnv* env, jclass, jstring jName
 ) {
     auto name = jName ? std::string(env->GetStringUTFChars(jName, nullptr)) : "";
@@ -1794,7 +1794,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleEnable(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleIsEnabled(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeModuleIsEnabled(
     JNIEnv* env, jclass, jstring jName
 ) {
     auto name = jName ? std::string(env->GetStringUTFChars(jName, nullptr)) : "";
@@ -1803,7 +1803,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleIsEnabled(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleListJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeModuleListJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_moduleLoader.listModulesJson();
@@ -1813,7 +1813,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeModuleListJson(
 // --- Notification Keywords ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNotifKeywordAdd(
     JNIEnv* env, jclass, jstring jKeyword, jboolean jCaseSensitive
 ) {
     auto kw = jKeyword ? std::string(env->GetStringUTFChars(jKeyword, nullptr)) : "";
@@ -1822,7 +1822,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordAdd(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordCheck(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNotifKeywordCheck(
     JNIEnv* env, jclass, jstring jBody
 ) {
     auto body = jBody ? std::string(env->GetStringUTFChars(jBody, nullptr)) : "";
@@ -1832,7 +1832,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordCheck
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNotifKeywordExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_notifKeywords.exportJson();
@@ -1840,7 +1840,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordExpor
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordImport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNotifKeywordImport(
     JNIEnv* env, jclass, jstring jJson
 ) {
     if (!jJson) return;
@@ -1850,7 +1850,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordImpor
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeNotifKeywordClear(
     JNIEnv*, jclass
 ) {
     g_notifKeywords.clear();
@@ -1859,7 +1859,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeNotifKeywordClear
 // --- Reaction Preview ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatReactionPreview(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatReactionPreview(
     JNIEnv* env, jclass,
     jstring jReactorName, jstring jEmoji, jstring jSourceBody, jstring jSourceSender
 ) {
@@ -1874,14 +1874,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatReactionPre
     if (jSourceBody)   env->ReleaseStringUTFChars(jSourceBody, rp.sourceBody.c_str());
     if (jSourceSender) env->ReleaseStringUTFChars(jSourceSender, rp.sourceSenderName.c_str());
 
-    auto s = progressive::formatReactionPreview(rp);
+    auto s = pcp::formatReactionPreview(rp);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Room Mirror ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorAdd(
     JNIEnv* env, jclass,
     jstring jSrcRoomId, jstring jSrcRoomName,
     jstring jMirRoomId, jstring jMirRoomName,
@@ -1904,7 +1904,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorAdd(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorRemove(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorRemove(
     JNIEnv* env, jclass, jstring jSrcRoomId
 ) {
     if (!jSrcRoomId) return;
@@ -1914,7 +1914,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorRemove(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorIsActive(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorIsActive(
     JNIEnv* env, jclass, jstring jSrcRoomId
 ) {
     if (!jSrcRoomId) return JNI_FALSE;
@@ -1924,7 +1924,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorIsActive(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorFormatMessage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorFormatMessage(
     JNIEnv* env, jclass,
     jstring jSenderName, jstring jSenderMxid, jstring jRoomName,
     jstring jBody, jstring jMsgType, jlong jTs
@@ -1943,12 +1943,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorFormatMessa
     if (jBody)       env->ReleaseStringUTFChars(jBody, msg.body.c_str());
     if (jMsgType)    env->ReleaseStringUTFChars(jMsgType, msg.msgType.c_str());
 
-    auto s = progressive::RoomMirrorManager::formatMirrorMessage(msg);
+    auto s = pcp::RoomMirrorManager::formatMirrorMessage(msg);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorGenerateDollMxid(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorGenerateDollMxid(
     JNIEnv* env, jclass,
     jstring jOriginalMxid, jstring jTargetServer
 ) {
@@ -1957,22 +1957,22 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorGenerateDol
     if (jOriginalMxid) env->ReleaseStringUTFChars(jOriginalMxid, mxid.c_str());
     if (jTargetServer) env->ReleaseStringUTFChars(jTargetServer, server.c_str());
 
-    auto doll = progressive::RoomMirrorManager::generateDollMxid(mxid, server);
+    auto doll = pcp::RoomMirrorManager::generateDollMxid(mxid, server);
     return env->NewStringUTF(doll.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorIsValidDoll(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorIsValidDoll(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     if (!jMxid) return JNI_FALSE;
     auto mxid = std::string(env->GetStringUTFChars(jMxid, nullptr));
     env->ReleaseStringUTFChars(jMxid, mxid.c_str());
-    return progressive::RoomMirrorManager::isValidDollMxid(mxid) ? JNI_TRUE : JNI_FALSE;
+    return pcp::RoomMirrorManager::isValidDollMxid(mxid) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorExportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMirrorExportJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_mirrorMgr.exportJson();
@@ -1982,7 +1982,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMirrorExportJson(
 // --- Input Tools (Symbol Bar + Replacement Engine) ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSymbolAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSymbolAdd(
     JNIEnv* env, jclass, jstring jSymbol, jstring jLabel
 ) {
     auto sym = jSymbol ? std::string(env->GetStringUTFChars(jSymbol, nullptr)) : "";
@@ -1993,7 +1993,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSymbolAdd(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSymbolExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSymbolExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_symbolBar.exportJson();
@@ -2001,7 +2001,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSymbolExport(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSymbolImport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSymbolImport(
     JNIEnv* env, jclass, jstring jJson
 ) {
     if (!jJson) return;
@@ -2011,7 +2011,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSymbolImport(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeReplacementAddRule(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeReplacementAddRule(
     JNIEnv* env, jclass, jstring jPattern, jstring jReplacement, jboolean jExactMatch
 ) {
     auto pattern = jPattern ? std::string(env->GetStringUTFChars(jPattern, nullptr)) : "";
@@ -2022,7 +2022,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeReplacementAddRul
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeReplacementApply(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeReplacementApply(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
@@ -2032,7 +2032,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeReplacementApply(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeReplacementExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeReplacementExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_replacementEngine.exportJson();
@@ -2042,7 +2042,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeReplacementExport
 // --- LLM ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildLlmRequest(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildLlmRequest(
     JNIEnv* env, jclass,
     jstring jPrompt, jint jProvider,
     jstring jEndpoint, jstring jToken, jstring jModel,
@@ -2065,12 +2065,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildLlmRequest(
     if (jSystemPrompt) env->ReleaseStringUTFChars(jSystemPrompt, cfg.systemPrompt.c_str());
     if (jPrompt)   env->ReleaseStringUTFChars(jPrompt, prompt.c_str());
 
-    auto body = progressive::buildLlmRequestBody(cfg, prompt);
+    auto body = pcp::buildLlmRequestBody(cfg, prompt);
     return env->NewStringUTF(body.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildLlmHeaders(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildLlmHeaders(
     JNIEnv* env, jclass, jint jProvider, jstring jToken
 ) {
     LlmConfig cfg;
@@ -2078,19 +2078,19 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildLlmHeaders(
     cfg.apiToken = jToken ? std::string(env->GetStringUTFChars(jToken, nullptr)) : "";
     if (jToken) env->ReleaseStringUTFChars(jToken, cfg.apiToken.c_str());
 
-    auto headers = progressive::buildLlmHeaders(cfg);
+    auto headers = pcp::buildLlmHeaders(cfg);
     return env->NewStringUTF(headers.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseLlmResponse(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseLlmResponse(
     JNIEnv* env, jclass, jstring jBody, jint jStatusCode, jint jProvider
 ) {
     auto body = jBody ? std::string(env->GetStringUTFChars(jBody, nullptr)) : "";
     if (jBody) env->ReleaseStringUTFChars(jBody, body.c_str());
 
     auto provider = static_cast<LlmProvider>(jProvider);
-    auto result = progressive::parseLlmResponse(body, jStatusCode, provider);
+    auto result = pcp::parseLlmResponse(body, jStatusCode, provider);
 
     auto esc = [](const std::string& s) -> std::string {
         std::string out;
@@ -2109,7 +2109,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseLlmResponse(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatLlmBroadcast(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatLlmBroadcast(
     JNIEnv* env, jclass, jstring jPrompt, jstring jResponse
 ) {
     auto prompt = jPrompt ? std::string(env->GetStringUTFChars(jPrompt, nullptr)) : "";
@@ -2117,14 +2117,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatLlmBroadcas
     if (jPrompt) env->ReleaseStringUTFChars(jPrompt, prompt.c_str());
     if (jResponse) env->ReleaseStringUTFChars(jResponse, response.c_str());
 
-    auto s = progressive::formatLlmBroadcastMessage(prompt, response);
+    auto s = pcp::formatLlmBroadcastMessage(prompt, response);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Duplicate Names ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatUserDisplayName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatUserDisplayName(
     JNIEnv* env, jclass,
     jstring jDisplayName, jstring jMxid, jboolean jShowMxid
 ) {
@@ -2133,14 +2133,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatUserDisplay
     if (jDisplayName) env->ReleaseStringUTFChars(jDisplayName, name.c_str());
     if (jMxid) env->ReleaseStringUTFChars(jMxid, mxid.c_str());
 
-    auto s = progressive::formatUserDisplayName(name, mxid, jShowMxid);
+    auto s = pcp::formatUserDisplayName(name, mxid, jShowMxid);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- User MXID Visibility ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityHide(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMxidVisibilityHide(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     auto mxid = jMxid ? std::string(env->GetStringUTFChars(jMxid, nullptr)) : "";
@@ -2149,7 +2149,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityHid
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityShow(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMxidVisibilityShow(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     auto mxid = jMxid ? std::string(env->GetStringUTFChars(jMxid, nullptr)) : "";
@@ -2158,7 +2158,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilitySho
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityIsVisible(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMxidVisibilityIsVisible(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     auto mxid = jMxid ? std::string(env->GetStringUTFChars(jMxid, nullptr)) : "";
@@ -2167,7 +2167,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityIsV
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMxidVisibilityExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_mxidVisibility.exportJson();
@@ -2177,7 +2177,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMxidVisibilityExp
 // --- Read Receipts ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeReceiptDisplay(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeReceiptDisplay(
     JNIEnv* env, jclass,
     jstring jReceiptsJson, jint jMaxVisible
 ) {
@@ -2254,21 +2254,21 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeReceiptDis
         }
     }
 
-    auto display = progressive::computeReceiptDisplay(receipts, jMaxVisible);
-    auto result = progressive::receiptDisplayToJson(display);
+    auto display = pcp::computeReceiptDisplay(receipts, jMaxVisible);
+    auto result = pcp::receiptDisplayToJson(display);
     return env->NewStringUTF(result.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatOverflowLabel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatOverflowLabel(
     JNIEnv* env, jclass, jint jCount
 ) {
-    auto s = progressive::formatOverflowLabel(jCount);
+    auto s = pcp::formatOverflowLabel(jCount);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatReceiptAccessibility(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatReceiptAccessibility(
     JNIEnv* env, jclass, jstring jVisibleJson, jint jOverflow
 ) {
     // Parse visible entries JSON
@@ -2290,26 +2290,26 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatReceiptAcce
         pos = qEnd;
     }
 
-    auto s = progressive::formatReceiptAccessibility(entries, jOverflow);
+    auto s = pcp::formatReceiptAccessibility(entries, jOverflow);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Room Analytics ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractServerName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeExtractServerName(
     JNIEnv* env, jclass, jstring jMxid
 ) {
     auto mxid = jMxid ? std::string(env->GetStringUTFChars(jMxid, nullptr)) : "";
     if (jMxid) env->ReleaseStringUTFChars(jMxid, mxid.c_str());
-    auto s = progressive::extractServerName(mxid);
+    auto s = pcp::extractServerName(mxid);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- User Hide ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserHideFor(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserHideFor(
     JNIEnv* env, jclass, jstring jUserId, jstring jDisplayName, jint jMinutes
 ) {
     auto uid = jUserId ? std::string(env->GetStringUTFChars(jUserId, nullptr)) : "";
@@ -2320,7 +2320,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserHideFor(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserHideIsHidden(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserHideIsHidden(
     JNIEnv* env, jclass, jstring jUserId
 ) {
     auto uid = jUserId ? std::string(env->GetStringUTFChars(jUserId, nullptr)) : "";
@@ -2329,7 +2329,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserHideIsHidden(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserHideGetActive(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserHideGetActive(
     JNIEnv* env, jclass
 ) {
     g_userHide.cleanExpired();
@@ -2340,7 +2340,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserHideGetActive
 // --- Message Queue ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueEnqueue(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgQueueEnqueue(
     JNIEnv* env, jclass,
     jstring jMsgId, jstring jRoomId, jstring jBody, jstring jFormattedBody,
     jint jOrder, jint jMaxRetries
@@ -2362,7 +2362,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueEnqueue(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueSetOrder(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgQueueSetOrder(
     JNIEnv* env, jclass, jstring jMsgId, jint jOrder
 ) {
     auto id = jMsgId ? std::string(env->GetStringUTFChars(jMsgId, nullptr)) : "";
@@ -2371,7 +2371,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueSetOrder(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueMarkFailed(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgQueueMarkFailed(
     JNIEnv* env, jclass, jstring jMsgId, jstring jError
 ) {
     auto id = jMsgId ? std::string(env->GetStringUTFChars(jMsgId, nullptr)) : "";
@@ -2382,7 +2382,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueMarkFaile
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueMarkSent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgQueueMarkSent(
     JNIEnv* env, jclass, jstring jMsgId
 ) {
     auto id = jMsgId ? std::string(env->GetStringUTFChars(jMsgId, nullptr)) : "";
@@ -2391,14 +2391,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueMarkSent(
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueuePendingCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgQueuePendingCount(
     JNIEnv*, jclass
 ) {
     return g_msgQueue.pendingCount();
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMsgQueueExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_msgQueue.exportJson();
@@ -2408,22 +2408,22 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMsgQueueExport(
 // --- Image Crop ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidCrop(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidCrop(
     JNIEnv*, jclass, jint jImgW, jint jImgH, jint jX, jint jY, jint jW, jint jH
 ) {
-    return progressive::isValidCrop(jImgW, jImgH, jX, jY, jW, jH) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidCrop(jImgW, jImgH, jX, jY, jW, jH) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Auto-Scroll ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeScrollPlan(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeScrollPlan(
     JNIEnv* env, jclass, jboolean jSmooth, jint jDurationMin, jint jTotalLines, jint jLineHeightPx
 ) {
     AutoScrollConfig cfg;
     cfg.smoothScroll = jSmooth;
     cfg.durationMinutes = jDurationMin;
-    auto plan = progressive::computeScrollPlan(cfg, jTotalLines, jLineHeightPx);
+    auto plan = pcp::computeScrollPlan(cfg, jTotalLines, jLineHeightPx);
 
     std::ostringstream json;
     json << "{";
@@ -2438,38 +2438,38 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeScrollPlan
 // --- Language Detection ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDetectLanguage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDetectLanguage(
     JNIEnv* env, jclass, jstring jText, jint jMethod
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
 
     auto method = static_cast<DetectionMethod>(jMethod);
-    auto result = progressive::detectLanguage(text, method);
+    auto result = pcp::detectLanguage(text, method);
 
     std::ostringstream json;
     json << R"({"langCode": ")" << result.langCode << R"(")";
     json << R"(,"langName": ")" << result.langName << R"(")";
     json << R"(,"confidence": )" << result.confidence;
-    json << R"(,"label": ")" << progressive::getLanguageLabel(result.langCode) << R"(")";
+    json << R"(,"label": ")" << pcp::getLanguageLabel(result.langCode) << R"(")";
     json << "}";
     return env->NewStringUTF(json.str().c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetLanguageLabel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetLanguageLabel(
     JNIEnv* env, jclass, jstring jCode
 ) {
     auto code = jCode ? std::string(env->GetStringUTFChars(jCode, nullptr)) : "";
     if (jCode) env->ReleaseStringUTFChars(jCode, code.c_str());
-    auto label = progressive::getLanguageLabel(code);
+    auto label = pcp::getLanguageLabel(code);
     return env->NewStringUTF(label.c_str());
 }
 
 // --- Language Hide ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLangHideAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLangHideAdd(
     JNIEnv* env, jclass,
     jstring jLangCode, jstring jRoomId, jstring jUserId,
     jboolean jSpecificUser, jint jMinutes
@@ -2486,7 +2486,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLangHideAdd(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLangHideIsHidden(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLangHideIsHidden(
     JNIEnv* env, jclass,
     jstring jLangCode, jstring jRoomId, jstring jUserId
 ) {
@@ -2504,7 +2504,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLangHideIsHidden(
 // --- Chat Push Down ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeChatPushDown(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeChatPushDown(
     JNIEnv* env, jclass, jstring jRoomId, jint jMinutes
 ) {
     auto roomId = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
@@ -2513,7 +2513,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeChatPushDown(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeChatIsPushedDown(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeChatIsPushedDown(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     auto roomId = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
@@ -2522,7 +2522,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeChatIsPushedDown(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeChatPushDownRestore(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeChatPushDownRestore(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     auto roomId = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
@@ -2533,7 +2533,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeChatPushDownResto
 // --- Emoji Blacklist ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistAdd(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEmojiBlacklistAdd(
     JNIEnv* env, jclass, jstring jEmoji
 ) {
     auto emoji = jEmoji ? std::string(env->GetStringUTFChars(jEmoji, nullptr)) : "";
@@ -2542,7 +2542,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistAdd
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistRemove(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEmojiBlacklistRemove(
     JNIEnv* env, jclass, jstring jEmoji
 ) {
     auto emoji = jEmoji ? std::string(env->GetStringUTFChars(jEmoji, nullptr)) : "";
@@ -2551,7 +2551,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistRem
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistIsBlocked(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEmojiBlacklistIsBlocked(
     JNIEnv* env, jclass, jstring jEmoji
 ) {
     auto emoji = jEmoji ? std::string(env->GetStringUTFChars(jEmoji, nullptr)) : "";
@@ -2560,7 +2560,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistIsB
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEmojiBlacklistExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_emojiBlacklist.exportJson();
@@ -2568,7 +2568,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistExp
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistImport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEmojiBlacklistImport(
     JNIEnv* env, jclass, jstring jJson
 ) {
     if (!jJson) return;
@@ -2580,7 +2580,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEmojiBlacklistImp
 // --- Avatar History ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAvatarAddChange(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeAvatarAddChange(
     JNIEnv* env, jclass, jstring jMxcUrl, jstring jEventId, jlong jTimestamp
 ) {
     auto mxc = jMxcUrl ? std::string(env->GetStringUTFChars(jMxcUrl, nullptr)) : "";
@@ -2591,7 +2591,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAvatarAddChange(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAvatarExportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeAvatarExportJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_avatarHistory.exportJson();
@@ -2599,7 +2599,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAvatarExportJson(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAvatarClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeAvatarClear(
     JNIEnv*, jclass
 ) {
     g_avatarHistory.clear();
@@ -2608,13 +2608,13 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAvatarClear(
 // --- Jump to Date with Time ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseJumpToDate(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseJumpToDate(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
 
-    auto target = progressive::parseJumpToDate(input);
+    auto target = pcp::parseJumpToDate(input);
 
     auto esc = [](const std::string& s) -> std::string {
         std::string out;
@@ -2632,7 +2632,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseJumpToDate(
     json << R"(,"day": )" << target.day;
     json << R"(,"hour": )" << target.hour;
     json << R"(,"minute": )" << target.minute;
-    json << R"(,"formatted": ")" << progressive::formatJumpTarget(target) << R"(")";
+    json << R"(,"formatted": ")" << pcp::formatJumpTarget(target) << R"(")";
     json << "}";
     return env->NewStringUTF(json.str().c_str());
 }
@@ -2640,7 +2640,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseJumpToDate(
 // --- Room Matching ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMatchRooms(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMatchRooms(
     JNIEnv* env, jclass, jstring jQuery, jstring jRoomsJson
 ) {
     auto query = jQuery ? std::string(env->GetStringUTFChars(jQuery, nullptr)) : "";
@@ -2699,7 +2699,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMatchRooms(
         }
     }
 
-    auto matches = progressive::matchRooms(query, rooms);
+    auto matches = pcp::matchRooms(query, rooms);
 
     auto esc = [](const std::string& s) -> std::string {
         std::string out;
@@ -2721,25 +2721,25 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMatchRooms(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsRoomId(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsRoomId(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    return progressive::isRoomId(input) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isRoomId(input) ? JNI_TRUE : JNI_FALSE;
 }
 
 
 // --- Event Links ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractEventLinks(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeExtractEventLinks(
     JNIEnv* env, jclass, jstring jBody
 ) {
     auto body = jBody ? std::string(env->GetStringUTFChars(jBody, nullptr)) : "";
     if (jBody) env->ReleaseStringUTFChars(jBody, body.c_str());
 
-    auto links = progressive::extractEventLinks(body);
+    auto links = pcp::extractEventLinks(body);
 
     auto esc = [](const std::string& s) -> std::string {
         std::string out;
@@ -2762,7 +2762,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractEventLinks
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatResolvedEvent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatResolvedEvent(
     JNIEnv* env, jclass, jstring jSender, jstring jBody
 ) {
     auto sender = jSender ? std::string(env->GetStringUTFChars(jSender, nullptr)) : "";
@@ -2770,7 +2770,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatResolvedEve
     if (jSender) env->ReleaseStringUTFChars(jSender, sender.c_str());
     if (jBody)   env->ReleaseStringUTFChars(jBody, body.c_str());
 
-    auto s = progressive::formatResolvedEventText(sender, body);
+    auto s = pcp::formatResolvedEventText(sender, body);
     return env->NewStringUTF(s.c_str());
 }
 
@@ -2778,62 +2778,62 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatResolvedEve
 // --- Timestamps with Seconds ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTimestamp(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatTimestamp(
     JNIEnv* env, jclass, jlong jEpochMs, jboolean jIncludeSeconds
 ) {
-    auto s = progressive::formatTimestamp(jEpochMs, jIncludeSeconds);
+    auto s = pcp::formatTimestamp(jEpochMs, jIncludeSeconds);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatFullTimestamp(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatFullTimestamp(
     JNIEnv* env, jclass, jlong jEpochMs
 ) {
-    auto s = progressive::formatFullTimestamp(jEpochMs);
+    auto s = pcp::formatFullTimestamp(jEpochMs);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Lightweight Call ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLightCallEnter(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLightCallEnter(
     JNIEnv* env, jclass
 ) {
     auto plan = g_lightCall.enterCallMode();
-    auto json = progressive::LightweightCallManager::planToJson(plan);
+    auto json = pcp::LightweightCallManager::planToJson(plan);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLightCallExit(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLightCallExit(
     JNIEnv* env, jclass
 ) {
     auto plan = g_lightCall.exitCallMode();
-    auto json = progressive::LightweightCallManager::planToJson(plan);
+    auto json = pcp::LightweightCallManager::planToJson(plan);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLightCallAssessMemory(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLightCallAssessMemory(
     JNIEnv* env, jclass
 ) {
     auto state = g_lightCall.assessMemory();
-    auto json = progressive::LightweightCallManager::memoryStateToJson(state);
+    auto json = pcp::LightweightCallManager::memoryStateToJson(state);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldUseLightweightMode(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeShouldUseLightweightMode(
     JNIEnv* env, jclass
 ) {
-    auto state = progressive::LightweightCallManager{}.assessMemory();
-    return progressive::LightweightCallManager::shouldUseLightweightMode(state) ? JNI_TRUE : JNI_FALSE;
+    auto state = pcp::LightweightCallManager{}.assessMemory();
+    return pcp::LightweightCallManager::shouldUseLightweightMode(state) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Scheduled Edits ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditSchedule(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditSchedule(
     JNIEnv* env, jclass,
     jstring jRoomId, jstring jTargetEventId, jstring jNewContent,
     jstring jContentUrl, jstring jFormattedContent, jstring jFormattedUrl,
@@ -2861,7 +2861,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditSchedule
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditCancel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditCancel(
     JNIEnv* env, jclass, jstring jEditId
 ) {
     auto id = jEditId ? std::string(env->GetStringUTFChars(jEditId, nullptr)) : "";
@@ -2870,7 +2870,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditCancel(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditGetDue(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditGetDue(
     JNIEnv* env, jclass
 ) {
     auto due = g_schedEdits.getDueEdits();
@@ -2883,14 +2883,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditGetDue(
     json << "[";
     for (size_t i = 0; i < due.size(); ++i) {
         if (i > 0) json << ",";
-        json << progressive::ScheduledEditQueue::editToJson(due[i]);
+        json << pcp::ScheduledEditQueue::editToJson(due[i]);
     }
     json << "]";
     return env->NewStringUTF(json.str().c_str());
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditMarkApplied(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditMarkApplied(
     JNIEnv* env, jclass, jstring jEditId
 ) {
     auto id = jEditId ? std::string(env->GetStringUTFChars(jEditId, nullptr)) : "";
@@ -2899,7 +2899,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditMarkAppl
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditMarkFailed(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditMarkFailed(
     JNIEnv* env, jclass, jstring jEditId, jstring jError
 ) {
     auto id = jEditId ? std::string(env->GetStringUTFChars(jEditId, nullptr)) : "";
@@ -2910,7 +2910,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditMarkFail
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditExport(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditExport(
     JNIEnv* env, jclass
 ) {
     auto json = g_schedEdits.exportJson();
@@ -2918,7 +2918,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditExport(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditStats(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSchedEditStats(
     JNIEnv* env, jclass
 ) {
     auto stats = g_schedEdits.getStats();
@@ -2936,49 +2936,49 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSchedEditStats(
 // --- SVG Renderer ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseSvg(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseSvg(
     JNIEnv* env, jclass, jstring jSvgData
 ) {
     auto svg = jSvgData ? std::string(env->GetStringUTFChars(jSvgData, nullptr)) : "";
     if (jSvgData) env->ReleaseStringUTFChars(jSvgData, svg.c_str());
-    auto doc = progressive::parseSvg(svg);
-    auto json = progressive::renderSvgToDrawCommands(doc);
+    auto doc = pcp::parseSvg(svg);
+    auto json = pcp::renderSvgToDrawCommands(doc);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidSvg(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidSvg(
     JNIEnv* env, jclass, jstring jData
 ) {
     auto data = jData ? std::string(env->GetStringUTFChars(jData, nullptr)) : "";
     if (jData) env->ReleaseStringUTFChars(jData, data.c_str());
-    return progressive::isValidSvg(data) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidSvg(data) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Drawing Canvas ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawMoveTo(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawMoveTo(
     JNIEnv*, jclass, jdouble jX, jdouble jY
 ) { g_drawCanvas.moveTo(jX, jY); }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawLineTo(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawLineTo(
     JNIEnv*, jclass, jdouble jX, jdouble jY
 ) { g_drawCanvas.lineTo(jX, jY); }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawSetColor(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawSetColor(
     JNIEnv*, jclass, jint jArgb
 ) { g_drawCanvas.setColor(jArgb); }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawSetWidth(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawSetWidth(
     JNIEnv*, jclass, jdouble jW
 ) { g_drawCanvas.setWidth(jW); }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawExportJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawExportJson(
     JNIEnv* env, jclass
 ) {
     auto json = g_drawCanvas.exportCommandsJson();
@@ -2986,7 +2986,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawExportJson(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawToSvgPath(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawToSvgPath(
     JNIEnv* env, jclass
 ) {
     auto d = g_drawCanvas.toSvgPath();
@@ -2994,14 +2994,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawToSvgPath(
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDrawClear(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDrawClear(
     JNIEnv*, jclass
 ) { g_drawCanvas.clear(); }
 
 // --- Profile Swiper ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeProfileSwiperSetProfiles(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeProfileSwiperSetProfiles(
     JNIEnv* env, jclass, jstring jProfilesJson
 ) {
     auto json = jProfilesJson ? std::string(env->GetStringUTFChars(jProfilesJson, nullptr)) : "[]";
@@ -3037,128 +3037,128 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeProfileSwiperSetP
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeProfileSwiperNext(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeProfileSwiperNext(
     JNIEnv* env, jclass
 ) {
     auto state = g_profileSwiper.swipeNext();
-    auto json = progressive::ProfileSwiper::stateToJson(state);
+    auto json = pcp::ProfileSwiper::stateToJson(state);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeProfileSwiperPrev(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeProfileSwiperPrev(
     JNIEnv* env, jclass
 ) {
     auto state = g_profileSwiper.swipePrev();
-    auto json = progressive::ProfileSwiper::stateToJson(state);
+    auto json = pcp::ProfileSwiper::stateToJson(state);
     return env->NewStringUTF(json.c_str());
 }
 
 // --- Rainbow Generator ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGenerateRainbow(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGenerateRainbow(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto rainbow = progressive::generateRainbow(text);
+    auto rainbow = pcp::generateRainbow(text);
     return env->NewStringUTF(rainbow.c_str());
 }
 
 // --- Text Formats ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatSpoiler(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatSpoiler(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::formatSpoiler(text);
+    auto s = pcp::formatSpoiler(text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatEmote(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatEmote(
     JNIEnv* env, jclass, jstring jSender, jstring jText
 ) {
     auto sender = jSender ? std::string(env->GetStringUTFChars(jSender, nullptr)) : "";
     auto text   = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jSender) env->ReleaseStringUTFChars(jSender, sender.c_str());
     if (jText)   env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::formatEmote(sender, text);
+    auto s = pcp::formatEmote(sender, text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatShrug(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatShrug(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::formatShrug(text);
+    auto s = pcp::formatShrug(text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatLenny(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatLenny(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::formatLenny(text);
+    auto s = pcp::formatLenny(text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTableFlip(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatTableFlip(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::formatTableFlip(text);
+    auto s = pcp::formatTableFlip(text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatPlain(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatPlain(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::formatPlain(text);
+    auto s = pcp::formatPlain(text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsEmojiOnly(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsEmojiOnly(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    return progressive::isEmojiOnly(text) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isEmojiOnly(text) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeTruncateText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeTruncateText(
     JNIEnv* env, jclass, jstring jText, jint jMaxLen
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::truncateText(text, jMaxLen);
+    auto s = pcp::truncateText(text, jMaxLen);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- URL Tools ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseUrl(
     JNIEnv* env, jclass, jstring jUrl
 ) {
     auto url = jUrl ? std::string(env->GetStringUTFChars(jUrl, nullptr)) : "";
     if (jUrl) env->ReleaseStringUTFChars(jUrl, url.c_str());
 
-    auto p = progressive::parseUrl(url);
+    auto p = pcp::parseUrl(url);
     auto esc = [](const std::string& s) -> std::string {
         std::string out;
         for (char c : s) { if (c == '"') out += "\\\""; else out += c; }
@@ -3177,49 +3177,49 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseUrl(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractFirstUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeExtractFirstUrl(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    auto s = progressive::extractFirstUrl(text);
+    auto s = pcp::extractFirstUrl(text);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUrlEncode(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUrlEncode(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    auto s = progressive::urlEncode(input);
+    auto s = pcp::urlEncode(input);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUrlDecode(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUrlDecode(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    auto s = progressive::urlDecode(input);
+    auto s = pcp::urlDecode(input);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildMatrixToUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildMatrixToUrl(
     JNIEnv* env, jclass, jstring jRoomId
 ) {
     auto id = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
     if (jRoomId) env->ReleaseStringUTFChars(jRoomId, id.c_str());
-    auto s = progressive::buildMatrixToUrl(id);
+    auto s = pcp::buildMatrixToUrl(id);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Notification Priority ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeNotifPriority(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeNotifPriority(
     JNIEnv* env, jclass,
     jboolean jIsDM, jboolean jIsMention, jboolean jIsRoomMention,
     jboolean jIsKeyword, jboolean jIsCall, jboolean jIsBackground,
@@ -3232,7 +3232,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeNotifPrior
     content.isKeywordMatch = jIsKeyword;
     content.isCallInvite = jIsCall;
 
-    auto prio = progressive::computeNotifPriority(content, jIsBackground, jDnd, jFavorite);
+    auto prio = pcp::computeNotifPriority(content, jIsBackground, jDnd, jFavorite);
 
     std::ostringstream json;
     json << "{";
@@ -3247,7 +3247,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeNotifPrior
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatNotifTitle(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatNotifTitle(
     JNIEnv* env, jclass,
     jstring jRoomName, jstring jSenderName, jboolean jIsDM
 ) {
@@ -3258,12 +3258,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatNotifTitle(
     if (jRoomName)   env->ReleaseStringUTFChars(jRoomName, c.roomName.c_str());
     if (jSenderName) env->ReleaseStringUTFChars(jSenderName, c.senderName.c_str());
 
-    auto s = progressive::formatNotifTitle(c);
+    auto s = pcp::formatNotifTitle(c);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatNotifBody(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatNotifBody(
     JNIEnv* env, jclass,
     jstring jBody, jstring jSenderName, jboolean jIsDM, jboolean jShowSender
 ) {
@@ -3274,38 +3274,38 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatNotifBody(
     if (jBody)       env->ReleaseStringUTFChars(jBody, c.body.c_str());
     if (jSenderName) env->ReleaseStringUTFChars(jSenderName, c.senderName.c_str());
 
-    auto s = progressive::formatNotifBody(c, jShowSender);
+    auto s = pcp::formatNotifBody(c, jShowSender);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsRoomMention(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsRoomMention(
     JNIEnv* env, jclass, jstring jBody
 ) {
     auto body = jBody ? std::string(env->GetStringUTFChars(jBody, nullptr)) : "";
     if (jBody) env->ReleaseStringUTFChars(jBody, body.c_str());
-    return progressive::isRoomMention(body) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isRoomMention(body) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Matrix Patterns ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsUserId(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsUserId(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    return progressive::isUserId(input) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isUserId(input) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseMatrixToPermalink(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseMatrixToPermalink(
     JNIEnv* env, jclass, jstring jUrl
 ) {
     auto url = jUrl ? std::string(env->GetStringUTFChars(jUrl, nullptr)) : "";
     if (jUrl) env->ReleaseStringUTFChars(jUrl, url.c_str());
 
-    auto info = progressive::parseMatrixToPermalink(url);
+    auto info = pcp::parseMatrixToPermalink(url);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -3320,18 +3320,18 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseMatrixToPerm
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidEmail(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidEmail(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    return progressive::isValidEmail(input) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidEmail(input) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Desync Detector ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDesyncTrackEvent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDesyncTrackEvent(
     JNIEnv* env, jclass,
     jstring jEventId, jstring jServerName, jlong jTimestamp
 ) {
@@ -3343,7 +3343,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDesyncTrackEvent(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDesyncCheck(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDesyncCheck(
     JNIEnv* env, jclass, jstring jRoomId, jstring jCurrentServer
 ) {
     auto rid = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
@@ -3352,14 +3352,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDesyncCheck(
     if (jCurrentServer) env->ReleaseStringUTFChars(jCurrentServer, cs.c_str());
 
     auto report = g_desyncDetector.checkDesync(rid, cs);
-    auto json = progressive::DesyncDetector::reportToJson(report);
+    auto json = pcp::DesyncDetector::reportToJson(report);
     return env->NewStringUTF(json.c_str());
 }
 
 // --- Latency Tracker ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLatencyRecord(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLatencyRecord(
     JNIEnv* env, jclass,
     jdouble jLatencyMs, jstring jServer, jstring jEndpoint, jboolean jSuccess
 ) {
@@ -3371,48 +3371,48 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLatencyRecord(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLatencyStats(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLatencyStats(
     JNIEnv* env, jclass
 ) {
     auto stats = g_latencyTracker.computeStats();
-    auto json = progressive::LatencyTracker::statsToJson(stats);
+    auto json = pcp::LatencyTracker::statsToJson(stats);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLatencyStatsText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLatencyStatsText(
     JNIEnv* env, jclass
 ) {
     auto stats = g_latencyTracker.computeStats();
-    auto text = progressive::LatencyTracker::statsToText(stats);
+    auto text = pcp::LatencyTracker::statsToText(stats);
     return env->NewStringUTF(text.c_str());
 }
 
 // --- String Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSanitizeRoomName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSanitizeRoomName(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    auto s = progressive::sanitizeRoomName(input);
+    auto s = pcp::sanitizeRoomName(input);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeWordCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeWordCount(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    return progressive::wordCount(input);
+    return pcp::wordCount(input);
 }
 
 // --- Location Sharing ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationStartSession(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLocationStartSession(
     JNIEnv* env, jclass,
     jstring jRoomId, jstring jUserId, jint jIntervalSec, jboolean jAutoStop, jint jAutoStopMin
 ) {
@@ -3430,7 +3430,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationStartSess
 }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationStopSession(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLocationStopSession(
     JNIEnv* env, jclass, jstring jSessionId
 ) {
     auto id = jSessionId ? std::string(env->GetStringUTFChars(jSessionId, nullptr)) : "";
@@ -3439,7 +3439,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationStopSessi
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationIsDue(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLocationIsDue(
     JNIEnv* env, jclass, jstring jSessionId
 ) {
     auto id = jSessionId ? std::string(env->GetStringUTFChars(jSessionId, nullptr)) : "";
@@ -3448,7 +3448,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationIsDue(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationFormatMessage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLocationFormatMessage(
     JNIEnv* env, jclass,
     jdouble jLat, jdouble jLon, jdouble jAcc, jstring jLabel
 ) {
@@ -3463,7 +3463,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationFormatMes
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationFormatGeoJson(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLocationFormatGeoJson(
     JNIEnv* env, jclass,
     jdouble jLat, jdouble jLon, jdouble jAcc
 ) {
@@ -3476,7 +3476,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationFormatGeo
 }
 
 JNIEXPORT jdouble JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationDistance(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeLocationDistance(
     JNIEnv*, jclass,
     jdouble jLat1, jdouble jLon1, jdouble jLat2, jdouble jLon2
 ) {
@@ -3487,21 +3487,21 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeLocationDistance(
 // --- Color Utils ---
 
 JNIEXPORT jdouble JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeContrastRatio(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeContrastRatio(
     JNIEnv*, jclass, jint jFgR, jint jFgG, jint jFgB, jint jBgR, jint jBgG, jint jBgB
 ) {
     RgbaColor fg{jFgR, jFgG, jFgB, 255, true};
     RgbaColor bg{jBgR, jBgG, jBgB, 255, true};
-    return progressive::contrastRatio(fg, bg);
+    return pcp::contrastRatio(fg, bg);
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseColor(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseColor(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    auto color = progressive::parseColor(input);
+    auto color = pcp::parseColor(input);
     std::ostringstream json;
     json << R"({"valid": )" << (color.valid ? "true" : "false");
     json << R"(,"r": )" << color.r << R"(,"g": )" << color.g << R"(,"b": )" << color.b;
@@ -3513,29 +3513,29 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseColor(
 // --- E2EE Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetTrustLabel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetTrustLabel(
     JNIEnv* env, jclass, jint jLevel
 ) {
-    auto s = progressive::getTrustLabel(static_cast<TrustLevel>(jLevel));
+    auto s = pcp::getTrustLabel(static_cast<TrustLevel>(jLevel));
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetTrustBadge(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetTrustBadge(
     JNIEnv* env, jclass, jint jLevel
 ) {
-    auto s = progressive::getTrustBadge(static_cast<TrustLevel>(jLevel));
+    auto s = pcp::getTrustBadge(static_cast<TrustLevel>(jLevel));
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Thumbnail ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeThumbnail(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeThumbnail(
     JNIEnv* env, jclass, jint jSrcW, jint jSrcH, jint jMaxW, jint jMaxH, jboolean jUpscale, jint jQuality
 ) {
     ThumbnailParams p{jSrcW, jSrcH, jMaxW, jMaxH, static_cast<bool>(jUpscale), jQuality};
-    auto result = progressive::computeThumbnail(p);
+    auto result = pcp::computeThumbnail(p);
     std::ostringstream json;
     json << R"({"targetW": )" << result.targetW;
     json << R"(,"targetH": )" << result.targetH;
@@ -3545,28 +3545,28 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeThumbnail(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildThumbnailUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildThumbnailUrl(
     JNIEnv* env, jclass, jstring jMxc, jint jW, jint jH, jstring jMethod, jboolean jAnim
 ) {
     auto mxc = jMxc ? std::string(env->GetStringUTFChars(jMxc, nullptr)) : "";
     auto method = jMethod ? std::string(env->GetStringUTFChars(jMethod, nullptr)) : "scale";
     if (jMxc) env->ReleaseStringUTFChars(jMxc, mxc.c_str());
     if (jMethod) env->ReleaseStringUTFChars(jMethod, method.c_str());
-    auto s = progressive::buildThumbnailUrl(mxc, jW, jH, method, jAnim);
+    auto s = pcp::buildThumbnailUrl(mxc, jW, jH, method, jAnim);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Waveform ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSuggestBarCount(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSuggestBarCount(
     JNIEnv*, jclass, jlong jDurationMs
 ) {
-    return progressive::suggestBarCount(jDurationMs);
+    return pcp::suggestBarCount(jDurationMs);
 }
 
 JNIEXPORT jdouble JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeRmsVolume(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeRmsVolume(
     JNIEnv*, jclass, jintArray jSamples
 ) {
     // This would need to read jintArray samples — placeholder
@@ -3576,7 +3576,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeRmsVolume(
 // --- Session Timeout ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldLock(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeShouldLock(
     JNIEnv*, jclass,
     jint jLockMethod, jint jIdleTimeoutMin, jint jMaxSessionMin,
     jint jMaxFailedPin, jboolean jLockOnBg,
@@ -3597,35 +3597,35 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldLock(
     state.isLocked = jIsLocked;
     state.isBackground = jIsBackground;
 
-    return progressive::shouldLock(policy, state) ? JNI_TRUE : JNI_FALSE;
+    return pcp::shouldLock(policy, state) ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidPin(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidPin(
     JNIEnv* env, jclass, jstring jPin, jint jMinLen, jint jMaxLen
 ) {
     auto pin = jPin ? std::string(env->GetStringUTFChars(jPin, nullptr)) : "";
     if (jPin) env->ReleaseStringUTFChars(jPin, pin.c_str());
-    return progressive::isValidPin(pin, jMinLen, jMaxLen) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidPin(pin, jMinLen, jMaxLen) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Spellcheck ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEditDistance(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEditDistance(
     JNIEnv* env, jclass, jstring jA, jstring jB
 ) {
     auto a = jA ? std::string(env->GetStringUTFChars(jA, nullptr)) : "";
     auto b = jB ? std::string(env->GetStringUTFChars(jB, nullptr)) : "";
     if (jA) env->ReleaseStringUTFChars(jA, a.c_str());
     if (jB) env->ReleaseStringUTFChars(jB, b.c_str());
-    return progressive::SpellChecker::editDistance(a, b);
+    return pcp::SpellChecker::editDistance(a, b);
 }
 
 // --- Typing Indicator ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTypingText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatTypingText(
     JNIEnv* env, jclass, jstring jNamesJson
 ) {
     auto json = jNamesJson ? std::string(env->GetStringUTFChars(jNamesJson, nullptr)) : "[]";
@@ -3643,92 +3643,92 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTypingText(
         pos = end + 1;
     }
 
-    auto s = progressive::formatTypingText(names);
+    auto s = pcp::formatTypingText(names);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Link Preview ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsImageUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsImageUrl(
     JNIEnv* env, jclass, jstring jUrl
 ) {
     auto url = jUrl ? std::string(env->GetStringUTFChars(jUrl, nullptr)) : "";
     if (jUrl) env->ReleaseStringUTFChars(jUrl, url.c_str());
-    return progressive::isImageUrl(url) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isImageUrl(url) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Hash Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSha256Hex(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSha256Hex(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
-    auto hash = progressive::sha256Hex(input);
+    auto hash = pcp::sha256Hex(input);
     return env->NewStringUTF(hash.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGenerateToken(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGenerateToken(
     JNIEnv* env, jclass, jint jBytes
 ) {
-    auto token = progressive::generateToken(jBytes > 0 ? jBytes : 32);
+    auto token = pcp::generateToken(jBytes > 0 ? jBytes : 32);
     return env->NewStringUTF(token.c_str());
 }
 
 // --- Room Stats ---
 
 JNIEXPORT jdouble JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeMessagesPerDay(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeMessagesPerDay(
     JNIEnv*, jclass, jint jCount, jlong jFirstTs, jlong jLastTs
 ) {
-    return progressive::computeMessagesPerDay(jCount, jFirstTs, jLastTs);
+    return pcp::computeMessagesPerDay(jCount, jFirstTs, jLastTs);
 }
 
 // --- Mention Parser ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildUserPill(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildUserPill(
     JNIEnv* env, jclass, jstring jUserId, jstring jDisplayName
 ) {
     auto userId = jUserId ? std::string(env->GetStringUTFChars(jUserId, nullptr)) : "";
     auto name   = jDisplayName ? std::string(env->GetStringUTFChars(jDisplayName, nullptr)) : "";
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
     if (jDisplayName) env->ReleaseStringUTFChars(jDisplayName, name.c_str());
-    auto s = progressive::buildUserPill(userId, name);
+    auto s = pcp::buildUserPill(userId, name);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeStripPills(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeStripPills(
     JNIEnv* env, jclass, jstring jHtml
 ) {
     auto html = jHtml ? std::string(env->GetStringUTFChars(jHtml, nullptr)) : "";
     if (jHtml) env->ReleaseStringUTFChars(jHtml, html.c_str());
-    auto s = progressive::stripPills(html);
+    auto s = pcp::stripPills(html);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Poll Utils ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidPollQuestion(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidPollQuestion(
     JNIEnv* env, jclass, jstring jQuestion
 ) {
     auto q = jQuestion ? std::string(env->GetStringUTFChars(jQuestion, nullptr)) : "";
     if (jQuestion) env->ReleaseStringUTFChars(jQuestion, q.c_str());
-    return progressive::isValidPollQuestion(q) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidPollQuestion(q) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Reaction Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetQuickReactions(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetQuickReactions(
     JNIEnv* env, jclass
 ) {
-    auto reactions = progressive::getQuickReactions();
+    auto reactions = pcp::getQuickReactions();
     std::ostringstream json;
     json << "[";
     for (size_t i = 0; i < reactions.size(); ++i) {
@@ -3742,63 +3742,63 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetQuickReactions
 // --- File Validator ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatFileSize(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatFileSize(
     JNIEnv* env, jclass, jlong jBytes
 ) {
-    auto s = progressive::formatFileSize(jBytes);
+    auto s = pcp::formatFileSize(jBytes);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetExtensionFromName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetExtensionFromName(
     JNIEnv* env, jclass, jstring jFileName
 ) {
     auto name = jFileName ? std::string(env->GetStringUTFChars(jFileName, nullptr)) : "";
     if (jFileName) env->ReleaseStringUTFChars(jFileName, name.c_str());
-    auto s = progressive::getFileExtension(name);
+    auto s = pcp::getFileExtension(name);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Date Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatChatTimestamp(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatChatTimestamp(
     JNIEnv* env, jclass, jlong jEpochMs, jboolean jIncludeSeconds
 ) {
-    auto s = progressive::formatChatTimestamp(jEpochMs, jIncludeSeconds);
+    auto s = pcp::formatChatTimestamp(jEpochMs, jIncludeSeconds);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatRelativeTime(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatRelativeTime(
     JNIEnv* env, jclass, jlong jEpochMs
 ) {
-    auto s = progressive::formatRelativeTime(jEpochMs);
+    auto s = pcp::formatRelativeTime(jEpochMs);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Message Queue ---
 
 JNIEXPORT jdouble JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeTextSimilarity(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeTextSimilarity(
     JNIEnv* env, jclass, jstring jA, jstring jB
 ) {
     auto a = jA ? std::string(env->GetStringUTFChars(jA, nullptr)) : "";
     auto b = jB ? std::string(env->GetStringUTFChars(jB, nullptr)) : "";
     if (jA) env->ReleaseStringUTFChars(jA, a.c_str());
     if (jB) env->ReleaseStringUTFChars(jB, b.c_str());
-    return progressive::textSimilarity(a, b);
+    return pcp::textSimilarity(a, b);
 }
 
 // --- Pinned Events ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParsePinnedEventIds(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParsePinnedEventIds(
     JNIEnv* env, jclass, jstring jStateJson
 ) {
     auto json = jStateJson ? std::string(env->GetStringUTFChars(jStateJson, nullptr)) : "";
     if (jStateJson) env->ReleaseStringUTFChars(jStateJson, json.c_str());
-    auto ids = progressive::parsePinnedEventIds(json);
+    auto ids = pcp::parsePinnedEventIds(json);
     std::ostringstream out;
     out << "[";
     for (size_t i = 0; i < ids.size(); ++i) {
@@ -3810,7 +3810,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParsePinnedEventI
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildPinnedEventsContent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildPinnedEventsContent(
     JNIEnv* env, jclass, jstring jIdsJson
 ) {
     auto json = jIdsJson ? std::string(env->GetStringUTFChars(jIdsJson, nullptr)) : "[]";
@@ -3828,33 +3828,33 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildPinnedEvents
         pos = end + 1;
     }
 
-    auto s = progressive::buildPinnedEventsContent(ids);
+    auto s = pcp::buildPinnedEventsContent(ids);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Server Capabilities ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseServerCapabilities(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseServerCapabilities(
     JNIEnv* env, jclass, jstring jWellKnownJson
 ) {
     auto json = jWellKnownJson ? std::string(env->GetStringUTFChars(jWellKnownJson, nullptr)) : "";
     if (jWellKnownJson) env->ReleaseStringUTFChars(jWellKnownJson, json.c_str());
-    auto caps = progressive::parseServerCapabilities(json);
-    auto result = progressive::capabilitiesToJson(caps);
+    auto caps = pcp::parseServerCapabilities(json);
+    auto result = pcp::capabilitiesToJson(caps);
     return env->NewStringUTF(result.c_str());
 }
 
 // --- Username Validator ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateUsername(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeValidateUsername(
     JNIEnv* env, jclass, jstring jUsername
 ) {
     auto username = jUsername ? std::string(env->GetStringUTFChars(jUsername, nullptr)) : "";
     if (jUsername) env->ReleaseStringUTFChars(jUsername, username.c_str());
 
-    auto result = progressive::validateUsername(username);
+    auto result = pcp::validateUsername(username);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -3870,33 +3870,33 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateUsername(
 // --- Emoji Analyzer ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCountEmojis(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCountEmojis(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    return progressive::countEmojis(text);
+    return pcp::countEmojis(text);
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsEmojiOnlyMessage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsEmojiOnlyMessage(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    return progressive::isEmojiOnlyMessage(text) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isEmojiOnlyMessage(text) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Identity Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeResolveMatrixId(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeResolveMatrixId(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
 
-    auto result = progressive::resolveMatrixId(input);
+    auto result = pcp::resolveMatrixId(input);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -3909,19 +3909,19 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeResolveMatrixId(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetInitials(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetInitials(
     JNIEnv* env, jclass, jstring jName
 ) {
     auto name = jName ? std::string(env->GetStringUTFChars(jName, nullptr)) : "";
     if (jName) env->ReleaseStringUTFChars(jName, name.c_str());
-    auto s = progressive::getInitials(name);
+    auto s = pcp::getInitials(name);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Notification Analyzer ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSuggestQuietHours(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeSuggestQuietHours(
     JNIEnv* env, jclass, jstring jByHourJson
 ) {
     // Parse byHour array from JSON
@@ -3945,7 +3945,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSuggestQuietHours
         }
     }
 
-    auto [start, end] = progressive::suggestQuietHours(a);
+    auto [start, end] = pcp::suggestQuietHours(a);
     std::ostringstream out;
     out << R"({"startHour": )" << start << R"(,"endHour": )" << end << "}";
     return env->NewStringUTF(out.str().c_str());
@@ -3954,17 +3954,17 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeSuggestQuietHours
 // --- Sync Analyzer ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatProgressBar(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatProgressBar(
     JNIEnv* env, jclass, jdouble jPercent, jint jWidth
 ) {
-    auto s = progressive::formatProgressBar(jPercent, jWidth);
+    auto s = pcp::formatProgressBar(jPercent, jWidth);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- User Rating ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeStreak(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeStreak(
     JNIEnv* env, jclass, jstring jTimestampsJson
 ) {
     auto json = jTimestampsJson ? std::string(env->GetStringUTFChars(jTimestampsJson, nullptr)) : "[]";
@@ -3985,7 +3985,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeStreak(
         }
     }
 
-    auto streak = progressive::computeStreak(ts);
+    auto streak = pcp::computeStreak(ts);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4000,17 +4000,17 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeStreak(
 // --- Event Timeline ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatGroupLabel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatGroupLabel(
     JNIEnv* env, jclass, jlong jTimestampMs
 ) {
-    auto s = progressive::formatGroupLabel(jTimestampMs);
+    auto s = pcp::formatGroupLabel(jTimestampMs);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Room Directory ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractServers(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeExtractServers(
     JNIEnv* env, jclass, jstring jRoomsJson
 ) {
     auto json = jRoomsJson ? std::string(env->GetStringUTFChars(jRoomsJson, nullptr)) : "[]";
@@ -4047,25 +4047,25 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractServers(
 // --- Widget Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetWidgetTypeName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetWidgetTypeName(
     JNIEnv* env, jclass, jstring jType
 ) {
     auto type = jType ? std::string(env->GetStringUTFChars(jType, nullptr)) : "";
     if (jType) env->ReleaseStringUTFChars(jType, type.c_str());
-    auto s = progressive::getWidgetTypeName(type);
+    auto s = pcp::getWidgetTypeName(type);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- SSO Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateHomeserverUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeValidateHomeserverUrl(
     JNIEnv* env, jclass, jstring jInput
 ) {
     auto input = jInput ? std::string(env->GetStringUTFChars(jInput, nullptr)) : "";
     if (jInput) env->ReleaseStringUTFChars(jInput, input.c_str());
 
-    auto result = progressive::validateHomeserverUrl(input);
+    auto result = pcp::validateHomeserverUrl(input);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4083,43 +4083,43 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateHomeserve
 // --- Backup Utils ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidRecoveryKey(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidRecoveryKey(
     JNIEnv* env, jclass, jstring jKey
 ) {
     auto key = jKey ? std::string(env->GetStringUTFChars(jKey, nullptr)) : "";
     if (jKey) env->ReleaseStringUTFChars(jKey, key.c_str());
-    return progressive::isValidRecoveryKey(key) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidRecoveryKey(key) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Device Manager ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatDeviceLastSeen(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatDeviceLastSeen(
     JNIEnv* env, jclass, jlong jLastSeenMs
 ) {
-    auto s = progressive::formatDeviceLastSeen(jLastSeenMs);
+    auto s = pcp::formatDeviceLastSeen(jLastSeenMs);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsDeviceInactive(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsDeviceInactive(
     JNIEnv*, jclass, jlong jLastSeenMs
 ) {
-    return progressive::isDeviceInactive(jLastSeenMs) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isDeviceInactive(jLastSeenMs) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Presence ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatPresence(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatPresence(
     JNIEnv* env, jclass, jint jPresence
 ) {
-    auto s = progressive::formatPresence(static_cast<Presence>(jPresence));
+    auto s = pcp::formatPresence(static_cast<Presence>(jPresence));
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatPresenceLine(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatPresenceLine(
     JNIEnv* env, jclass, jint jPresence, jlong jLastActiveAgoMs, jstring jStatusMsg
 ) {
     PresenceInfo info;
@@ -4127,14 +4127,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatPresenceLin
     info.lastActiveAgoMs = jLastActiveAgoMs;
     info.statusMessage = jStatusMsg ? std::string(env->GetStringUTFChars(jStatusMsg, nullptr)) : "";
     if (jStatusMsg) env->ReleaseStringUTFChars(jStatusMsg, info.statusMessage.c_str());
-    auto s = progressive::formatPresenceLine(info);
+    auto s = pcp::formatPresenceLine(info);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Room Permissions ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetSuggestedRole(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetSuggestedRole(
     JNIEnv* env, jclass, jstring jPlJson, jstring jUserId
 ) {
     auto plJson = jPlJson ? std::string(env->GetStringUTFChars(jPlJson, nullptr)) : "{}";
@@ -4142,41 +4142,41 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetSuggestedRole(
     if (jPlJson) env->ReleaseStringUTFChars(jPlJson, plJson.c_str());
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
 
-    auto pl = progressive::parseRoomPowerLevels(plJson);
-    auto role = progressive::getSuggestedRole(pl, userId);
+    auto pl = pcp::parseRoomPowerLevels(plJson);
+    auto role = pcp::getSuggestedRole(pl, userId);
     return env->NewStringUTF(role.c_str());
 }
 
 // --- Room Summary ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatLastMessagePreview(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatLastMessagePreview(
     JNIEnv* env, jclass, jstring jSender, jstring jBody, jboolean jEncrypted
 ) {
     auto sender = jSender ? std::string(env->GetStringUTFChars(jSender, nullptr)) : "";
     auto body = jBody ? std::string(env->GetStringUTFChars(jBody, nullptr)) : "";
     if (jSender) env->ReleaseStringUTFChars(jSender, sender.c_str());
     if (jBody) env->ReleaseStringUTFChars(jBody, body.c_str());
-    auto s = progressive::formatLastMessagePreview(sender, body, jEncrypted);
+    auto s = pcp::formatLastMessagePreview(sender, body, jEncrypted);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Membership ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatMembership(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatMembership(
     JNIEnv* env, jclass, jstring jMembershipStr
 ) {
     auto ms = jMembershipStr ? std::string(env->GetStringUTFChars(jMembershipStr, nullptr)) : "";
     if (jMembershipStr) env->ReleaseStringUTFChars(jMembershipStr, ms.c_str());
-    auto s = progressive::formatMembership(progressive::parseMembership(ms));
+    auto s = pcp::formatMembership(pcp::parseMembership(ms));
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Event Validator ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateEvent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeValidateEvent(
     JNIEnv* env, jclass,
     jstring jEventId, jstring jEventType, jstring jSenderId,
     jstring jContentJson, jstring jOriginTs, jstring jBlockedUsersJson
@@ -4208,26 +4208,26 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidateEvent(
         pos = end + 1;
     }
 
-    auto result = progressive::validateEvent(eventId, eventType, senderId, contentJson, originTs, blocked);
-    auto json = progressive::eventValidationToJson(result);
+    auto result = pcp::validateEvent(eventId, eventType, senderId, contentJson, originTs, blocked);
+    auto json = pcp::eventValidationToJson(result);
     return env->NewStringUTF(json.c_str());
 }
 
 // --- Room Encryption ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsRoomEncrypted(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsRoomEncrypted(
     JNIEnv* env, jclass, jstring jStateJson
 ) {
     auto json = jStateJson ? std::string(env->GetStringUTFChars(jStateJson, nullptr)) : "";
     if (jStateJson) env->ReleaseStringUTFChars(jStateJson, json.c_str());
-    return progressive::isRoomEncrypted(json) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isRoomEncrypted(json) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Login Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildLoginBody(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildLoginBody(
     JNIEnv* env, jclass,
     jstring jUserId, jstring jPassword, jstring jDeviceName, jstring jDeviceId
 ) {
@@ -4242,14 +4242,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildLoginBody(
     if (jDeviceName) env->ReleaseStringUTFChars(jDeviceName, params.deviceName.c_str());
     if (jDeviceId)   env->ReleaseStringUTFChars(jDeviceId, params.deviceId.c_str());
 
-    auto s = progressive::buildLoginBody(params);
+    auto s = pcp::buildLoginBody(params);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Account Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidatePasswordWithUsername(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeValidatePasswordWithUsername(
     JNIEnv* env, jclass, jstring jPassword, jstring jUsername
 ) {
     auto pass = jPassword ? std::string(env->GetStringUTFChars(jPassword, nullptr)) : "";
@@ -4257,7 +4257,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidatePasswordW
     if (jPassword) env->ReleaseStringUTFChars(jPassword, pass.c_str());
     if (jUsername) env->ReleaseStringUTFChars(jUsername, user.c_str());
 
-    auto result = progressive::validateAccountPassword(pass, user);
+    auto result = pcp::validateAccountPassword(pass, user);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4277,17 +4277,17 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeValidatePasswordW
 // --- Connection Monitor ---
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeConnMonitorOnConnected(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeConnMonitorOnConnected(
     JNIEnv*, jclass
 ) { g_connectionMonitor.onConnected(); }
 
 JNIEXPORT void JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeConnMonitorOnDisconnected(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeConnMonitorOnDisconnected(
     JNIEnv*, jclass
 ) { g_connectionMonitor.onDisconnected(); }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeConnMonitorGetStatus(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeConnMonitorGetStatus(
     JNIEnv* env, jclass
 ) {
     auto state = g_connectionMonitor.getState();
@@ -4300,7 +4300,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeConnMonitorGetSta
     json << R"(,"downtimeText": ")" << esc(state.downtimeText) << R"(")";
     json << R"(,"statusText": ")" << esc(state.statusText) << R"(")";
     json << R"(,"reconnectAttempts": )" << state.reconnectAttempts;
-    json << R"(,"bannerColor": ")" << progressive::ConnectionMonitor::getBannerColor(state.downtimeMs) << R"(")";
+    json << R"(,"bannerColor": ")" << pcp::ConnectionMonitor::getBannerColor(state.downtimeMs) << R"(")";
     json << "}";
     return env->NewStringUTF(json.str().c_str());
 }
@@ -4308,13 +4308,13 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeConnMonitorGetSta
 // --- Push Rules ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParsePushCondition(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParsePushCondition(
     JNIEnv* env, jclass, jstring jConditionJson
 ) {
     auto json = jConditionJson ? std::string(env->GetStringUTFChars(jConditionJson, nullptr)) : "";
     if (jConditionJson) env->ReleaseStringUTFChars(jConditionJson, json.c_str());
 
-    auto cond = progressive::parsePushCondition(json);
+    auto cond = pcp::parsePushCondition(json);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4330,25 +4330,25 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParsePushConditio
 // --- Space Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildSpaceChildContent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildSpaceChildContent(
     JNIEnv* env, jclass, jboolean jSuggested, jstring jOrder, jboolean jAutoJoin, jboolean jCanonical
 ) {
     auto order = jOrder ? std::string(env->GetStringUTFChars(jOrder, nullptr)) : "";
     if (jOrder) env->ReleaseStringUTFChars(jOrder, order.c_str());
-    auto s = progressive::buildSpaceChildContent(jSuggested, order, jAutoJoin, jCanonical);
+    auto s = pcp::buildSpaceChildContent(jSuggested, order, jAutoJoin, jCanonical);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Event Relations ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseEventRelation(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseEventRelation(
     JNIEnv* env, jclass, jstring jContentJson
 ) {
     auto json = jContentJson ? std::string(env->GetStringUTFChars(jContentJson, nullptr)) : "";
     if (jContentJson) env->ReleaseStringUTFChars(jContentJson, json.c_str());
 
-    auto rel = progressive::parseEventRelation(json);
+    auto rel = pcp::parseEventRelation(json);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4356,7 +4356,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseEventRelatio
     out << R"({"relType": ")" << esc(rel.relType) << R"(")";
     out << R"(,"eventId": ")" << esc(rel.eventId) << R"(")";
     out << R"(,"key": ")" << esc(rel.key) << R"(")";
-    out << R"(,"description": ")" << progressive::formatRelationDescription(rel) << R"(")";
+    out << R"(,"description": ")" << pcp::formatRelationDescription(rel) << R"(")";
     out << "}";
     return env->NewStringUTF(out.str().c_str());
 }
@@ -4364,7 +4364,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseEventRelatio
 // --- E2EE Decoration ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeE2eeDecoration(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeE2eeDecoration(
     JNIEnv* env, jclass,
     jboolean jEncrypted, jboolean jVerified, jboolean jCrossSigned,
     jboolean jDecryptError, jboolean jBlacklisted, jboolean jBeforeJoined,
@@ -4373,7 +4373,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeE2eeDecora
     auto err = jErrorReason ? std::string(env->GetStringUTFChars(jErrorReason, nullptr)) : "";
     if (jErrorReason) env->ReleaseStringUTFChars(jErrorReason, err.c_str());
 
-    auto dec = progressive::computeE2eeDecoration(
+    auto dec = pcp::computeE2eeDecoration(
         jEncrypted, jVerified, jCrossSigned, jDecryptError, jBlacklisted, jBeforeJoined, err);
 
     auto esc = [](const std::string& s) -> std::string {
@@ -4392,68 +4392,68 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeE2eeDecora
 // --- Room List ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetBadgeText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetBadgeText(
     JNIEnv* env, jclass, jint jCount, jint jHighlights
 ) {
     RoomListItem room;
     room.notificationCount = jCount;
     room.highlightCount = jHighlights;
-    auto s = progressive::getBadgeText(room);
+    auto s = pcp::getBadgeText(room);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Media Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeMimeToMsgType(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeMimeToMsgType(
     JNIEnv* env, jclass, jstring jMimeType
 ) {
     auto mime = jMimeType ? std::string(env->GetStringUTFChars(jMimeType, nullptr)) : "";
     if (jMimeType) env->ReleaseStringUTFChars(jMimeType, mime.c_str());
-    auto s = progressive::mimeToMsgType(mime);
+    auto s = pcp::mimeToMsgType(mime);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsValidBlurhash(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsValidBlurhash(
     JNIEnv* env, jclass, jstring jHash
 ) {
     auto hash = jHash ? std::string(env->GetStringUTFChars(jHash, nullptr)) : "";
     if (jHash) env->ReleaseStringUTFChars(jHash, hash.c_str());
-    return progressive::isValidBlurhash(hash) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isValidBlurhash(hash) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Notification Settings ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatNotifMode(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatNotifMode(
     JNIEnv* env, jclass, jint jMode
 ) {
-    auto s = progressive::formatNotifMode(static_cast<NotifMode>(jMode));
+    auto s = pcp::formatNotifMode(static_cast<NotifMode>(jMode));
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Invite Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildInviteBody(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildInviteBody(
     JNIEnv* env, jclass, jstring jUserId, jstring jReason
 ) {
     auto userId = jUserId ? std::string(env->GetStringUTFChars(jUserId, nullptr)) : "";
     auto reason = jReason ? std::string(env->GetStringUTFChars(jReason, nullptr)) : "";
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
     if (jReason) env->ReleaseStringUTFChars(jReason, reason.c_str());
-    auto s = progressive::buildInviteBody(userId, reason);
+    auto s = pcp::buildInviteBody(userId, reason);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Verification ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetVerificationEmojis(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetVerificationEmojis(
     JNIEnv* env, jclass
 ) {
-    auto emojis = progressive::getVerificationEmojis();
+    auto emojis = pcp::getVerificationEmojis();
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4471,50 +4471,50 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetVerificationEm
 // --- Session Manager ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatSessionBadge(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatSessionBadge(
     JNIEnv* env, jclass, jint jUnread, jint jHighlights
 ) {
     SessionInfo s;
     s.unreadCount = jUnread;
     s.highlightCount = jHighlights;
-    auto badge = progressive::formatSessionBadge(s);
+    auto badge = pcp::formatSessionBadge(s);
     return env->NewStringUTF(badge.c_str());
 }
 
 // --- Auth Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatRateLimitMessage(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatRateLimitMessage(
     JNIEnv* env, jclass, jstring jResponseJson, jint jHttpStatus
 ) {
     auto json = jResponseJson ? std::string(env->GetStringUTFChars(jResponseJson, nullptr)) : "";
     if (jResponseJson) env->ReleaseStringUTFChars(jResponseJson, json.c_str());
-    auto limit = progressive::parseRateLimit(json, jHttpStatus);
-    auto s = progressive::formatRateLimitMessage(limit);
+    auto limit = pcp::parseRateLimit(json, jHttpStatus);
+    auto s = pcp::formatRateLimitMessage(limit);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Content Scanner ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsServerNotice(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsServerNotice(
     JNIEnv* env, jclass, jstring jContentJson
 ) {
     auto json = jContentJson ? std::string(env->GetStringUTFChars(jContentJson, nullptr)) : "";
     if (jContentJson) env->ReleaseStringUTFChars(jContentJson, json.c_str());
-    return progressive::isServerNotice(json) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isServerNotice(json) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Event Encryption ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseEncryptedHeader(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseEncryptedHeader(
     JNIEnv* env, jclass, jstring jContentJson
 ) {
     auto json = jContentJson ? std::string(env->GetStringUTFChars(jContentJson, nullptr)) : "";
     if (jContentJson) env->ReleaseStringUTFChars(jContentJson, json.c_str());
 
-    auto header = progressive::parseEncryptedHeader(json);
+    auto header = pcp::parseEncryptedHeader(json);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4530,55 +4530,55 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseEncryptedHea
 // --- Report Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetReasonDescription(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetReasonDescription(
     JNIEnv* env, jclass, jstring jCode
 ) {
     auto code = jCode ? std::string(env->GetStringUTFChars(jCode, nullptr)) : "";
     if (jCode) env->ReleaseStringUTFChars(jCode, code.c_str());
-    auto s = progressive::getReasonDescription(code);
+    auto s = pcp::getReasonDescription(code);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- WebRTC Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatCallDuration(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatCallDuration(
     JNIEnv* env, jclass, jint jSeconds
 ) {
-    auto s = progressive::formatCallDuration(jSeconds);
+    auto s = pcp::formatCallDuration(jSeconds);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsCallEvent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsCallEvent(
     JNIEnv* env, jclass, jstring jEventType
 ) {
     auto et = jEventType ? std::string(env->GetStringUTFChars(jEventType, nullptr)) : "";
     if (jEventType) env->ReleaseStringUTFChars(jEventType, et.c_str());
-    return progressive::isCallEvent(et) ? JNI_TRUE : JNI_FALSE;
+    return pcp::isCallEvent(et) ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Message Retry ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeRetryDelay(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeRetryDelay(
     JNIEnv*, jclass, jint jRetryCount, jint jMaxDelayMs
 ) {
-    return static_cast<jint>(progressive::computeRetryDelay(jRetryCount, jMaxDelayMs));
+    return static_cast<jint>(pcp::computeRetryDelay(jRetryCount, jMaxDelayMs));
 }
 
 // --- Message Retry Queue ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDecideRetry(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeDecideRetry(
     JNIEnv* env, jclass, jint jRetryCount, jint jErrorCode, jstring jRetryAfterHeader
 ) {
-    progressive::PendingMessage msg;
+    pcp::PendingMessage msg;
     msg.retryCount = jRetryCount;
     auto retryAfter = jRetryAfterHeader ? std::string(env->GetStringUTFChars(jRetryAfterHeader, nullptr)) : "";
     if (jRetryAfterHeader) env->ReleaseStringUTFChars(jRetryAfterHeader, retryAfter.c_str());
 
-    auto decision = progressive::decideRetry(msg, jErrorCode, retryAfter);
+    auto decision = pcp::decideRetry(msg, jErrorCode, retryAfter);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4591,10 +4591,10 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeDecideRetry(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatMessageStatus(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatMessageStatus(
     JNIEnv* env, jclass, jint jState
 ) {
-    auto s = progressive::formatMessageStatus(static_cast<progressive::MessageSendState>(jState));
+    auto s = pcp::formatMessageStatus(static_cast<pcp::MessageSendState>(jState));
     return env->NewStringUTF(s.c_str());
 }
 
@@ -4602,12 +4602,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatMessageStat
 // Ported from: PowerLevelsContent.kt, RoomPermissions.kt, PowerLevelsHelper.kt
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParsePowerLevels(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParsePowerLevels(
     JNIEnv* env, jclass, jstring jJson
 ) {
     auto json = jJson ? std::string(env->GetStringUTFChars(jJson, nullptr)) : "{}";
     if (jJson) env->ReleaseStringUTFChars(jJson, json.c_str());
-    auto pl = progressive::parsePowerLevels(json);
+    auto pl = pcp::parsePowerLevels(json);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4626,7 +4626,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParsePowerLevels(
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeUserPermissions(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeUserPermissions(
     JNIEnv* env, jclass, jstring jPowerLevelsJson, jstring jUserId
 ) {
     auto json = jPowerLevelsJson ? std::string(env->GetStringUTFChars(jPowerLevelsJson, nullptr)) : "{}";
@@ -4634,99 +4634,99 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeUserPermis
     if (jPowerLevelsJson) env->ReleaseStringUTFChars(jPowerLevelsJson, json.c_str());
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
 
-    auto pl = progressive::parsePowerLevels(json);
-    auto perms = progressive::computeUserPermissions(pl, userId);
-    auto result = progressive::permissionsToJson(perms);
+    auto pl = pcp::parsePowerLevels(json);
+    auto perms = pcp::computeUserPermissions(pl, userId);
+    auto result = pcp::permissionsToJson(perms);
     return env->NewStringUTF(result.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetUserRole(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetUserRole(
     JNIEnv* env, jclass, jint jPowerLevel
 ) {
-    progressive::UserPermissions perms;
+    pcp::UserPermissions perms;
     perms.powerLevel = jPowerLevel;
     perms.isOwner = jPowerLevel >= 100;
     perms.isAdmin = jPowerLevel >= 50;
     perms.canKick = jPowerLevel >= 50;
-    auto role = progressive::getUserRole(perms);
+    auto role = pcp::getUserRole(perms);
     return env->NewStringUTF(role.c_str());
 }
 
 // --- Sync Utils ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildSyncFilter(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildSyncFilter(
     JNIEnv* env, jclass, jboolean jIncludeThreads, jboolean jIncludePresence, jint jTimelineLimit
 ) {
     SyncFilter filter;
     filter.includeThreads = jIncludeThreads;
     filter.includePresence = jIncludePresence;
     filter.timelineLimit = jTimelineLimit;
-    auto s = progressive::buildSyncFilter(filter);
+    auto s = pcp::buildSyncFilter(filter);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Event Display ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeClassifyEvent(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeClassifyEvent(
     JNIEnv* env, jclass, jstring jEventType, jstring jMsgType
 ) {
     auto et = jEventType ? std::string(env->GetStringUTFChars(jEventType, nullptr)) : "";
     auto mt = jMsgType ? std::string(env->GetStringUTFChars(jMsgType, nullptr)) : "";
     if (jEventType) env->ReleaseStringUTFChars(jEventType, et.c_str());
     if (jMsgType) env->ReleaseStringUTFChars(jMsgType, mt.c_str());
-    return env->NewStringUTF(std::to_string(static_cast<int>(progressive::classifyEvent(et, mt))).c_str());
+    return env->NewStringUTF(std::to_string(static_cast<int>(pcp::classifyEvent(et, mt))).c_str());
 }
 
 // --- Permalink ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildEventPermalink(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildEventPermalink(
     JNIEnv* env, jclass, jstring jRoomId, jstring jEventId
 ) {
     auto roomId = jRoomId ? std::string(env->GetStringUTFChars(jRoomId, nullptr)) : "";
     auto eventId = jEventId ? std::string(env->GetStringUTFChars(jEventId, nullptr)) : "";
     if (jRoomId) env->ReleaseStringUTFChars(jRoomId, roomId.c_str());
     if (jEventId) env->ReleaseStringUTFChars(jEventId, eventId.c_str());
-    auto s = progressive::buildEventPermalink(roomId, eventId);
+    auto s = pcp::buildEventPermalink(roomId, eventId);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Network Monitor ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetRecommendedMediaQuality(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetRecommendedMediaQuality(
     JNIEnv* env, jclass,
     jint jType, jboolean jConnected, jboolean jMetered,
     jint jSignal, jdouble jLatency, jdouble jLoss
 ) {
-    auto quality = progressive::computeNetworkQuality(
+    auto quality = pcp::computeNetworkQuality(
         static_cast<NetworkType>(jType), jConnected, jMetered, false,
         jSignal, jLatency, jLoss
     );
-    auto s = progressive::getRecommendedMediaQuality(quality);
+    auto s = pcp::getRecommendedMediaQuality(quality);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Client Info ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeCompareSemver(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeCompareSemver(
     JNIEnv* env, jclass, jstring jA, jstring jB
 ) {
     auto a = jA ? std::string(env->GetStringUTFChars(jA, nullptr)) : "";
     auto b = jB ? std::string(env->GetStringUTFChars(jB, nullptr)) : "";
     if (jA) env->ReleaseStringUTFChars(jA, a.c_str());
     if (jB) env->ReleaseStringUTFChars(jB, b.c_str());
-    return progressive::compareSemver(a, b);
+    return pcp::compareSemver(a, b);
 }
 
 // --- Keyshare ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildKeyRequestBody(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeBuildKeyRequestBody(
     JNIEnv* env, jclass,
     jstring jRoomId, jstring jSessionId, jstring jSenderKey, jstring jAlgorithm,
     jstring jRequestId, jstring jDeviceId
@@ -4745,56 +4745,56 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeBuildKeyRequestBo
     if (jRequestId) env->ReleaseStringUTFChars(jRequestId, requestId.c_str());
     if (jDeviceId)  env->ReleaseStringUTFChars(jDeviceId, deviceId.c_str());
 
-    auto s = progressive::buildKeyRequestBody(roomId, sessionId, senderKey, algorithm, requestId, deviceId);
+    auto s = pcp::buildKeyRequestBody(roomId, sessionId, senderKey, algorithm, requestId, deviceId);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Display Name ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserIdToDisplayName(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserIdToDisplayName(
     JNIEnv* env, jclass, jstring jUserId
 ) {
     auto userId = jUserId ? std::string(env->GetStringUTFChars(jUserId, nullptr)) : "";
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
-    auto s = progressive::userIdToDisplayName(userId);
+    auto s = pcp::userIdToDisplayName(userId);
     return env->NewStringUTF(s.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUserIdToColor(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUserIdToColor(
     JNIEnv* env, jclass, jstring jUserId
 ) {
     auto userId = jUserId ? std::string(env->GetStringUTFChars(jUserId, nullptr)) : "";
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
-    auto s = progressive::userIdToColor(userId);
+    auto s = pcp::userIdToColor(userId);
     return env->NewStringUTF(s.c_str());
 }
 
 // --- Message Location ---
 
 JNIEXPORT jint JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeEstimatePaginationRequests(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeEstimatePaginationRequests(
     JNIEnv*, jclass, jint jMissing, jint jPageSize
 ) {
-    return progressive::estimatePaginationRequests(jMissing, jPageSize);
+    return pcp::estimatePaginationRequests(jMissing, jPageSize);
 }
 
 // --- Timeline Utils ---
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldAutoScroll(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeShouldAutoScroll(
     JNIEnv*, jclass, jboolean jIsOwnMsg
 ) {
     LiveTimelineState state;
-    auto result = progressive::shouldAutoScroll(state, jIsOwnMsg);
+    auto result = pcp::shouldAutoScroll(state, jIsOwnMsg);
     return result ? JNI_TRUE : JNI_FALSE;
 }
 
 // --- Cross Signing ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseCrossSigningStatus(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseCrossSigningStatus(
     JNIEnv* env, jclass, jstring jAccountDataJson, jstring jUserId
 ) {
     auto json = jAccountDataJson ? std::string(env->GetStringUTFChars(jAccountDataJson, nullptr)) : "";
@@ -4802,7 +4802,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseCrossSigning
     if (jAccountDataJson) env->ReleaseStringUTFChars(jAccountDataJson, json.c_str());
     if (jUserId) env->ReleaseStringUTFChars(jUserId, userId.c_str());
 
-    auto status = progressive::parseCrossSigningStatus(json, userId);
+    auto status = pcp::parseCrossSigningStatus(json, userId);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4816,10 +4816,10 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseCrossSigning
 // --- Edit History ---
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetEditBadgeText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetEditBadgeText(
     JNIEnv* env, jclass, jint jEditCount
 ) {
-    auto s = progressive::getEditBadgeText(jEditCount);
+    auto s = pcp::getEditBadgeText(jEditCount);
     return env->NewStringUTF(s.c_str());
 }
 
@@ -4829,7 +4829,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetEditBadgeText(
 //              RoomSummary.kt (unread count display)
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeReadMarker(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeComputeReadMarker(
     JNIEnv* env, jclass,
     jstring jLastReadEventId,
     jobjectArray jLoadedEventIds,
@@ -4884,13 +4884,13 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeComputeReadMarker
     std::string myUserId = jMyUserId ? env->GetStringUTFChars(jMyUserId, nullptr) : "";
     if (jMyUserId) env->ReleaseStringUTFChars(jMyUserId, myUserId.c_str());
 
-    auto state = progressive::computeReadMarker(lastReadEventId, eventIds, senders, isMention, isHighlight, myUserId);
-    auto json = progressive::readMarkerToJson(state);
+    auto state = pcp::computeReadMarker(lastReadEventId, eventIds, senders, isMention, isHighlight, myUserId);
+    auto json = pcp::readMarkerToJson(state);
     return env->NewStringUTF(json.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldShowJumpToUnread(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeShouldShowJumpToUnread(
     JNIEnv* env, jclass, jstring jReadMarkerJson
 ) {
     std::string json = jReadMarkerJson ? env->GetStringUTFChars(jReadMarkerJson, nullptr) : "{}";
@@ -4904,7 +4904,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeShouldShowJumpToU
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatUnreadJumpLabel(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatUnreadJumpLabel(
     JNIEnv* env, jclass, jstring jReadMarkerJson
 ) {
     std::string json = jReadMarkerJson ? env->GetStringUTFChars(jReadMarkerJson, nullptr) : "{}";
@@ -4949,14 +4949,14 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatUnreadJumpL
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAdvanceReadMarker(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeAdvanceReadMarker(
     JNIEnv* env, jclass, jstring jRoomId, jstring jLatestEventId
 ) {
     std::string roomId = jRoomId ? env->GetStringUTFChars(jRoomId, nullptr) : "";
     if (jRoomId) env->ReleaseStringUTFChars(jRoomId, roomId.c_str());
     std::string latestEventId = jLatestEventId ? env->GetStringUTFChars(jLatestEventId, nullptr) : "";
     if (jLatestEventId) env->ReleaseStringUTFChars(jLatestEventId, latestEventId.c_str());
-    auto newMark = progressive::advanceReadMarker(roomId, latestEventId);
+    auto newMark = pcp::advanceReadMarker(roomId, latestEventId);
     return env->NewStringUTF(newMark.c_str());
 }
 
@@ -4964,13 +4964,13 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeAdvanceReadMarker
 // Ported from: SlashCommandParser.kt, SlashCommand.kt, Command.kt
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseSlashCommand(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseSlashCommand(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
 
-    auto cmd = progressive::parseSlashCommand(text);
+    auto cmd = pcp::parseSlashCommand(text);
     auto esc = [](const std::string& s) -> std::string {
         std::string out; for (char c : s) { if (c == '"') out += "\\\""; else out += c; } return out;
     };
@@ -4980,13 +4980,13 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseSlashCommand
     json << R"(,"arguments": ")" << esc(cmd.arguments) << R"(")";
     json << R"(,"type": )" << static_cast<int>(cmd.type);
     json << R"(,"needsMatrixId": )" << (cmd.needsMatrixİd ? "true" : "false");
-    json << R"(,"isMessage": )" << (progressive::isMessageCommand(cmd.type) ? "true" : "false");
-    json << R"(,"isAdmin": )" << (progressive::isAdminCommand(cmd.type) ? "true" : "false") << "}";
+    json << R"(,"isMessage": )" << (pcp::isMessageCommand(cmd.type) ? "true" : "false");
+    json << R"(,"isAdmin": )" << (pcp::isAdminCommand(cmd.type) ? "true" : "false") << "}";
     return env->NewStringUTF(json.str().c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatSlashCommand(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatSlashCommand(
     JNIEnv* env, jclass,
     jstring jCommand, jstring jArguments, jint jType, jstring jSenderDisplayName
 ) {
@@ -4995,27 +4995,27 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatSlashComman
     if (jArguments) env->ReleaseStringUTFChars(jArguments, arguments.c_str());
     if (jSenderDisplayName) env->ReleaseStringUTFChars(jSenderDisplayName, sender.c_str());
 
-    progressive::SlashCommand cmd;
-    cmd.type = static_cast<progressive::SlashCommandType>(jType);
+    pcp::SlashCommand cmd;
+    cmd.type = static_cast<pcp::SlashCommandType>(jType);
     cmd.arguments = arguments;
-    auto formatted = progressive::formatSlashCommand(cmd, sender);
+    auto formatted = pcp::formatSlashCommand(cmd, sender);
     return env->NewStringUTF(formatted.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsKnownSlashCommand(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsKnownSlashCommand(
     JNIEnv* env, jclass, jstring jText
 ) {
     auto text = jText ? std::string(env->GetStringUTFChars(jText, nullptr)) : "";
     if (jText) env->ReleaseStringUTFChars(jText, text.c_str());
-    return progressive::isKnownSlashCommand(text);
+    return pcp::isKnownSlashCommand(text);
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetAvailableCommands(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeGetAvailableCommands(
     JNIEnv* env, jclass
 ) {
-    auto cmds = progressive::getAvailableCommands();
+    auto cmds = pcp::getAvailableCommands();
     std::ostringstream json;
     json << "[";
     for (size_t i = 0; i < cmds.size(); ++i) {
@@ -5030,7 +5030,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeGetAvailableComma
 // Ported from: TypingUsersTracker.kt, TypingHelper.kt, TypingView.kt
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUpdateTypingState(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeUpdateTypingState(
     JNIEnv* env, jclass,
     jstring jRoomId,
     jobjectArray jTypingUserIds,
@@ -5060,15 +5060,15 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeUpdateTypingState
         env->DeleteLocalRef(jName);
     }
 
-    auto state = progressive::updateTypingState(roomId, userIds, names, jNowMs);
-    auto json = progressive::typingStateToJson(state);
+    auto state = pcp::updateTypingState(roomId, userIds, names, jNowMs);
+    auto json = pcp::typingStateToJson(state);
     return env->NewStringUTF(json.c_str());
 }
 
 #if 0 // v0.3 late-add JNI bridges — duplicates, needs fixes
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTypingText(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeFormatTypingText(
     JNIEnv* env, jclass, jstring jTypingStateJson
 ) {
     // Quick-parse the typing state from JSON
@@ -5076,7 +5076,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTypingText(
     if (jTypingStateJson) env->ReleaseStringUTFChars(jTypingStateJson, json.c_str());
 
     // Parse typingUsers array
-    progressive::TypingState state;
+    pcp::TypingState state;
     state.hasAnyoneTyping = json.find(R"("hasAnyoneTyping": true)") != std::string::npos ||
                             json.find(R"("hasAnyoneTyping":true)") != std::string::npos;
 
@@ -5088,12 +5088,12 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeFormatTypingText(
     }
     state.typingCount = static_cast<int>(state.typingUsers.size());
 
-    auto text = progressive::formatTypingText(state, 3);
+    auto text = pcp::formatTypingText(state, 3);
     return env->NewStringUTF(text.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsUserTyping(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsUserTyping(
     JNIEnv* env, jclass, jstring jTypingStateJson, jstring jUserId, jlong jNowMs
 ) {
     auto json = jTypingStateJson ? std::string(env->GetStringUTFChars(jTypingStateJson, nullptr)) : "{}";
@@ -5109,7 +5109,7 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsUserTyping(
 // Ported from: UrlPreviewer.kt, EventHtmlRenderer.kt
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseUrlPreview(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeParseUrlPreview(
     JNIEnv* env, jclass, jstring jHtml, jstring jBaseUrl
 ) {
     auto html = jHtml ? std::string(env->GetStringUTFChars(jHtml, nullptr)) : "";
@@ -5117,49 +5117,49 @@ Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeParseUrlPreview(
     if (jHtml) env->ReleaseStringUTFChars(jHtml, html.c_str());
     if (jBaseUrl) env->ReleaseStringUTFChars(jBaseUrl, baseUrl.c_str());
 
-    auto preview = progressive::parseUrlPreview(html, baseUrl);
-    auto json = progressive::urlPreviewToJson(preview);
+    auto preview = pcp::parseUrlPreview(html, baseUrl);
+    auto json = pcp::urlPreviewToJson(preview);
     return env->NewStringUTF(json.str().c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeExtractHtmlTitle(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeExtractHtmlTitle(
     JNIEnv* env, jclass, jstring jHtml
 ) {
     auto html = jHtml ? std::string(env->GetStringUTFChars(jHtml, nullptr)) : "";
     if (jHtml) env->ReleaseStringUTFChars(jHtml, html.c_str());
-    auto title = progressive::extractHtmlTitle(html);
+    auto title = pcp::extractHtmlTitle(html);
     return env->NewStringUTF(title.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeResolveUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeResolveUrl(
     JNIEnv* env, jclass, jstring jBaseUrl, jstring jRelative
 ) {
     auto base = jBaseUrl ? std::string(env->GetStringUTFChars(jBaseUrl, nullptr)) : "";
     auto rel = jRelative ? std::string(env->GetStringUTFChars(jRelative, nullptr)) : "";
     if (jBaseUrl) env->ReleaseStringUTFChars(jBaseUrl, base.c_str());
     if (jRelative) env->ReleaseStringUTFChars(jRelative, rel.c_str());
-    auto resolved = progressive::resolveUrl(base, rel);
+    auto resolved = pcp::resolveUrl(base, rel);
     return env->NewStringUTF(resolved.c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeIsImageUrl(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeIsImageUrl(
     JNIEnv* env, jclass, jstring jUrl
 ) {
     auto url = jUrl ? std::string(env->GetStringUTFChars(jUrl, nullptr)) : "";
     if (jUrl) env->ReleaseStringUTFChars(jUrl, url.c_str());
-    return progressive::isImageUrl(url);
+    return pcp::isImageUrl(url);
 }
 
 JNIEXPORT jstring JNICALL
-Java_im_vector_app_features_jumptodate_ProgressiveNative_nativeStripHtmlTags(
+Java_im_vector_app_features_jumptodate_PcpNative_nativeStripHtmlTags(
     JNIEnv* env, jclass, jstring jHtml
 ) {
     auto html = jHtml ? std::string(env->GetStringUTFChars(jHtml, nullptr)) : "";
     if (jHtml) env->ReleaseStringUTFChars(jHtml, html.c_str());
-    auto stripped = progressive::stripHtmlTags(html);
+    auto stripped = pcp::stripHtmlTags(html);
     return env->NewStringUTF(stripped.c_str());
 }
 

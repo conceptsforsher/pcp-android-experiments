@@ -1,11 +1,11 @@
-#include "progressive/webrtc_utils.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/webrtc_utils.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <chrono>
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 CallInfo parseCallInvite(const std::string& eventContentJson, const std::string& eventId,
     const std::string& roomId, const std::string& senderId) {
@@ -164,4 +164,4 @@ bool isCallEvent(const std::string& eventType) {
            eventType == "m.call.reject";
 }
 
-} // namespace progressive
+} // namespace pcp

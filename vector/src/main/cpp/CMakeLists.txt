@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.22.1)
-project("progressive_native")
+project("pcp_native")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(
-    progressive_native
+    pcp_native
     SHARED
     src/jumptodate.cpp
     src/json_parser.cpp
@@ -137,7 +137,7 @@ add_library(
 )
 
 target_include_directories(
-    progressive_native
+    pcp_native
     PUBLIC
     include
 )
@@ -148,9 +148,9 @@ find_library(log_lib log)
 add_subdirectory(libolm)
 
 target_link_libraries(
-    progressive_native
+    pcp_native
     ${log_lib}
     olm
 )
 
-target_compile_definitions(progressive_native PRIVATE PROGRESSIVE_HAS_OLM=1)
+target_compile_definitions(pcp_native PRIVATE PCP_HAS_OLM=1)

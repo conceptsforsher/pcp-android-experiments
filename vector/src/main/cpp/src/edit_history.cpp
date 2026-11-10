@@ -1,11 +1,11 @@
-#include "progressive/edit_history.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/edit_history.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 EditHistory parseEditHistory(const std::string& originalEventId, const std::string& originalBody,
     const std::string& originalSenderId, const std::string& originalSenderName,
@@ -139,4 +139,4 @@ std::string getEditBadgeText(int editCount) {
     return "Edited " + std::to_string(editCount) + " times";
 }
 
-} // namespace progressive
+} // namespace pcp

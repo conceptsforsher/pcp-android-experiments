@@ -1,5 +1,5 @@
-#include "progressive/device_manager.hpp"
-#include "progressive/json_parser.hpp"
+#include "pcp/device_manager.hpp"
+#include "pcp/json_parser.hpp"
 #include <sstream>
 #include <algorithm>
 #include <chrono>
@@ -8,7 +8,7 @@
 #include <chrono>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 DeviceStats parseDeviceList(const std::string& apiResponseJson, const std::string& currentDeviceId) {
     DeviceStats stats;
@@ -208,4 +208,4 @@ std::string buildSessionRenameBody(const std::string& sessionId, const std::stri
     return R"({"session_id": ")" + esc(sessionId) + R"(", "display_name": ")" + esc(newName) + R"("})";
 }
 
-} // namespace progressive
+} // namespace pcp

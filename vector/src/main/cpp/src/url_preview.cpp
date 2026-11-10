@@ -1,10 +1,10 @@
-#include "progressive/url_preview.hpp"
+#include "pcp/url_preview.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cctype>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // Helper: extract content of a named attribute from HTML
 static std::string getAttr(const std::string& tag, const std::string& attr) {
@@ -241,4 +241,4 @@ std::string urlPreviewToJson(const UrlPreview& preview) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

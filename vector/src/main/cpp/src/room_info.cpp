@@ -1,9 +1,9 @@
-#include "progressive/room_info.hpp"
+#include "pcp/room_info.hpp"
 #include <sstream>
 #include <ctime>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 bool isLikelyFullHistory(int cachedCount, int estimatedTotal) {
     if (estimatedTotal <= 0) return false;
@@ -50,4 +50,4 @@ int estimateTotalEvents(int cachedCount, bool hasMoreHistory) {
     return 0; // unknown
 }
 
-} // namespace progressive
+} // namespace pcp

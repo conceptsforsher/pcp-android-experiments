@@ -1,10 +1,10 @@
-#include "progressive/slash_command.hpp"
+#include "pcp/slash_command.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cctype>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Command table ----
 // Original Kotlin (Command.kt): companion object with all known commands
@@ -213,4 +213,4 @@ bool isAdminCommand(SlashCommandType type) {
     return false;
 }
 
-} // namespace progressive
+} // namespace pcp

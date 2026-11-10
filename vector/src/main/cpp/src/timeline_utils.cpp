@@ -1,4 +1,4 @@
-#include "progressive/timeline_utils.hpp"
+#include "pcp/timeline_utils.hpp"
 #include <sstream>
 #include <algorithm>
 #include <iomanip>
@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 std::vector<std::string> mergeTimelineChunks(const std::vector<TimelineChunk>& chunks) {
     if (chunks.empty()) return {};
@@ -118,4 +118,4 @@ bool hasScrolledAway(const LiveTimelineState& state, int visibleFirstIndex,
     return eventsFromEnd > thresholdFromEnd;
 }
 
-} // namespace progressive
+} // namespace pcp

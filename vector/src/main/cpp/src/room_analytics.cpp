@@ -1,4 +1,4 @@
-#include "progressive/room_analytics.hpp"
+#include "pcp/room_analytics.hpp"
 #include <sstream>
 #include <algorithm>
 #include <unordered_set>
@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace progressive {
+namespace pcp {
 
 std::string extractServerName(const std::string& mxid) {
     auto colon = mxid.find(':');
@@ -170,4 +170,4 @@ std::string analyticsToJson(const RoomAnalytics& a) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

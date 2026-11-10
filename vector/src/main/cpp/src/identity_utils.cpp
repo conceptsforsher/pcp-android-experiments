@@ -1,5 +1,5 @@
-#include "progressive/identity_utils.hpp"
-#include "progressive/matrix_patterns.hpp"
+#include "pcp/identity_utils.hpp"
+#include "pcp/matrix_patterns.hpp"
 #include <sstream>
 #include <regex>
 #include <algorithm>
@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <regex>
 
-namespace progressive {
+namespace pcp {
 
 ResolvedId resolveMatrixId(const std::string& input) {
     ResolvedId result;
@@ -187,4 +187,4 @@ std::vector<std::string> suggestAliases(const std::string& roomName, int maxResu
     return aliases;
 }
 
-} // namespace progressive
+} // namespace pcp

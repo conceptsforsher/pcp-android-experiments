@@ -1,10 +1,10 @@
-#include "progressive/room_summary.hpp"
+#include "pcp/room_summary.hpp"
 #include <sstream>
 #include <algorithm>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 RoomListStats computeRoomListStats(const std::vector<RoomSummaryInfo>& rooms) {
     RoomListStats stats;
@@ -130,4 +130,4 @@ std::string roomListStatsToJson(const RoomListStats& stats) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

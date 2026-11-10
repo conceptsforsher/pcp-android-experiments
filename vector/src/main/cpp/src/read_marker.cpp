@@ -1,9 +1,9 @@
-#include "progressive/read_marker.hpp"
+#include "pcp/read_marker.hpp"
 #include <sstream>
 #include <algorithm>
 #include <sstream>
 
-namespace progressive {
+namespace pcp {
 
 ReadMarkerState computeReadMarker(const std::string& lastReadEventId,
     const std::vector<std::string>& loadedEventIds,
@@ -105,4 +105,4 @@ std::string readMarkerToJson(const ReadMarkerState& state) {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp

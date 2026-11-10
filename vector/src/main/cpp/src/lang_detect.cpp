@@ -1,4 +1,4 @@
-#include "progressive/lang_detect.hpp"
+#include "pcp/lang_detect.hpp"
 #include <sstream>
 #include <algorithm>
 #include <chrono>
@@ -8,7 +8,7 @@
 #include <sstream>
 #include <unordered_map>
 
-namespace progressive {
+namespace pcp {
 
 // ---- Language Detection ----
 
@@ -306,4 +306,4 @@ void EmojiBlacklist::importJson(const std::string& json) {
     }
 }
 
-} // namespace progressive
+} // namespace pcp
