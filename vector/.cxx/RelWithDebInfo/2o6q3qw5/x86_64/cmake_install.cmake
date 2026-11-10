@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/progressive-android-experiments/vector/src/main/cpp
+# Install script for directory: /tmp/pcp-android-experiments/vector/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86_64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86_64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

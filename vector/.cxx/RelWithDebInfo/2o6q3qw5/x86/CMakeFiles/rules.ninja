@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: progressive_native
+# Project: pcp_native
 # Configurations: RelWithDebInfo
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__progressive_native_RelWithDebInfo
+rule C_COMPILER__pcp_native_RelWithDebInfo
   depfile = $DEP_FILE
   deps = gcc
   command = /home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android21 --gcc-toolchain=/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__progressive_native_RelWithDebInfo
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__progressive_native_RelWithDebInfo
+rule CXX_COMPILER__pcp_native_RelWithDebInfo
   depfile = $DEP_FILE
   deps = gcc
   command = /home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-none-linux-android21 --gcc-toolchain=/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -34,7 +34,7 @@ rule CXX_COMPILER__progressive_native_RelWithDebInfo
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__progressive_native_RelWithDebInfo
+rule CXX_SHARED_LIBRARY_LINKER__pcp_native_RelWithDebInfo
   command = $PRE_LINK && /home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-none-linux-android21 --gcc-toolchain=/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/bym/android-sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S/tmp/progressive-android-experiments/vector/src/main/cpp -B/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86
+  command = /home/bym/android-sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S/tmp/pcp-android-experiments/vector/src/main/cpp -B/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86
   description = Re-running CMake...
   generator = 1
 

@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86"
+			"value" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/tmp/progressive-android-experiments/vector/src/main/cpp"
+			"value" : "/tmp/pcp-android-experiments/vector/src/main/cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -695,7 +695,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/tmp/progressive-android-experiments/vector/build/intermediates/cxx/RelWithDebInfo/2o6q3qw5/obj/x86"
+			"value" : "/tmp/pcp-android-experiments/vector/build/intermediates/cxx/RelWithDebInfo/2o6q3qw5/obj/x86"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -911,7 +911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "progressive_native"
+			"value" : "pcp_native"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -967,7 +967,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/tmp/progressive-android-experiments/vector/build/intermediates/cxx/RelWithDebInfo/2o6q3qw5/obj/x86"
+			"value" : "/tmp/pcp-android-experiments/vector/build/intermediates/cxx/RelWithDebInfo/2o6q3qw5/obj/x86"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1254,7 +1254,7 @@
 			"value" : "/home/bym/android-sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/21/liblog.so"
 		},
 		{
-			"name" : "progressive_native_BINARY_DIR",
+			"name" : "pcp_native_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1263,10 +1263,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86"
+			"value" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86"
 		},
 		{
-			"name" : "progressive_native_IS_TOP_LEVEL",
+			"name" : "pcp_native_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1278,7 +1278,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "progressive_native_SOURCE_DIR",
+			"name" : "pcp_native_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1287,7 +1287,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/tmp/progressive-android-experiments/vector/src/main/cpp"
+			"value" : "/tmp/pcp-android-experiments/vector/src/main/cpp"
 		}
 	],
 	"kind" : "cache",

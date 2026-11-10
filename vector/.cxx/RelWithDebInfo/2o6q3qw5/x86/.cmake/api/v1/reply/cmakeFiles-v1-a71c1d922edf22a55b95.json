@@ -29,7 +29,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake"
+			"path" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -82,7 +82,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake"
+			"path" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -121,7 +121,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake"
+			"path" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -260,7 +260,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake"
+			"path" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -354,14 +354,14 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake"
+			"path" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86/CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/tmp/progressive-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86",
-		"source" : "/tmp/progressive-android-experiments/vector/src/main/cpp"
+		"build" : "/tmp/pcp-android-experiments/vector/.cxx/RelWithDebInfo/2o6q3qw5/x86",
+		"source" : "/tmp/pcp-android-experiments/vector/src/main/cpp"
 	},
 	"version" : 
 	{
