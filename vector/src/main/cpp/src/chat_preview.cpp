@@ -1,8 +1,8 @@
-#include "progressive/chat_preview.hpp"
+#include "pcp/chat_preview.hpp"
 #include <sstream>
 #include <ctime>
 
-namespace progressive {
+namespace pcp {
 
 std::string truncateMessage(const std::string& body, int maxLen) {
     if (static_cast<int>(body.size()) <= maxLen) return body;
@@ -100,4 +100,4 @@ std::string ChatPreviewState::toJson() const {
     return json.str();
 }
 
-} // namespace progressive
+} // namespace pcp
