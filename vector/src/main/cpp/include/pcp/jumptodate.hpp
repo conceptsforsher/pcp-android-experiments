@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_JUMPTODATE_HPP
-#define PROGRESSIVE_JUMPTODATE_HPP
+#ifndef PCP_JUMPTODATE_HPP
+#define PCP_JUMPTODATE_HPP
 
 #include <string>
 #include <optional>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 struct JumpToDateRequest {
     std::string roomId;
@@ -36,6 +36,6 @@ JumpToDateResult parseTimestampToEventResponse(const std::string& responseBody, 
 // Compute Unix timestamp from date parts
 int64_t dateToUnixTimestamp(int year, int month, int day);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_JUMPTODATE_HPP
+#endif // PCP_JUMPTODATE_HPP

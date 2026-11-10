@@ -1,9 +1,9 @@
-#ifndef PROGRESSIVE_ACCOUNT_EXPORT_HPP
-#define PROGRESSIVE_ACCOUNT_EXPORT_HPP
+#ifndef PCP_ACCOUNT_EXPORT_HPP
+#define PCP_ACCOUNT_EXPORT_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 struct AccountData {
     std::string userId;
@@ -34,6 +34,6 @@ AccountData jsonToAccount(const std::string& json);
 std::string base64Encode(const std::string& input);
 std::string base64Decode(const std::string& input);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_ACCOUNT_EXPORT_HPP
+#endif // PCP_ACCOUNT_EXPORT_HPP

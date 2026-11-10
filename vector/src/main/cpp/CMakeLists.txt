@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22.1)
-project("progressive_native")
+project("pcp_native")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -34,7 +34,7 @@ if(NOT EXISTS "${SQLITE3_SRC}")
 endif()
 
 add_library(
-    progressive_native
+    pcp_native
     SHARED
     src/jumptodate.cpp
     src/json_parser.cpp
@@ -58,7 +58,7 @@ add_library(
 )
 
 target_include_directories(
-    progressive_native
+    pcp_native
     PUBLIC
     include
     ${SQLITE3_DIR}
@@ -73,6 +73,6 @@ set_source_files_properties(
 find_library(log_lib log)
 
 target_link_libraries(
-    progressive_native
+    pcp_native
     ${log_lib}
 )

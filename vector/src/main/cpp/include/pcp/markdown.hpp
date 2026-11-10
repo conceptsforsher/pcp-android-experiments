@@ -1,9 +1,9 @@
-#ifndef PROGRESSIVE_MARKDOWN_HPP
-#define PROGRESSIVE_MARKDOWN_HPP
+#ifndef PCP_MARKDOWN_HPP
+#define PCP_MARKDOWN_HPP
 
 #include <string>
 
-namespace progressive {
+namespace pcp {
 
 struct MdConfig {
     bool enableTables = true;
@@ -26,6 +26,6 @@ std::string markdownToHtml(const std::string& markdown, const MdConfig& config =
 // | Cell 1   | Cell 2   |
 std::string parseMarkdownTable(const std::string& tableBlock, bool withScroll);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_MARKDOWN_HPP
+#endif // PCP_MARKDOWN_HPP

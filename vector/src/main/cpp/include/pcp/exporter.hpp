@@ -1,12 +1,12 @@
-#ifndef PROGRESSIVE_EXPORTER_HPP
-#define PROGRESSIVE_EXPORTER_HPP
+#ifndef PCP_EXPORTER_HPP
+#define PCP_EXPORTER_HPP
 
 #include <string>
 #include <vector>
 #include <functional>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 enum class ExportFormat { Html, PlainText, Json };
 enum class ExportRange { Timeline, Beginning, LastNMessages };
@@ -84,6 +84,6 @@ std::string escapeHtml(const std::string& input);
 // Escape JSON string
 std::string escapeJson(const std::string& input);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_EXPORTER_HPP
+#endif // PCP_EXPORTER_HPP
