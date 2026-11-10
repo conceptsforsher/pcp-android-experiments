@@ -1,11 +1,11 @@
-#ifndef PROGRESSIVE_NETWORK_STATS_HPP
-#define PROGRESSIVE_NETWORK_STATS_HPP
+#ifndef PCP_NETWORK_STATS_HPP
+#define PCP_NETWORK_STATS_HPP
 
 #include <string>
 #include <vector>
 #include <cstdint>
 
-namespace progressive {
+namespace pcp {
 
 struct RequestRecord {
     std::string url;
@@ -69,6 +69,6 @@ double computePacketLossRate(int total, int failed);
 // Compute requests per minute from elapsed time
 double computeRequestRate(int totalRequests, int64_t elapsedMs);
 
-} // namespace progressive
+} // namespace pcp
 
-#endif // PROGRESSIVE_NETWORK_STATS_HPP
+#endif // PCP_NETWORK_STATS_HPP
